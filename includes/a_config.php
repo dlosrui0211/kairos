@@ -2,7 +2,7 @@
 	switch ($_SERVER["SCRIPT_NAME"]) {
 		case "/index.php":
 			$CURRENT_PAGE = "Index"; 
-			$PAGE_TITLE = "Portfolio";
+			$PAGE_TITLE = "Kairos - Tu página de claves";
 			break;
 		case "/about.php":
 			$CURRENT_PAGE = "About"; 
@@ -14,6 +14,6 @@
 			break;
 		default:
 			$CURRENT_PAGE = "Index";
-			$PAGE_TITLE = "Welcome to my homepage!";
+			$PAGE_TITLE = "Kairos - Tu página de claves";
 	}
 ?>
