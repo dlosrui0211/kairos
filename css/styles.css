@@ -16673,4 +16673,209 @@ html {
 .copyright {
   background-color: #1a252f; }
 
+.login-pc {
+  background: var(--principal, #1c0538);
+  padding: 47px 0 47px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  justify-content: flex-start;
+  height: 1888px;
+  position: relative;
+  overflow: hidden; }
+  .login-pc,
+  .login-pc * {
+    box-sizing: border-box; }
+  .login-pc .frame-11 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 1210px;
+    height: 585px;
+    position: relative;
+    overflow: hidden; }
+  .login-pc .logo {
+    flex: 1;
+    width: 800px;
+    position: relative;
+    object-fit: cover; }
+  .login-pc .registro {
+    padding: 193px 102px 193px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    overflow: hidden; }
+    .login-pc .registro .frame-9 {
+      padding: 30px 10px 30px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: flex-start;
+      align-self: stretch;
+      flex-shrink: 0;
+      position: relative;
+      overflow: hidden; }
+    .login-pc .registro .frame-20 {
+      border-radius: 30px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 1112px;
+      height: 198px;
+      position: relative;
+      overflow: hidden; }
+    .login-pc .registro .bienvenido-a-kairos {
+      color: var(--texto-principal, #ffffff);
+      text-align: center;
+      font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
+      font-size: var(--h2-font-size, 24px);
+      font-weight: var(--h2-font-weight, 400);
+      position: relative;
+      align-self: stretch;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .login-pc .registro .frame-12 {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-shrink: 0;
+      height: 551px;
+      position: relative;
+      overflow: hidden; }
+      .login-pc .registro .frame-12 .frame-18 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 896px;
+        position: relative;
+        overflow: hidden; }
+        .login-pc .registro .frame-12 .frame-18 .email {
+          color: var(--texto-principal, #ffffff);
+          text-align: center;
+          font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
+          font-size: var(--h2-font-size, 24px);
+          font-weight: var(--h2-font-weight, 400);
+          position: relative;
+          width: 361px;
+          height: 155px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+        .login-pc .registro .frame-12 .frame-18 .frame-17 {
+          background: var(--texto-principal, #ffffff);
+          border-radius: 50px;
+          padding: 10px;
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          align-items: flex-start;
+          justify-content: flex-start;
+          flex: 1;
+          height: 89px;
+          position: relative;
+          overflow: hidden; }
+      .login-pc .registro .frame-12 .frame-25 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 896px;
+        position: relative;
+        overflow: hidden; }
+        .login-pc .registro .frame-12 .frame-25 .contrase-a {
+          color: var(--texto-principal, #ffffff);
+          text-align: center;
+          font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
+          font-size: var(--h2-font-size, 24px);
+          font-weight: var(--h2-font-weight, 400);
+          position: relative;
+          width: 361px;
+          height: 155px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+      .login-pc .registro .frame-12 .frame-24 {
+        padding: 0 154px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        align-self: stretch;
+        flex: 1;
+        position: relative;
+        overflow: hidden; }
+        .login-pc .registro .frame-12 .frame-24 .frame-23 {
+          background: var(--principal-de-acento, #6f12e0);
+          border-radius: 30px;
+          padding: 10px;
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          align-items: flex-start;
+          justify-content: flex-start;
+          align-self: stretch;
+          flex: 1;
+          position: relative;
+          overflow: hidden; }
+          .login-pc .registro .frame-12 .frame-24 .frame-23 .log-in {
+            color: var(--texto-principal, #ffffff);
+            text-align: center;
+            font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
+            font-size: var(--h2-font-size, 24px);
+            font-weight: var(--h2-font-weight, 400);
+            position: relative;
+            align-self: stretch;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-text-stroke: 1px var(--secundario, #5e3a8b); }
+  .login-pc .frame-202 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 906px;
+    height: 143px;
+    position: relative;
+    overflow: hidden; }
+    .login-pc .frame-202 .a-n-no-tienes-cuenta-registrate-aqu {
+      color: var(--texto-principal, #ffffff);
+      text-align: center;
+      font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
+      font-size: var(--h2-font-size, 24px);
+      font-weight: var(--h2-font-weight, 400);
+      position: relative;
+      align-self: stretch;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
 /*# sourceMappingURL=styles.css.map */

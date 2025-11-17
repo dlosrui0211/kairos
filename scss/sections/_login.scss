@@ -1,0 +1,271 @@
+// Variables (asumiendo que están definidas en otro lugar, aquí las uso)
+// Si no las tienes, asegúrate de definirlas o reemplázalas por sus valores fijos.
+$principal: #1c0538;
+$texto-principal: #ffffff;
+$principal-de-acento: #6f12e0;
+$secundario: #5e3a8b;
+
+$h2-font-family: "GasoekOne-Regular", sans-serif;
+$h2-font-size: 24px;
+$h2-font-weight: 400;
+
+.login-pc {
+  // Reset de box-sizing para el elemento y sus hijos
+  &,
+  * {
+    box-sizing: border-box;
+  }
+
+  // Estilos del contenedor principal
+  background: var(--principal, $principal);
+  padding: 47px 0 47px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  justify-content: flex-start;
+  height: 1888px;
+  position: relative;
+  overflow: hidden;
+
+  // Frame 11
+  .frame-11 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 1210px;
+    height: 585px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  // Logo
+  .logo {
+    flex: 1;
+    width: 800px;
+    position: relative;
+    object-fit: cover;
+  }
+
+  // Registro
+  .registro {
+    padding: 193px 102px 193px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+
+    // Frame 9 (Hijo de .registro)
+    .frame-9 {
+      padding: 30px 10px 30px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: flex-start;
+      align-self: stretch;
+      flex-shrink: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    // Frame 20 (Hijo de .registro)
+    .frame-20 {
+      border-radius: 30px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 1112px;
+      height: 198px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    // Título/Mensaje
+    .bienvenido-a-kairos {
+      color: var(--texto-principal, $texto-principal);
+      text-align: center;
+      font-family: var(--h2-font-family, $h2-font-family);
+      font-size: var(--h2-font-size, $h2-font-size);
+      font-weight: var(--h2-font-weight, $h2-font-weight);
+      position: relative;
+      align-self: stretch;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    // Frame 12
+    .frame-12 {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-shrink: 0;
+      height: 551px;
+      position: relative;
+      overflow: hidden;
+
+      // Grupo de Email
+      .frame-18 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 896px;
+        position: relative;
+        overflow: hidden;
+
+        .email {
+          color: var(--texto-principal, $texto-principal);
+          text-align: center;
+          font-family: var(--h2-font-family, $h2-font-family);
+          font-size: var(--h2-font-size, $h2-font-size);
+          font-weight: var(--h2-font-weight, $h2-font-weight);
+          position: relative;
+          width: 361px;
+          height: 155px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .frame-17 {
+          background: var(--texto-principal, $texto-principal);
+          border-radius: 50px;
+          padding: 10px;
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          align-items: flex-start;
+          justify-content: flex-start;
+          flex: 1;
+          height: 89px;
+          position: relative;
+          overflow: hidden;
+        }
+      } // Fin de .frame-18
+
+      // Grupo de Contraseña
+      .frame-25 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 896px;
+        position: relative;
+        overflow: hidden;
+
+        .contrase-a {
+          color: var(--texto-principal, $texto-principal);
+          text-align: center;
+          font-family: var(--h2-font-family, $h2-font-family);
+          font-size: var(--h2-font-size, $h2-font-size);
+          font-weight: var(--h2-font-weight, $h2-font-weight);
+          position: relative;
+          width: 361px;
+          height: 155px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        // El .frame-17 (input field) no se repite aquí, asumo que es solo .frame-17
+        // Si el campo de contraseña es diferente, se le daría otra clase.
+        // Aquí no hay un estilo de campo de entrada para la contraseña.
+      } // Fin de .frame-25
+
+      // Botón Log In
+      .frame-24 {
+        padding: 0 154px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        align-self: stretch;
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+
+        .frame-23 {
+          background: var(--principal-de-acento, $principal-de-acento);
+          border-radius: 30px;
+          padding: 10px;
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          align-items: flex-start;
+          justify-content: flex-start;
+          align-self: stretch;
+          flex: 1;
+          position: relative;
+          overflow: hidden;
+
+          .log-in {
+            color: var(--texto-principal, $texto-principal);
+            text-align: center;
+            font-family: var(--h2-font-family, $h2-font-family);
+            font-size: var(--h2-font-size, $h2-font-size);
+            font-weight: var(--h2-font-weight, $h2-font-weight);
+            position: relative;
+            align-self: stretch;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // Se usa SCSS para simular el -webkit-text-stroke si es necesario, 
+            // pero lo dejamos como está para compatibilidad con el original.
+            -webkit-text-stroke: 1px var(--secundario, $secundario);
+          }
+        }
+      } // Fin de .frame-24
+    } // Fin de .frame-12
+  } // Fin de .registro
+
+  // Enlace de registro (abajo)
+  .frame-202 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 906px;
+    height: 143px;
+    position: relative;
+    overflow: hidden;
+
+    .a-n-no-tienes-cuenta-registrate-aqu {
+      color: var(--texto-principal, $texto-principal);
+      text-align: center;
+      font-family: var(--h2-font-family, $h2-font-family);
+      font-size: var(--h2-font-size, $h2-font-size);
+      font-weight: var(--h2-font-weight, $h2-font-weight);
+      position: relative;
+      align-self: stretch;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
