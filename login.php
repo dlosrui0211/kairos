@@ -369,7 +369,9 @@
           </div>
           <div class="frame-202">
             <div class="a-n-no-tienes-cuenta-registrate-aqu">
-              ¿Aún no tienes cuenta? Registrate aquí
+              <a href="register.php">
+                ¿Aún no tienes cuenta? Registrate aquí
+              </a>
             </div>
           </div>
         </div>
