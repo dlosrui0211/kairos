@@ -1,184 +1,391 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Kalvrei</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            background: #1a0033;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        
-        .login-container {
-            background: #2d0052;
-            border-radius: 20px;
-            padding: 60px 40px;
-            width: 100%;
-            max-width: 500px;
-            text-align: center;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-        }
-        
-        .logo {
-            margin-bottom: 40px;
-        }
-        
-        .logo h1 {
-            color: white;
-            font-size: 80px;
-            font-weight: bold;
-            letter-spacing: -5px;
-            margin-bottom: 10px;
-        }
-        
-        .logo-icon {
-            display: inline-block;
-            position: relative;
-        }
-        
-        .welcome-text {
-            color: white;
-            font-size: 16px;
-            margin-bottom: 40px;
-        }
-        
-        .form-group {
-            margin-bottom: 25px;
-            text-align: left;
-        }
-        
-        .form-group label {
-            color: white;
-            display: block;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        
-        .form-group input {
-            width: 100%;
-            padding: 15px 20px;
-            border: none;
-            border-radius: 25px;
-            font-size: 16px;
-            outline: none;
-        }
-        
-        .login-btn {
-            width: 100%;
-            padding: 15px;
-            background: linear-gradient(90deg, #8b00ff, #ff00ff);
-            border: none;
-            border-radius: 25px;
-            color: white;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            margin-top: 20px;
-            transition: transform 0.2s;
-        }
-        
-        .login-btn:hover {
-            transform: scale(1.02);
-        }
-        
-        .register-link {
-            color: white;
-            margin-top: 25px;
-            font-size: 14px;
-        }
-        
-        .register-link a {
-            color: #ff00ff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        
-        .error-message {
-            background: rgba(255, 0, 0, 0.2);
-            color: #ff6b6b;
-            padding: 12px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            font-size: 14px;
-        }
-        
-        /* Responsivo */
-        @media (max-width: 768px) {
-            .login-container {
-                padding: 40px 30px;
-            }
-            
-            .logo h1 {
-                font-size: 60px;
-            }
-            
-            .welcome-text {
-                font-size: 14px;
-            }
-            
-            .form-group input {
-                padding: 12px 18px;
-                font-size: 14px;
-            }
-            
-            .login-btn {
-                padding: 12px;
-                font-size: 14px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .login-container {
-                padding: 30px 20px;
-            }
-            
-            .logo h1 {
-                font-size: 50px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Figma Styles of your File */
+:root {
+  /* Colors */
+  --principal: #1c0538;
+  --secundario: #5e3a8b;
+  --principal-de-acento: #6f12e0;
+  --secundario-de-acento: #4b3861;
+  --secundario-alternativo-2: #2f2936;
+  --texto-secundario: #302d33;
+  --texto-principal: #ffffff;
+  --foundation-purple-light: #f0e6f6;
+  --foundation-purple-light-hover: #e9d9f2;
+  --foundation-purple-light-active: #d2b0e4;
+  --foundation-purple-normal: #6d00a8;
+  --foundation-purple-normal-hover: #620097;
+  --foundation-purple-normal-active: #570086;
+  --foundation-purple-dark: #52007e;
+  --foundation-purple-dark-hover: #410065;
+  --foundation-purple-dark-active: #31004c;
+  --foundation-purple-darker: #26003b;
+  --foundation-purple-light: #f0e6f6;
+  --foundation-purple-light-hover: #e9d9f2;
+  --foundation-purple-light-active: #d2b0e4;
+  --foundation-purple-normal: #6d00a8;
+  --foundation-purple-normal-hover: #620097;
+  --foundation-purple-normal-active: #570086;
+  --foundation-purple-dark: #52007e;
+  --foundation-purple-dark-hover: #410065;
+  --foundation-purple-dark-active: #31004c;
+  --foundation-purple-darker: #26003b;
+
+  /* Fonts */
+  --parrafo-base-font-family: Inter-Regular, sans-serif;
+  --parrafo-base-font-size: 16px;
+  --parrafo-base-line-height: normal;
+  --parrafo-base-font-weight: 400;
+  --parrafo-base-font-style: normal;
+  --texto-secundario-font-family: Inter-Light, sans-serif;
+  --texto-secundario-font-size: 14px;
+  --texto-secundario-line-height: normal;
+  --texto-secundario-font-weight: 300;
+  --texto-secundario-font-style: normal;
+  --botones-font-family: Inter-SemiBold, sans-serif;
+  --botones-font-size: 15px;
+  --botones-line-height: normal;
+  --botones-font-weight: 600;
+  --botones-font-style: normal;
+  --menus-font-family: Inter-Medium, sans-serif;
+  --menus-font-size: 15px;
+  --menus-line-height: normal;
+  --menus-font-weight: 500;
+  --menus-font-style: normal;
+  --h1-font-family: GasoekOne-Regular, sans-serif;
+  --h1-font-size: 32px;
+  --h1-line-height: normal;
+  --h1-font-weight: 400;
+  --h1-font-style: normal;
+  --h2-font-family: GasoekOne-Regular, sans-serif;
+  --h2-font-size: 24px;
+  --h2-line-height: normal;
+  --h2-font-weight: 400;
+  --h2-font-style: normal;
+  --h3-font-family: GasoekOne-Regular, sans-serif;
+  --h3-font-size: 20px;
+  --h3-line-height: normal;
+  --h3-font-weight: 400;
+  --h3-font-style: normal;
+  --subtitulo-destacado-font-family: Inter-Regular, sans-serif;
+  --subtitulo-destacado-font-size: 18px;
+  --subtitulo-destacado-line-height: normal;
+  --subtitulo-destacado-font-weight: 400;
+  --subtitulo-destacado-font-style: normal;
+  --subtitulo-destacado-font-family: Inter-Regular, sans-serif;
+  --subtitulo-destacado-font-size: 18px;
+  --subtitulo-destacado-line-height: normal;
+  --subtitulo-destacado-font-weight: 400;
+  --subtitulo-destacado-font-style: normal;
+  --body-text-1-font-family: Inter-Regular, sans-serif;
+  --body-text-1-font-size: 32px;
+  --body-text-1-line-height: normal;
+  --body-text-1-font-weight: 400;
+  --body-text-1-font-style: normal;
+  --body-text-2-font-family: Inter-Regular, sans-serif;
+  --body-text-2-font-size: 24px;
+  --body-text-2-line-height: normal;
+  --body-text-2-font-weight: 400;
+  --body-text-2-font-style: normal;
+  --body-text-3-font-family: Inter-Regular, sans-serif;
+  --body-text-3-font-size: 16px;
+  --body-text-3-line-height: normal;
+  --body-text-3-font-weight: 400;
+  --body-text-3-font-style: normal;
+
+  /* Effects */
+}
+/* Figma Color Variables of your File */
+:root,
+[data-coleccion-variable-mode="mode-1"] {
+  /* mode-1 */
+  --principal: #1c0538;
+  --morado-resalte: #6f12e0;
+  --morado-secundario: #5e3a8b;
+  --negro: #302d33;
+  --negro-morado: #2f2936;
+  --morado-principal: #5e3a8b;
+}
+
+    .login-pc,
+.login-pc * {
+  box-sizing: border-box;
+}
+.login-pc {
+  background: var(--principal, #1c0538);
+  padding: 47px 0px 47px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  justify-content: flex-start;
+  height: 1888px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-11 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1210px;
+  height: 585px;
+  position: relative;
+  overflow: hidden;
+}
+.logo {
+  flex: 1;
+  width: 800px;
+  position: relative;
+  object-fit: cover;
+}
+.registro {
+  padding: 193px 102px 193px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.frame-9 {
+  padding: 30px 10px 30px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.frame-20 {
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1112px;
+  height: 198px;
+  position: relative;
+  overflow: hidden;
+}
+.bienvenido-a-kairos {
+  color: var(--texto-principal, #ffffff);
+  text-align: center;
+  font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
+  font-size: var(--h2-font-size, 24px);
+  font-weight: var(--h2-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-12 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 551px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-18 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 896px;
+  position: relative;
+  overflow: hidden;
+}
+.email {
+  color: var(--texto-principal, #ffffff);
+  text-align: center;
+  font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
+  font-size: var(--h2-font-size, 24px);
+  font-weight: var(--h2-font-weight, 400);
+  position: relative;
+  width: 361px;
+  height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-17 {
+  background: var(--texto-principal, #ffffff);
+  border-radius: 50px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  height: 89px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-25 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 896px;
+  position: relative;
+  overflow: hidden;
+}
+.contrase-a {
+  color: var(--texto-principal, #ffffff);
+  text-align: center;
+  font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
+  font-size: var(--h2-font-size, 24px);
+  font-weight: var(--h2-font-weight, 400);
+  position: relative;
+  width: 361px;
+  height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-24 {
+  padding: 0px 154px 0px 154px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.frame-23 {
+  background: var(--principal-de-acento, #6f12e0);
+  border-radius: 30px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.log-in {
+  color: var(--texto-principal, #ffffff);
+  text-align: center;
+  font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
+  font-size: var(--h2-font-size, 24px);
+  font-weight: var(--h2-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-text-stroke: 1px var(--secundario, #5e3a8b);
+}
+.frame-202 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 906px;
+  height: 143px;
+  position: relative;
+  overflow: hidden;
+}
+.a-n-no-tienes-cuenta-registrate-aqu {
+  color: var(--texto-principal, #ffffff);
+  text-align: center;
+  font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
+  font-size: var(--h2-font-size, 24px);
+  font-weight: var(--h2-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  </style>
 </head>
 <body>
-    <div class="login-container">
-        <div class="logo">
-            <img src="/img/kairos.png" alt="Kairos">
-        </div>
-        
-        <p class="welcome-text">¡Bienvenido a Kairos!</p>
-        
-        <?php if (isset($error)): ?>
-            <div class="error-message"><?php echo htmlspecialchars($error); ?></div>
-        <?php endif; ?>
-        
-        <form method="POST" action="">
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            
-            <button type="submit" name="login" class="login-btn">Log in</button>
-        </form>
-        
-        <p class="register-link">
-            ¿Aún no tienes cuenta? <a href="register.php">Regístrate aquí</a>
-        </p>
+  
+  
+  
+  
+  <div class="login-pc">
+    <div class="frame-11">
+      <img class="logo" src="img/kairos.png" />
     </div>
+    <div class="registro">
+      <div class="frame-9">
+        <div class="frame-20">
+          <div class="bienvenido-a-kairos">¡Bienvenido a Kairos!</div>
+        </div>
+        <div class="frame-12">
+          <div class="frame-18">
+            <div class="email">Email:</div>
+            <div class="frame-17"></div>
+          </div>
+          <div class="frame-25">
+            <div class="contrase-a">Contraseña:</div>
+            <div class="frame-17"></div>
+          </div>
+          <div class="frame-24">
+            <div class="frame-23">
+              <div class="log-in">Log in</div>
+            </div>
+          </div>
+          <div class="frame-202">
+            <div class="a-n-no-tienes-cuenta-registrate-aqu">
+              ¿Aún no tienes cuenta? Registrate aquí
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
