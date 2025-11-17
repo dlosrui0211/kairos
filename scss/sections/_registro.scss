@@ -1,0 +1,286 @@
+// Variables (Se recomienda definir estas variables una sola vez en un archivo _variables.scss)
+$principal: #1c0538;
+$texto-principal: #ffffff;
+$principal-de-acento: #6f12e0;
+$secundario: #5e3a8b;
+
+$font-family-base: "GasoekOne-Regular", sans-serif;
+$font-size-h1: 32px;
+$font-size-h2: 24px;
+$font-weight-base: 400;
+
+// Mixin o Placeholder para estilos de texto comunes (H2/títulos pequeños)
+@mixin text-style-h2 {
+  color: var(--texto-principal, $texto-principal);
+  text-align: center;
+  font-family: var(--h2-font-family, $font-family-base);
+  font-size: var(--h2-font-size, $font-size-h2);
+  font-weight: var(--h2-font-weight, $font-weight-base);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registro-pc {
+  // Reset de box-sizing para el elemento y sus hijos
+  &,
+  * {
+    box-sizing: border-box;
+  }
+
+  // Estilos del contenedor principal
+  background: var(--principal, $principal);
+  padding: 47px 0 47px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  justify-content: flex-start;
+  height: 2272px;
+  position: relative;
+  overflow: hidden;
+
+  // Frame 11 (Contenedor del logo)
+  .frame-11 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 800px;
+    height: 585px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  // Logo
+  .logo {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    object-fit: cover;
+  }
+
+  // Registro (Contenedor principal de formularios)
+  .registro {
+    padding: 193px 102px 193px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+
+    // Frame 9 (Contenedor de título/mensaje)
+    .frame-9 {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: flex-start;
+      align-self: stretch;
+      flex-shrink: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    // Frame 20 (Contenedor del título de registro)
+    .frame-20 {
+      border-radius: 30px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 1112px;
+      height: 198px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    // Título de registro
+    .a-n-no-tienes-cuenta-registate {
+      @include text-style-h2;
+      align-self: stretch;
+      flex: 1;
+    }
+
+    // Frame 12 (Contenedor de campos de entrada)
+    .frame-12 {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-shrink: 0;
+      height: 716px;
+      position: relative;
+      overflow: hidden;
+
+      // Grupo de Nombre (.frame-13)
+      .frame-13 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 906px;
+        height: 143px;
+        position: relative;
+        overflow: hidden;
+
+        .nombre {
+          @include text-style-h2;
+          // Sobreescribe el tamaño para ser H1 (32px)
+          font-family: var(--h1-font-family, $font-family-base);
+          font-size: var(--h1-font-size, $font-size-h1);
+          width: 361px;
+          height: 155px;
+        }
+      }
+
+      // Input Field (Campo de entrada común)
+      .frame-17 {
+        background: var(--texto-principal, $texto-principal);
+        border-radius: 50px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex: 1;
+        height: 89px;
+        position: relative;
+        overflow: hidden;
+        // Los otros campos pueden usar esta clase o la siguiente anidación.
+      }
+
+      // Grupo de Apellidos (.frame-172)
+      .frame-172 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 896px;
+        position: relative;
+        overflow: hidden;
+
+        .apellidos {
+          @include text-style-h2;
+          width: 361px;
+          height: 155px;
+        }
+      }
+
+      // Grupo de Email (.frame-18)
+      .frame-18 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 896px;
+        position: relative;
+        overflow: hidden;
+
+        .email {
+          @include text-style-h2;
+          width: 361px;
+          height: 155px;
+        }
+      }
+
+      // Grupo de Contraseña (.frame-19)
+      .frame-19 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 906px;
+        height: 143px;
+        position: relative;
+        overflow: hidden;
+
+        .contrase-a {
+          @include text-style-h2;
+          width: 361px;
+          height: 155px;
+        }
+      }
+    } // Fin de .frame-12
+
+    // Frame 24 (Contenedor de botones Aceptar/Cancelar)
+    .frame-24 {
+      padding: 0 154px;
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      align-items: center;
+      justify-content: center;
+      align-self: stretch;
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+
+      // Botón Aceptar
+      .frame-23 {
+        background: var(--principal-de-acento, $principal-de-acento);
+        border-radius: 30px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-self: stretch;
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+
+        .aceptar {
+          @include text-style-h2;
+          align-self: stretch;
+          flex: 1;
+          -webkit-text-stroke: 1px var(--secundario, $secundario);
+        }
+      }
+
+      // Botón Cancelar
+      .frame-22 {
+        background: var(--principal-de-acento, $principal-de-acento);
+        border-radius: 30px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-self: stretch;
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+
+        .cancelar {
+          @include text-style-h2;
+          align-self: stretch;
+          flex: 1;
+        }
+      }
+    } // Fin de .frame-24
+  } // Fin de .registro
+} // Fin de .registro-pc

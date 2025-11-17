@@ -16878,4 +16878,259 @@ html {
       align-items: center;
       justify-content: center; }
 
+.registro-pc {
+  background: var(--principal, #1c0538);
+  padding: 47px 0 47px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  justify-content: flex-start;
+  height: 2272px;
+  position: relative;
+  overflow: hidden; }
+  .registro-pc,
+  .registro-pc * {
+    box-sizing: border-box; }
+  .registro-pc .frame-11 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 800px;
+    height: 585px;
+    position: relative;
+    overflow: hidden; }
+  .registro-pc .logo {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    object-fit: cover; }
+  .registro-pc .registro {
+    padding: 193px 102px 193px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    overflow: hidden; }
+    .registro-pc .registro .frame-9 {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: flex-start;
+      align-self: stretch;
+      flex-shrink: 0;
+      position: relative;
+      overflow: hidden; }
+    .registro-pc .registro .frame-20 {
+      border-radius: 30px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 1112px;
+      height: 198px;
+      position: relative;
+      overflow: hidden; }
+    .registro-pc .registro .a-n-no-tienes-cuenta-registate {
+      color: var(--texto-principal, #ffffff);
+      text-align: center;
+      font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
+      font-size: var(--h2-font-size, 24px);
+      font-weight: var(--h2-font-weight, 400);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: stretch;
+      flex: 1; }
+    .registro-pc .registro .frame-12 {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-shrink: 0;
+      height: 716px;
+      position: relative;
+      overflow: hidden; }
+      .registro-pc .registro .frame-12 .frame-13 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 906px;
+        height: 143px;
+        position: relative;
+        overflow: hidden; }
+        .registro-pc .registro .frame-12 .frame-13 .nombre {
+          color: var(--texto-principal, #ffffff);
+          text-align: center;
+          font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
+          font-size: var(--h2-font-size, 24px);
+          font-weight: var(--h2-font-weight, 400);
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: var(--h1-font-family, "GasoekOne-Regular", sans-serif);
+          font-size: var(--h1-font-size, 32px);
+          width: 361px;
+          height: 155px; }
+      .registro-pc .registro .frame-12 .frame-17 {
+        background: var(--texto-principal, #ffffff);
+        border-radius: 50px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex: 1;
+        height: 89px;
+        position: relative;
+        overflow: hidden; }
+      .registro-pc .registro .frame-12 .frame-172 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 896px;
+        position: relative;
+        overflow: hidden; }
+        .registro-pc .registro .frame-12 .frame-172 .apellidos {
+          color: var(--texto-principal, #ffffff);
+          text-align: center;
+          font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
+          font-size: var(--h2-font-size, 24px);
+          font-weight: var(--h2-font-weight, 400);
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 361px;
+          height: 155px; }
+      .registro-pc .registro .frame-12 .frame-18 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 896px;
+        position: relative;
+        overflow: hidden; }
+        .registro-pc .registro .frame-12 .frame-18 .email {
+          color: var(--texto-principal, #ffffff);
+          text-align: center;
+          font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
+          font-size: var(--h2-font-size, 24px);
+          font-weight: var(--h2-font-weight, 400);
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 361px;
+          height: 155px; }
+      .registro-pc .registro .frame-12 .frame-19 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 906px;
+        height: 143px;
+        position: relative;
+        overflow: hidden; }
+        .registro-pc .registro .frame-12 .frame-19 .contrase-a {
+          color: var(--texto-principal, #ffffff);
+          text-align: center;
+          font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
+          font-size: var(--h2-font-size, 24px);
+          font-weight: var(--h2-font-weight, 400);
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 361px;
+          height: 155px; }
+    .registro-pc .registro .frame-24 {
+      padding: 0 154px;
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      align-items: center;
+      justify-content: center;
+      align-self: stretch;
+      flex: 1;
+      position: relative;
+      overflow: hidden; }
+      .registro-pc .registro .frame-24 .frame-23 {
+        background: var(--principal-de-acento, #6f12e0);
+        border-radius: 30px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-self: stretch;
+        flex: 1;
+        position: relative;
+        overflow: hidden; }
+        .registro-pc .registro .frame-24 .frame-23 .aceptar {
+          color: var(--texto-principal, #ffffff);
+          text-align: center;
+          font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
+          font-size: var(--h2-font-size, 24px);
+          font-weight: var(--h2-font-weight, 400);
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          align-self: stretch;
+          flex: 1;
+          -webkit-text-stroke: 1px var(--secundario, #5e3a8b); }
+      .registro-pc .registro .frame-24 .frame-22 {
+        background: var(--principal-de-acento, #6f12e0);
+        border-radius: 30px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-self: stretch;
+        flex: 1;
+        position: relative;
+        overflow: hidden; }
+        .registro-pc .registro .frame-24 .frame-22 .cancelar {
+          color: var(--texto-principal, #ffffff);
+          text-align: center;
+          font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
+          font-size: var(--h2-font-size, 24px);
+          font-weight: var(--h2-font-weight, 400);
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          align-self: stretch;
+          flex: 1; }
+
 /*# sourceMappingURL=styles.css.map */
