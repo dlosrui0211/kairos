@@ -19,4 +19,4 @@ Una vez hecho esto, ya podemos compilar los ficheros scss con el comando:
 
 sass -w scss:css
 
-npm run dev:win
+npm run dev
