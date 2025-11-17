@@ -5,12 +5,14 @@
 	<?php include("includes/head-tag-contents.php");?>
 </head>
 <body>
-
-
-<?php include("includes/navigation.php");?>
-<main> </main>
-
-<?php include("includes/footer.php");?>
-
+	<header>
+		<?php include("includes/navigation.php");?>
+	</header>
+	<main>
+		<p>aaaaaaaaaaaaa</p>
+	</main>
+	<footer>
+		<?php include("includes/footer.php");?>
+	</footer>
 </body>
 </html>
