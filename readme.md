@@ -1,3 +1,4 @@
+# Proyecto Diseño + Saass
 Cuando publicamos proyectos en GIT, es conveniente crear un fichero .gitnore para que no se suban
 al repositorio los paquetes externos de node. Cuando descarguéis de GITHUB este proyecto, observar
 que la carpeta node_modules aún no existe.
@@ -18,3 +19,4 @@ Una vez hecho esto, ya podemos compilar los ficheros scss con el comando:
 
 sass -w scss:css
 
+npm run dev:win
