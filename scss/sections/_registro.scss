@@ -9,7 +9,22 @@ $font-size-h1: 32px;
 $font-size-h2: 24px;
 $font-weight-base: 400;
 
-// Mixin o Placeholder para estilos de texto comunes (H2/títulos pequeños)
+// Mixin para estilos de texto de encabezado principal (H1: Nombre, Apellidos, Email, Contraseña)
+@mixin text-style-h1 {
+  color: var(--texto-principal, $texto-principal);
+  text-align: center;
+  font-family: var(--h1-font-family, $font-family-base);
+  font-size: var(--h1-font-size, $font-size-h1);
+  font-weight: var(--h1-font-weight, $font-weight-base);
+  position: relative;
+  width: 361px;
+  height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Mixin para estilos de texto de encabezado secundario (H2: Título, Botones)
 @mixin text-style-h2 {
   color: var(--texto-principal, $texto-principal);
   text-align: center;
@@ -76,7 +91,7 @@ $font-weight-base: 400;
     position: relative;
     overflow: hidden;
 
-    // Frame 9 (Contenedor de título/mensaje)
+    // Título/Mensaje
     .frame-9 {
       padding: 10px;
       display: flex;
@@ -90,7 +105,6 @@ $font-weight-base: 400;
       overflow: hidden;
     }
 
-    // Frame 20 (Contenedor del título de registro)
     .frame-20 {
       border-radius: 30px;
       display: flex;
@@ -105,7 +119,6 @@ $font-weight-base: 400;
       overflow: hidden;
     }
 
-    // Título de registro
     .a-n-no-tienes-cuenta-registate {
       @include text-style-h2;
       align-self: stretch;
@@ -125,6 +138,22 @@ $font-weight-base: 400;
       position: relative;
       overflow: hidden;
 
+      // Campo de entrada común (Background blanco)
+      .frame-17 {
+        background: var(--texto-principal, $texto-principal);
+        border-radius: 50px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex: 1;
+        height: 89px;
+        position: relative;
+        overflow: hidden;
+      }
+
       // Grupo de Nombre (.frame-13)
       .frame-13 {
         display: flex;
@@ -139,72 +168,48 @@ $font-weight-base: 400;
         overflow: hidden;
 
         .nombre {
-          @include text-style-h2;
-          // Sobreescribe el tamaño para ser H1 (32px)
-          font-family: var(--h1-font-family, $font-family-base);
-          font-size: var(--h1-font-size, $font-size-h1);
-          width: 361px;
-          height: 155px;
+          @include text-style-h1;
         }
       }
 
-      // Input Field (Campo de entrada común)
-      .frame-17 {
-        background: var(--texto-principal, $texto-principal);
-        border-radius: 50px;
-        padding: 10px;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex: 1;
-        height: 89px;
-        position: relative;
-        overflow: hidden;
-        // Los otros campos pueden usar esta clase o la siguiente anidación.
-      }
-
-      // Grupo de Apellidos (.frame-172)
-      .frame-172 {
+      // Grupo de Apellidos (.frame-25)
+      .frame-25 {
         display: flex;
         flex-direction: row;
         gap: 10px;
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-        width: 896px;
+        width: 906px;
+        height: 143px;
         position: relative;
         overflow: hidden;
 
         .apellidos {
-          @include text-style-h2;
-          width: 361px;
-          height: 155px;
+          @include text-style-h1;
         }
       }
 
-      // Grupo de Email (.frame-18)
-      .frame-18 {
+      // Grupo de Email (.frame-26)
+      .frame-26 {
         display: flex;
         flex-direction: row;
         gap: 10px;
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-        width: 896px;
+        width: 906px;
+        height: 143px;
         position: relative;
         overflow: hidden;
 
         .email {
-          @include text-style-h2;
-          width: 361px;
-          height: 155px;
+          @include text-style-h1;
         }
       }
 
-      // Grupo de Contraseña (.frame-19)
-      .frame-19 {
+      // Grupo de Contraseña (.frame-27)
+      .frame-27 {
         display: flex;
         flex-direction: row;
         gap: 10px;
@@ -217,9 +222,7 @@ $font-weight-base: 400;
         overflow: hidden;
 
         .contrase-a {
-          @include text-style-h2;
-          width: 361px;
-          height: 155px;
+          @include text-style-h1;
         }
       }
     } // Fin de .frame-12

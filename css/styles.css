@@ -16965,6 +16965,19 @@ html {
       height: 716px;
       position: relative;
       overflow: hidden; }
+      .registro-pc .registro .frame-12 .frame-17 {
+        background: var(--texto-principal, #ffffff);
+        border-radius: 50px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex: 1;
+        height: 89px;
+        position: relative;
+        overflow: hidden; }
       .registro-pc .registro .frame-12 .frame-13 {
         display: flex;
         flex-direction: row;
@@ -16979,75 +16992,16 @@ html {
         .registro-pc .registro .frame-12 .frame-13 .nombre {
           color: var(--texto-principal, #ffffff);
           text-align: center;
-          font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
-          font-size: var(--h2-font-size, 24px);
-          font-weight: var(--h2-font-weight, 400);
-          position: relative;
-          display: flex;
-          align-items: center;
-          justify-content: center;
           font-family: var(--h1-font-family, "GasoekOne-Regular", sans-serif);
           font-size: var(--h1-font-size, 32px);
-          width: 361px;
-          height: 155px; }
-      .registro-pc .registro .frame-12 .frame-17 {
-        background: var(--texto-principal, #ffffff);
-        border-radius: 50px;
-        padding: 10px;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex: 1;
-        height: 89px;
-        position: relative;
-        overflow: hidden; }
-      .registro-pc .registro .frame-12 .frame-172 {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-        width: 896px;
-        position: relative;
-        overflow: hidden; }
-        .registro-pc .registro .frame-12 .frame-172 .apellidos {
-          color: var(--texto-principal, #ffffff);
-          text-align: center;
-          font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
-          font-size: var(--h2-font-size, 24px);
-          font-weight: var(--h2-font-weight, 400);
+          font-weight: var(--h1-font-weight, 400);
           position: relative;
+          width: 361px;
+          height: 155px;
           display: flex;
           align-items: center;
-          justify-content: center;
-          width: 361px;
-          height: 155px; }
-      .registro-pc .registro .frame-12 .frame-18 {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-        width: 896px;
-        position: relative;
-        overflow: hidden; }
-        .registro-pc .registro .frame-12 .frame-18 .email {
-          color: var(--texto-principal, #ffffff);
-          text-align: center;
-          font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
-          font-size: var(--h2-font-size, 24px);
-          font-weight: var(--h2-font-weight, 400);
-          position: relative;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 361px;
-          height: 155px; }
-      .registro-pc .registro .frame-12 .frame-19 {
+          justify-content: center; }
+      .registro-pc .registro .frame-12 .frame-25 {
         display: flex;
         flex-direction: row;
         gap: 10px;
@@ -17058,18 +17012,64 @@ html {
         height: 143px;
         position: relative;
         overflow: hidden; }
-        .registro-pc .registro .frame-12 .frame-19 .contrase-a {
+        .registro-pc .registro .frame-12 .frame-25 .apellidos {
           color: var(--texto-principal, #ffffff);
           text-align: center;
-          font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
-          font-size: var(--h2-font-size, 24px);
-          font-weight: var(--h2-font-weight, 400);
+          font-family: var(--h1-font-family, "GasoekOne-Regular", sans-serif);
+          font-size: var(--h1-font-size, 32px);
+          font-weight: var(--h1-font-weight, 400);
           position: relative;
+          width: 361px;
+          height: 155px;
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: center; }
+      .registro-pc .registro .frame-12 .frame-26 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 906px;
+        height: 143px;
+        position: relative;
+        overflow: hidden; }
+        .registro-pc .registro .frame-12 .frame-26 .email {
+          color: var(--texto-principal, #ffffff);
+          text-align: center;
+          font-family: var(--h1-font-family, "GasoekOne-Regular", sans-serif);
+          font-size: var(--h1-font-size, 32px);
+          font-weight: var(--h1-font-weight, 400);
+          position: relative;
           width: 361px;
-          height: 155px; }
+          height: 155px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+      .registro-pc .registro .frame-12 .frame-27 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 906px;
+        height: 143px;
+        position: relative;
+        overflow: hidden; }
+        .registro-pc .registro .frame-12 .frame-27 .contrase-a {
+          color: var(--texto-principal, #ffffff);
+          text-align: center;
+          font-family: var(--h1-font-family, "GasoekOne-Regular", sans-serif);
+          font-size: var(--h1-font-size, 32px);
+          font-weight: var(--h1-font-weight, 400);
+          position: relative;
+          width: 361px;
+          height: 155px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
     .registro-pc .registro .frame-24 {
       padding: 0 154px;
       display: flex;
