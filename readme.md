@@ -20,3 +20,5 @@ Una vez hecho esto, ya podemos compilar los ficheros scss con el comando:
 sass -w scss:css
 
 npm run dev
+
+cambiar la ruta de las imagenes a assets
