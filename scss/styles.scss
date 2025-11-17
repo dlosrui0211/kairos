@@ -14,13 +14,8 @@ $bootstrap-icons-font-src: url("../node_modules/bootstrap-icons/font/fonts/boots
 // Import custom styles
 @import "./global.scss";
 
-// Components
-@import "./components/divider.scss";
-@import "./components/buttons.scss";
-@import "./components/navbar.scss";
-@import "./components/forms.scss";
+// Components - Kairos
 
-// Sections
-@import "./sections/masthead.scss";
-@import "./sections/portfolio.scss";
+// Components - Kairos
+@import "./sections/navigation.scss";
 @import "./sections/footer.scss";
