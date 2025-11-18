@@ -11,7 +11,7 @@
 <body>
 <div class="registro-pc">
   <div class="frame-11">
-    <img class="logo" src="/img/kairos.png" />
+    <img class="logo" src="assets/img/kairos.png" />
   </div>
   <div class="registro">
     <div class="frame-9">
