@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Soporte - Kairos</title>
     <?php include_once 'includes/head-tag-contents.php' ?>
     
 </head>
@@ -58,11 +58,11 @@
             <div class="card-de-soporte">
             <img class="icono" src="/img/seguridad.png" />
             <div class="texto2">
-                <div class="t-tulo3">
+                <div class="t-tulo2">
                 SEGURIDAD
                 <br />
                 </div>
-                <div class="texto-descriptivo2">
+                <div class="texto-descriptivo">
                 Lorem Ipsum es simplemente el texto de relleno de las imprentas y
                 archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
                 las industrias desde el año 1500.
