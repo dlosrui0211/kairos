@@ -19,7 +19,7 @@
     <form class="frame-9">
       <div class="frame-20">
         <div class="a-n-no-tienes-cuenta-registate">
-          Registro de Cuenta
+          ¡Registrate rellenando el formulario!
         </div>
       </div>
       
