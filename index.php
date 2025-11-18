@@ -9,7 +9,8 @@
 		<?php include("includes/navigation.php");?>
 	</header>
 	<main>
-		<p>aaaaaaaaaaaaa</p>
+		<?php include("includes/product-card.php");?>
+		<?php include("includes/product-card.php");?>
 	</main>
 	<footer>
 		<?php include("includes/footer.php");?>
