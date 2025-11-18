@@ -12,6 +12,13 @@ html {
     scroll-padding-top: calc(#{$navbar-height} - 1px);
 }
 
+html, body {
+    color: $light;
+    background-color: $primary !important;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 // Styling for page sections
 .page-section {
     padding: 6rem 0;
