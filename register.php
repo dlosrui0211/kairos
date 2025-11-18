@@ -11,42 +11,54 @@
 <body>
 <div class="registro-pc">
   <div class="frame-11">
-    <img class="logo" src="assets/img/kairos.png" />
+    <img class="logo" src="assets/img/kairos.png" onerror="this.src='https://placehold.co/150x50/1c0538/ffffff?text=Kairos'" alt="Kairos Logo"/>
   </div>
+  
+  <!-- Contenedor del Formulario -->
   <div class="registro">
-    <div class="frame-9">
+    <form class="frame-9">
       <div class="frame-20">
         <div class="a-n-no-tienes-cuenta-registate">
-          ¿Aún no tienes cuenta? Registate
+          Registro de Cuenta
         </div>
       </div>
+      
       <div class="frame-12">
-        <div class="frame-13">
-          <div class="nombre">Nombre</div>
-          <div class="frame-17"></div>
+        <!-- Campo Nombre -->
+        <div class="frame-13 frame-input-group">
+          <label for="nombre-input" class="label-field">Nombre:</label>
+          <input type="text" id="nombre-input" class="frame-17" placeholder="Introduce tu nombre" required />
         </div>
-        <div class="frame-25">
-          <div class="apellidos">Apellidos</div>
-          <div class="frame-17"></div>
+        
+        <!-- Campo Apellidos -->
+        <div class="frame-25 frame-input-group">
+          <label for="apellidos-input" class="label-field">Apellidos:</label>
+          <input type="text" id="apellidos-input" class="frame-17" placeholder="Introduce tus apellidos" required />
         </div>
-        <div class="frame-26">
-          <div class="email">Email</div>
-          <div class="frame-17"></div>
+        
+        <!-- Campo Email -->
+        <div class="frame-26 frame-input-group">
+          <label for="email-input" class="label-field">Email:</label>
+          <input type="email" id="email-input" class="frame-17" placeholder="Introduce tu email" required />
         </div>
-        <div class="frame-27">
-          <div class="contrase-a">Contraseña</div>
-          <div class="frame-17"></div>
+        
+        <!-- Campo Contraseña -->
+        <div class="frame-27 frame-input-group">
+          <label for="password-input" class="label-field">Contraseña:</label>
+          <input type="password" id="password-input" class="frame-17" placeholder="Crea una contraseña" required />
         </div>
+        
+        <!-- Botones Aceptar/Cancelar -->
         <div class="frame-24">
-          <div class="frame-23">
+          <button type="submit" class="frame-23">
             <div class="aceptar">Aceptar</div>
-          </div>
-          <div class="frame-22">
+          </button>
+          <a href="login.php" class="frame-22">
             <div class="cancelar">Cancelar</div>
-          </div>
+          </a>
         </div>
       </div>
-    </div>
+    </form>
   </div>
 </div>
 
