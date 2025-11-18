@@ -56,11 +56,12 @@
     <div class="t-tulo2">FORMULARIO DE AFILIACIÓN</div>
     <div class="inputs">
       <div class="correo-electr-nico">
-        <div class="t-tulo3">Correo Electrónico</div>
-        <div class="input"></div>
+        <label class="t-tulo3">Correo Electrónico:</label>
+        <input type="email" class="input" placeholder="tu@email.com" required>
       </div>
       <div class="mensaje">
-        <div class="input2"></div>
+        <label class="t-tulo4">Motivo de afiliacion:</label>
+        <textarea class="input2" placeholder="Escribe el motivo por el que quieres afiliarte aquí..." required></textarea>
       </div>
       <div class="bot-n-simple">
         <div class="texto2">Enviar</div>
