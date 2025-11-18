@@ -13,7 +13,7 @@
     <?php
     include 'includes/navigation.php';
     ?>
- <div class="carrito2">
+<div class="carrito2">
     <div class="frame-9">
       <!-- Sección de Productos (Izquierda) - Se mantiene corta y compacta -->
       <div class="frame-5">
@@ -29,7 +29,11 @@
           </div>
           <div class="botones">
             <div class="_1">1</div>
-            <img class="group-4" src="group-40.svg" onerror="this.src='https://placehold.co/14x14/ffffff/1c0538?text=▲'" />
+            <!-- He reemplazado los SVG de Group-4 con un texto simple para la flecha, que es más seguro si el SVG no se encuentra -->
+            <div class="quantity-control">
+                <div class="up-arrow">▲</div> 
+                <div class="down-arrow">▼</div> 
+            </div>
           </div>
           <div class="frame-7">
             <img
@@ -51,7 +55,10 @@
           </div>
           <div class="botones">
             <div class="_1">1</div>
-            <img class="group-42" src="group-41.svg" onerror="this.src='https://placehold.co/14x14/ffffff/1c0538?text=▲'" />
+            <div class="quantity-control">
+                <div class="up-arrow">▲</div> 
+                <div class="down-arrow">▼</div> 
+            </div>
           </div>
           <div class="frame-7">
             <img
@@ -73,7 +80,10 @@
           </div>
           <div class="botones">
             <div class="_1">1</div>
-            <img class="group-43" src="group-42.svg" onerror="this.src='https://placehold.co/14x14/ffffff/1c0538?text=▲'" />
+            <div class="quantity-control">
+                <div class="up-arrow">▲</div> 
+                <div class="down-arrow">▼</div> 
+            </div>
           </div>
           <div class="frame-7">
             <img
@@ -89,37 +99,37 @@
       <div class="frame-25">
         <div class="frame-26">
           
-          <!-- Título: Resumen del pedido (Más nítido y alineado a la izquierda) -->
+          <!-- Título: Resumen del pedido -->
           <div class="resumen-del-pedido">Resumen del pedido</div>
           
           <!-- Fila 1: Subtotal -->
-          <div class="frame-28">
-            <div class="subtotal-x-productos">Subtotal (X productos)</div>
-            <div class="_992">297$</div>
+          <div class="frame-28 summary-row">
+            <div class="subtotal-x-productos">Subtotal (3 productos)</div>
+            <div class="_992 price-text">$297</div>
           </div>
           
           <!-- Fila 2: Envío -->
-          <div class="frame-29"> <!-- Usando frame-29 para la fila de envío -->
+          <div class="frame-29 summary-row">
             <div class="env-o-estimado">Envío estimado</div>
-            <div class="gratuito">Gratuito</div>
+            <div class="gratuito price-text">Gratuito</div>
           </div> 
           
-          <!-- Fila 3: Devolución - Sin divisor manual, el espacio es manejado por el gap de frame-26 -->
-          <div class="frame-30">
+          <!-- Fila 3: Devolución (Sin valor, solo texto informativo) -->
+          <div class="frame-30 summary-row info-row">
             <div class="devoluci-n-gratuita-en-30-d-as">
               Devolución gratuita en 30 días
             </div>
           </div>
 
-          <!-- Fila Final: Total (El divisor lo manejará el CSS con un border-top en total-del-pedido) -->
-          <div class="frame-33">
+          <!-- Fila Final: Total (El divisor lo manejará el CSS con un border-top y bottom) -->
+          <div class="frame-33 summary-row total-row">
             <div class="total-del-pedido">Total del pedido:</div>
-            <div class="_993">297€</div>
+            <div class="_993 price-text total-price">€297</div>
           </div>
         </div>
         
         <!-- Botón de Confirmar Pedido -->
-        <div class="frame-72">
+        <div class="frame-72 action-button">
           <div class="confirmar-pedido">Confirmar pedido</div>
         </div>
       </div>

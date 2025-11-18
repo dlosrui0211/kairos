@@ -185,7 +185,7 @@ $font-weight-base: 400;
     // Botón Cancelar (Enlace)
     .frame-22 {
       // Usado como <a> en el HTML para regresar
-      background: $cancel-color; 
+      background: $principal-de-acento; 
       border-radius: 30px;
       padding: 10px 15px;
       display: flex;
@@ -198,7 +198,7 @@ $font-weight-base: 400;
       transition: background-color 0.3s ease;
 
       &:hover {
-          background: darken($cancel-color, 10%);
+          background: darken($principal-de-acento, 10%);
       }
 
       .cancelar {

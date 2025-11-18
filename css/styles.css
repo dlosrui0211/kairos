@@ -16847,7 +16847,7 @@ html, body {
       font-size: 14px;
       font-weight: 400; }
       .registro .frame-202 .a-n-no-tienes-cuenta-registrate-aqu a {
-        color: #6f12e0;
+        color: #ffffff;
         text-decoration: none;
         transition: color 0.3s ease; }
         .registro .frame-202 .a-n-no-tienes-cuenta-registrate-aqu a:hover {
@@ -17006,7 +17006,7 @@ html, body {
         font-size: 20px;
         font-weight: 400; }
     .registro .frame-24 .frame-22 {
-      background: #555555;
+      background: #6f12e0;
       border-radius: 30px;
       padding: 10px 15px;
       display: flex;
@@ -17018,7 +17018,7 @@ html, body {
       text-decoration: none;
       transition: background-color 0.3s ease; }
       .registro .frame-24 .frame-22:hover {
-        background: #3c3c3c; }
+        background: #580eb1; }
       .registro .frame-24 .frame-22 .cancelar {
         color: #ffffff;
         text-align: center;
@@ -17098,7 +17098,13 @@ html, body {
       max-width: 1000px;
       height: auto;
       position: relative;
-      overflow: hidden; }
+      overflow: hidden;
+      /* Base style for all detail rows (Subtotal, Envío, Devolución) */
+      /* Styles for detail text (Subtotal, Shipping, etc.) - Nítido */
+      /* Styles for detail prices/values - Nítido, con énfasis */
+      /* Style for the information row (Devolución) */
+      /* Specific style for the Total row frame (frame-33) - Línea divisoria superior */
+      /* Styles for Total text and price - Más grande (H2) */ }
       .zona-de-pago-pc .carrito2 .frame-9 .frame-5 {
         padding: 0;
         display: flex;
@@ -17154,7 +17160,7 @@ html, body {
             flex-direction: row;
             gap: 10px;
             align-items: center;
-            justify-content: space-between;
+            justify: space-between;
             align-self: stretch;
             height: auto; }
             .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .texto .titulo .producto-1 {
@@ -17226,28 +17232,32 @@ html, body {
         align-self: stretch; }
       .zona-de-pago-pc .carrito2 .frame-9 .frame-26 {
         max-width: 320px;
-        padding: 15px;
+        padding: 20px;
+        /* Amplio */
         background: #5e3a8b;
         border-radius: 8px;
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 15px;
+        /* Amplio */
         align-items: center;
         justify-content: flex-start;
         align-self: stretch; }
       .zona-de-pago-pc .carrito2 .frame-9 .resumen-del-pedido {
+        /* Título con línea divisoria inferior */
         color: #ffffff;
         text-align: left;
-        font: 400 26px/1 "GasoekOne-Regular", sans-serif;
+        font: 400 28px "GasoekOne-Regular", sans-serif;
         width: 100%;
         height: auto;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #6f12e0;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ffffff;
+        /* Línea divisoria */
         margin-bottom: 5px;
         display: flex;
         align-items: center;
         justify-content: flex-start; }
-      .zona-de-pago-pc .carrito2 .frame-9 .frame-28, .zona-de-pago-pc .carrito2 .frame-9 .frame-29, .zona-de-pago-pc .carrito2 .frame-9 .frame-30, .zona-de-pago-pc .carrito2 .frame-9 .frame-33 {
+      .zona-de-pago-pc .carrito2 .frame-9 .frame-28, .zona-de-pago-pc .carrito2 .frame-9 .frame-29, .zona-de-pago-pc .carrito2 .frame-9 .frame-30 {
         padding: 0;
         display: flex;
         flex-direction: row;
@@ -17259,41 +17269,56 @@ html, body {
         position: relative;
         overflow: hidden; }
       .zona-de-pago-pc .carrito2 .frame-9 .subtotal-x-productos,
-      .zona-de-pago-pc .carrito2 .frame-9 .env-o-estimado,
-      .zona-de-pago-pc .carrito2 .frame-9 .devoluci-n-gratuita-en-30-d-as {
+      .zona-de-pago-pc .carrito2 .frame-9 .env-o-estimado {
         color: #ffffff;
         text-align: left;
-        font: 400 16px/1 "Inter-Regular", sans-serif;
-        flex: 1;
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start; }
+        font: 400 20px "Inter-Regular", sans-serif;
+        flex: 1; }
       .zona-de-pago-pc .carrito2 .frame-9 ._992, .zona-de-pago-pc .carrito2 .frame-9 .gratuito {
         color: #ffffff;
         text-align: right;
-        font: 400 16px/1 "Inter-Regular", sans-serif;
-        width: auto;
-        height: auto;
+        font: 600 20px "Inter-Regular", sans-serif; }
+      .zona-de-pago-pc .carrito2 .frame-9 .devoluci-n-gratuita-en-30-d-as {
+        color: #ffffff;
+        text-align: center;
+        font: 400 14px/1 "Inter-Regular", sans-serif;
+        font-style: italic;
+        width: 100%;
         display: flex;
+        justify-content: center; }
+      .zona-de-pago-pc .carrito2 .frame-9 .frame-33 {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
         align-items: center;
-        justify-content: flex-end; }
+        justify-content: space-between;
+        align-self: stretch;
+        flex-shrink: 0;
+        position: relative;
+        overflow: hidden;
+        padding-top: 15px;
+        /* Espacio superior para la línea */
+        margin-top: 10px;
+        border-top: 1px solid #ffffff; }
       .zona-de-pago-pc .carrito2 .frame-9 .total-del-pedido {
         color: #ffffff;
         text-align: left;
-        font: 400 20px/1 "GasoekOne-Regular", sans-serif;
+        font: 400 22px "GasoekOne-Regular", sans-serif;
         flex: 1;
         height: auto;
-        padding-top: 10px;
-        border-top: 1px solid #6f12e0;
-        margin-top: 5px;
         display: flex;
         align-items: center;
-        justify-content: flex-start; }
+        justify-content: flex-start;
+        /* Overriding old total styles if they exist in the HTML structure */
+        padding-top: 0 !important;
+        border-top: none !important;
+        margin-top: 0 !important; }
       .zona-de-pago-pc .carrito2 .frame-9 ._993 {
+        /* Total price */
         color: #ffffff;
         text-align: right;
-        font: 400 20px/1 "GasoekOne-Regular", sans-serif;
+        font: 400 22px "GasoekOne-Regular", sans-serif;
         width: auto;
         height: auto;
         display: flex;
@@ -17302,26 +17327,28 @@ html, body {
       .zona-de-pago-pc .carrito2 .frame-9 .frame-72 {
         background: #6f12e0;
         border-radius: 8px;
-        padding: 8px 12px;
+        padding: 10px 15px;
+        /* Restaurado a padding más estándar */
+        height: auto;
+        /* Altura automática en lugar de 50px */
+        margin-top: 25px;
+        /* Restaurado a un margen más grande */
+        transition: background-color 0.3s ease;
         display: flex;
+        /* Centrado */
         align-items: center;
+        /* Centrado vertical */
         justify-content: center;
-        align-self: stretch;
-        flex-shrink: 0;
-        height: 45px;
-        position: relative;
-        overflow: hidden;
-        margin-top: 15px; }
+        /* Centrado horizontal */ }
+        .zona-de-pago-pc .carrito2 .frame-9 .frame-72:hover {
+          background: #580eb1; }
         .zona-de-pago-pc .carrito2 .frame-9 .frame-72 .confirmar-pedido {
           color: #ffffff;
+          font: 400 24px/1 "GasoekOne-Regular", sans-serif;
+          /* Restaurado */
+          cursor: pointer;
           text-align: center;
-          font: 400 20px/1 "GasoekOne-Regular", sans-serif;
-          flex: 1;
-          height: auto;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          cursor: pointer; }
+          /* Centrado del texto */ }
   @media (max-width: 768px) {
     .zona-de-pago-pc {
       padding: 15px 0;
@@ -17389,47 +17416,74 @@ html, body {
           .zona-de-pago-pc .carrito2 .frame-9 .frame-26 {
             max-width: 100%;
             width: 100%;
-            padding: 16px;
-            gap: 18px; }
+            padding: 18px;
+            gap: 15px;
+            /* Detalle rows */
+            /* Detail text */
+            /* Detail prices */
+            /* Total row frame */
+            /* Total text and price */ }
             .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .resumen-del-pedido {
-              font-size: 22px;
+              font-size: 18px;
               padding-bottom: 12px;
+              border-bottom: 1px solid #ffffff;
+              /* Línea divisoria */
               margin-bottom: 4px; }
+            .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .frame-28, .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .frame-29, .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .frame-30 {
+              gap: 8px; }
             .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .subtotal-x-productos,
-            .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .env-o-estimado,
-            .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .devoluci-n-gratuita-en-30-d-as {
+            .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .env-o-estimado {
               font-size: 16px; }
             .zona-de-pago-pc .carrito2 .frame-9 .frame-26 ._992, .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .gratuito {
-              font-size: 16px; }
+              font-size: 16px;
+              font-weight: 600; }
+            .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .frame-33 {
+              padding-top: 12px;
+              margin-top: 4px;
+              border-top: 1px solid #ffffff;
+              /* Línea divisoria */ }
             .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .total-del-pedido {
               font-size: 18px;
-              padding-top: 12px;
-              margin-top: 4px; }
+              padding-top: 0 !important;
+              /* Resetting old conflicting style */
+              border-top: none !important;
+              /* Resetting old conflicting style */
+              margin-top: 0 !important;
+              /* Resetting old conflicting style */ }
             .zona-de-pago-pc .carrito2 .frame-9 .frame-26 ._993 {
               font-size: 18px; }
             .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .frame-72 {
-              height: 40px;
-              margin-top: 10px; }
+              height: 45px;
+              margin-top: 15px;
+              display: flex;
+              /* Centrado */
+              align-items: center;
+              /* Centrado vertical */
+              justify-content: center;
+              /* Centrado horizontal */ }
               .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .frame-72 .confirmar-pedido {
-                font-size: 18px; }
-      .zona-de-pago-pc .footer {
-        padding: 8px 10px;
-        gap: 10px;
-        min-height: 40px; }
-        .zona-de-pago-pc .footer .frame-12 {
-          gap: 8px; }
-        .zona-de-pago-pc .footer .con-cenos,
-        .zona-de-pago-pc .footer .t-rminos-y-condiciones,
-        .zona-de-pago-pc .footer .t-rminos-y-condiciones2 {
-          font-size: 11px; }
-        .zona-de-pago-pc .footer .frame-22 {
-          gap: 6px; }
-        .zona-de-pago-pc .footer .icons-8-tik-tok-100-1,
-        .zona-de-pago-pc .footer .icons-8-twitterx-100-1-1,
-        .zona-de-pago-pc .footer .icons-8-instagram-100-1,
-        .zona-de-pago-pc .footer .icons-8-facebook-nuevo-100-1 {
-          width: 22px;
-          height: 22px; } }
+                font-size: 20px;
+                /* Tamaño un poco más grande para móvil */
+                text-align: center;
+                /* Centrado del texto */ }
+        .zona-de-pago-pc .carrito2 .footer {
+          padding: 8px 10px;
+          gap: 10px;
+          min-height: 40px; }
+          .zona-de-pago-pc .carrito2 .footer .frame-12 {
+            gap: 8px; }
+          .zona-de-pago-pc .carrito2 .footer .con-cenos,
+          .zona-de-pago-pc .carrito2 .footer .t-rminos-y-condiciones,
+          .zona-de-pago-pc .carrito2 .footer .t-rminos-y-condiciones2 {
+            font-size: 11px; }
+          .zona-de-pago-pc .carrito2 .footer .frame-22 {
+            gap: 6px; }
+          .zona-de-pago-pc .carrito2 .footer .icons-8-tik-tok-100-1,
+          .zona-de-pago-pc .carrito2 .footer .icons-8-twitterx-100-1-1,
+          .zona-de-pago-pc .carrito2 .footer .icons-8-instagram-100-1,
+          .zona-de-pago-pc .carrito2 .footer .icons-8-facebook-nuevo-100-1 {
+            width: 22px;
+            height: 22px; } }
 
 .kairos-header {
   width: 100%;

@@ -26,6 +26,9 @@ $body-text-1-font-size-pc: 20px;
 $body-text-1-font-size-mobile: 16px;
 $body-text-1-font-weight: 400;
 
+// --- Nuevo: Variables para el divisor (Líneas divisorias blancas) ---
+$divider-color: #ffffff; 
+$divider-thickness: 1px;
 
 // -----------------------------------------------------------------------------
 // Componente Principal
@@ -46,10 +49,6 @@ $body-text-1-font-weight: 400;
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-
-  // ---------------------------------------------------------------------------
-  // Cabecera (omitted for brevity, assume correct)
-  // ---------------------------------------------------------------------------
 
   // ---------------------------------------------------------------------------
   // Contenido del Carrito (principal)
@@ -144,7 +143,7 @@ $body-text-1-font-weight: 400;
             flex-direction: row;
             gap: 10px;
             align-items: center;
-            justify-content: space-between;
+            justify: space-between;
             align-self: stretch;
             height: auto;
 
@@ -228,7 +227,9 @@ $body-text-1-font-weight: 400;
         }
       }
 
-      // Elementos de Resumen/Total
+      // ------------------------------------------------------------------------
+      // Resumen del Pedido (Divisores y Nítido)
+      // ------------------------------------------------------------------------
       .frame-25 {
         flex: 1;
         max-width: 320px;
@@ -237,34 +238,34 @@ $body-text-1-font-weight: 400;
       
       .frame-26 {
         max-width: 320px;
-        padding: 15px;
+        padding: 20px; /* Amplio */
         background: $secundario;
         border-radius: 8px;
         display: flex;
         flex-direction: column;
-        gap: 12px; // Espacio entre las filas del resumen
+        gap: 15px; /* Amplio */
         align-items: center;
         justify-content: flex-start;
         align-self: stretch;
       }
 
       .resumen-del-pedido {
-        // ESTILO NÍTIDO Y ALINEADO
+        /* Título con línea divisoria inferior */
         color: $texto-principal;
         text-align: left;
-        font: $h1-font-weight 26px / 1 $h1-font-family; 
+        font: $h1-font-weight $h1-font-size-pc / 1 $h1-font-family;
         width: 100%;
         height: auto;
-        padding-bottom: 10px;
-        border-bottom: 1px solid $principal-de-acento;
+        padding-bottom: 15px;
+        border-bottom: $divider-thickness solid $divider-color; /* Línea divisoria */
         margin-bottom: 5px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
       }
 
-      // Estilo base para todas las filas (Subtotal, Envío, Devolución, Total)
-      .frame-28, .frame-29, .frame-30, .frame-33 {
+      /* Base style for all detail rows (Subtotal, Envío, Devolución) */
+      .frame-28, .frame-29, .frame-30 {
         padding: 0;
         display: flex;
         flex-direction: row;
@@ -277,81 +278,105 @@ $body-text-1-font-weight: 400;
         overflow: hidden;
       }
       
+      /* Styles for detail text (Subtotal, Shipping, etc.) - Nítido */
       .subtotal-x-productos,
-      .env-o-estimado,
+      .env-o-estimado {
+          color: $texto-principal;
+          text-align: left;
+          font: $body-text-1-font-weight $body-text-1-font-size-pc / 1 $body-text-1-font-family;
+          flex: 1;
+      }
+
+      /* Styles for detail prices/values - Nítido, con énfasis */
+      ._992, .gratuito {
+          color: $texto-principal;
+          text-align: right;
+          font: 600 $body-text-1-font-size-pc / 1 $body-text-1-font-family; 
+      }
+      
+      /* Style for the information row (Devolución) */
       .devoluci-n-gratuita-en-30-d-as {
         color: $texto-principal;
-        text-align: left;
-        font: $body-text-1-font-weight 16px / 1 $body-text-1-font-family;
-        flex: 1;
-        height: auto;
+        text-align: center;
+        font: $body-text-1-font-weight 14px / 1 $body-text-1-font-family;
+        font-style: italic;
+        width: 100%;
         display: flex;
-        align-items: center;
-        justify-content: flex-start;
-      }
-
-      ._992, .gratuito {
-        color: $texto-principal;
-        text-align: right;
-        font: $body-text-1-font-weight 16px / 1 $body-text-1-font-family;
-        width: auto;
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-      }
-
-      .total-del-pedido {
-        color: $texto-principal;
-        text-align: left;
-        font: $h2-font-weight 20px / 1 $h2-font-family;
-        flex: 1;
-        height: auto;
-        padding-top: 10px; // Divisor superior del Total
-        border-top: 1px solid $principal-de-acento; 
-        margin-top: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-      }
-
-      ._993 {
-        color: $texto-principal;
-        text-align: right;
-        font: $h2-font-weight 20px / 1 $h2-font-family;
-        width: auto;
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-      }
-
-      .frame-72 {
-        background: $principal-de-acento;
-        border-radius: 8px;
-        padding: 8px 12px;
-        display: flex;
-        align-items: center;
         justify-content: center;
-        align-self: stretch;
-        flex-shrink: 0;
-        height: 45px;
-        position: relative;
-        overflow: hidden;
-        margin-top: 15px;
+      }
 
-        .confirmar-pedido {
+
+      /* Specific style for the Total row frame (frame-33) - Línea divisoria superior */
+      .frame-33 {
+          padding: 0;
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          align-items: center;
+          justify-content: space-between;
+          align-self: stretch;
+          flex-shrink: 0;
+          position: relative;
+          overflow: hidden;
+          
+          padding-top: 15px; /* Espacio superior para la línea */
+          margin-top: 10px;
+          border-top: $divider-thickness solid $divider-color; 
+      }
+
+      /* Styles for Total text and price - Más grande (H2) */
+      .total-del-pedido {
           color: $texto-principal;
-          text-align: center;
-          font: $h1-font-weight 20px / 1 $h1-font-family;
+          text-align: left;
+          font: $h2-font-weight $h2-font-size-pc / 1 $h2-font-family;
           flex: 1;
           height: auto;
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: flex-start;
+          
+          /* Overriding old total styles if they exist in the HTML structure */
+          padding-top: 0 !important; 
+          border-top: none !important; 
+          margin-top: 0 !important;
+      }
+
+      ._993 { /* Total price */
+          color: $texto-principal;
+          text-align: right;
+          font: $h2-font-weight $h2-font-size-pc / 1 $h2-font-family;
+          width: auto;
+          height: auto;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+      }
+
+      // Botón Confirmar Pedido (CENTRADOS APLICADOS)
+      .frame-72 {
+        background: $principal-de-acento;
+        border-radius: 8px;
+        padding: 10px 15px; /* Restaurado a padding más estándar */
+        height: auto; /* Altura automática en lugar de 50px */
+        margin-top: 25px; /* Restaurado a un margen más grande */
+        transition: background-color 0.3s ease;
+        
+        display: flex; /* Centrado */
+        align-items: center; /* Centrado vertical */
+        justify-content: center; /* Centrado horizontal */
+
+        &:hover {
+            background: darken($principal-de-acento, 10%);
+        }
+
+        .confirmar-pedido {
+          color: $texto-principal;
+          font: $h1-font-weight 24px / 1 $h1-font-family; /* Restaurado */
           cursor: pointer;
+          text-align: center; /* Centrado del texto */
         }
       }
+
     }
   }
 
@@ -463,7 +488,7 @@ $body-text-1-font-weight: 400;
           }
         }
         
-        // Contenedor del Resumen
+        // Contenedor del Resumen (ACTUALIZADO MOBILE)
         .frame-25 {
             width: 100%; // Ocupa todo el ancho disponible
             max-width: 100%; // Asegurar que se expanda
@@ -472,46 +497,68 @@ $body-text-1-font-weight: 400;
         .frame-26 {
           max-width: 100%; // Ocupa todo el ancho
           width: 100%;
-          padding: 16px; // AUMENTADO: Más padding alrededor
-          gap: 18px; // AUMENTADO: Más espacio entre las filas del resumen
+          padding: 18px; 
+          gap: 15px; 
 
           .resumen-del-pedido {
-            font-size: 22px;
-            padding-bottom: 12px; // AUMENTADO: Espacio después del título
+            font-size: $h2-font-size-mobile;
+            padding-bottom: 12px;
+            border-bottom: $divider-thickness solid $divider-color; /* Línea divisoria */
             margin-bottom: 4px;
           }
 
+          /* Detalle rows */
+          .frame-28, .frame-29, .frame-30 {
+             gap: 8px; 
+          }
+          
+          /* Detail text */
           .subtotal-x-productos,
-          .env-o-estimado,
-          .devoluci-n-gratuita-en-30-d-as {
-            font-size: 16px; // Ligeramente más grande para más legibilidad
+          .env-o-estimado {
+            font-size: $body-text-1-font-size-mobile; 
           }
 
+          /* Detail prices */
           ._992, .gratuito {
-            font-size: 16px; // Ligeramente más grande para más legibilidad
+            font-size: $body-text-1-font-size-mobile; 
+            font-weight: 600;
+          }
+          
+          /* Total row frame */
+          .frame-33 {
+            padding-top: 12px;
+            margin-top: 4px;
+            border-top: $divider-thickness solid $divider-color; /* Línea divisoria */
           }
 
+          /* Total text and price */
           .total-del-pedido {
-            font-size: 18px;
-            padding-top: 12px; // AUMENTADO: Espacio antes del total
-            margin-top: 4px;
+            font-size: $h2-font-size-mobile;
+            padding-top: 0 !important; /* Resetting old conflicting style */
+            border-top: none !important; /* Resetting old conflicting style */
+            margin-top: 0 !important; /* Resetting old conflicting style */
           }
 
           ._993 {
-            font-size: 18px;
+            font-size: $h2-font-size-mobile;
           }
 
+          // Botón Confirmar Pedido (CENTRADOS APLICADOS MOBILE)
           .frame-72 {
-            height: 40px;
-            margin-top: 10px;
+            height: 45px;
+            margin-top: 15px;
+
+            display: flex; /* Centrado */
+            align-items: center; /* Centrado vertical */
+            justify-content: center; /* Centrado horizontal */
 
             .confirmar-pedido {
-              font-size: 18px;
+              font-size: 20px; /* Tamaño un poco más grande para móvil */
+              text-align: center; /* Centrado del texto */
             }
           }
         }
       }
-    }
 
     .footer {
       padding: 8px 10px;
@@ -541,4 +588,5 @@ $body-text-1-font-weight: 400;
       }
     }
   }
+}
 }
