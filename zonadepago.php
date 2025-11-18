@@ -10,30 +10,9 @@
 </head>
 <body>
     <div class="zona-de-pago-pc">
-
-  <div class="cabecera">
-    <img class="logo" src="logo0.png" />
-    <div class="barra-de-b-squeda">
-      <img
-        class="desplegable-de-plataformas"
-        src="desplegable-de-plataformas0.png"
-      />
-      <div class="desplegable-plataforma">
-        <div class="frame-1"></div>
-      </div>
-      <div class="frame-2">
-        <img class="lupa" src="lupa0.png" />
-      </div>
-    </div>
-    <div class="usuario">
-      <div class="frame-3">
-        <img class="usuario2" src="usuario1.png" />
-      </div>
-      <div class="frame-4">
-        <img class="carrito" src="carrito0.png" />
-      </div>
-    </div>
-  </div>
+    <?php
+    include 'includes/navigation.php';
+    ?>
   <div class="carrito2">
     <div class="frame-9">
       <div class="frame-5">
@@ -139,27 +118,8 @@
       </div>
     </div>
   </div>
-  <div class="footer">
-    <div class="frame-12">
-      <div class="con-cenos">Conócenos</div>
-      <div class="t-rminos-y-condiciones">Términos y Condiciones</div>
-      <div class="t-rminos-y-condiciones2">Soporte</div>
-    </div>
-    <div class="frame-22">
-      <img class="icons-8-tik-tok-100-1" src="icons-8-tik-tok-100-10.png" />
-      <img
-        class="icons-8-twitterx-100-1-1"
-        src="icons-8-twitterx-100-1-10.png"
-      />
-      <img class="icons-8-instagram-100-1" src="icons-8-instagram-100-10.png" />
-      <img
-        class="icons-8-facebook-nuevo-100-1"
-        src="icons-8-facebook-nuevo-100-10.png"
-      />
-    </div>
-  </div>
       <?php
-        include_once 'includes/footer.php.php';
+        include_once 'includes/footer.php';
     ?>
 </div>
 
