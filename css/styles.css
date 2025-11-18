@@ -16524,154 +16524,110 @@ html, body {
       font-size: 3rem;
       line-height: 2.5rem; } }
 
-.divider-custom {
-  margin: 1.25rem 0 1.5rem;
+.kairos-header {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .divider-custom .divider-custom-line {
-    width: 100%;
-    max-width: 7rem;
-    height: 0.25rem;
-    background-color: #5e3a8b;
-    border-radius: 1rem;
-    border-color: #5e3a8b; }
-    .divider-custom .divider-custom-line:first-child {
-      margin-right: 1rem; }
-    .divider-custom .divider-custom-line:last-child {
-      margin-left: 1rem; }
-  .divider-custom .divider-custom-icon {
-    color: #5e3a8b;
-    font-size: 2rem; }
-  .divider-custom.divider-light .divider-custom-line {
-    background-color: #fff; }
-  .divider-custom.divider-light .divider-custom-icon {
-    color: #fff; }
-
-.btn-xl {
-  padding: 1rem 1.75rem;
-  font-size: 1.25rem; }
-
-.btn-social {
-  border-radius: 100%;
-  display: inline-flex;
-  width: 3.25rem;
-  height: 3.25rem;
-  font-size: 1.25rem;
-  justify-content: center;
-  align-items: center; }
-
-#mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-family: "Gasoek One", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 400; }
-  #mainNav .navbar-brand {
-    color: #fff; }
-  #mainNav .navbar-nav {
-    margin-top: 1rem; }
-    #mainNav .navbar-nav li.nav-item a.nav-link a.dropdown-item {
-      color: #fff; }
-      #mainNav .navbar-nav li.nav-item a.nav-link a.dropdown-item:hover {
-        color: #1c0538; }
-      #mainNav .navbar-nav li.nav-item a.nav-link a.dropdown-item:active, #mainNav .navbar-nav li.nav-item a.nav-link a.dropdown-item:focus {
-        color: #fff; }
-      #mainNav .navbar-nav li.nav-item a.nav-link a.dropdown-item.active {
-        color: #1c0538; }
-    #mainNav .navbar-nav li.nav-item div.dropdown-menu a.dropdown-item:hover {
-      background-color: #1c0538; }
-  #mainNav .navbar-toggler {
-    font-size: 80%;
-    padding: 0.8rem; }
-
-@media (min-width: 992px) {
-  #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    transition: padding-top 0.3s, padding-bottom 0.3s; }
-    #mainNav .navbar-brand {
-      font-size: 1.75em;
-      transition: font-size 0.3s; }
-    #mainNav .navbar-nav {
-      margin-top: 0; }
-    #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-      color: #fff;
-      background: #1c0538; }
-      #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-        color: #fff;
-        background: #1c0538; }
-
-  #mainNav.navbar-shrink {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem; }
-    #mainNav.navbar-shrink .navbar-brand {
-      font-size: 1.5em; } }
-.form-floating input.form-control,
-.form-floating textarea.form-control {
-  font-size: 1.5rem;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  border-radius: 0;
-  border-width: 1px; }
-  .form-floating input.form-control:focus,
-  .form-floating textarea.form-control:focus {
-    box-shadow: none; }
-.form-floating label {
-  font-size: 1.5rem;
-  color: #6c757d; }
-
-.masthead {
-  padding-top: calc(1rem + 54px);
-  padding-bottom: calc(1rem ); }
-  .masthead .masthead-heading {
-    font-size: 2.75rem;
-    line-height: 2.75rem; }
-  .masthead .masthead-subheading {
-    font-size: 1.25rem; }
-  .masthead .masthead-avatar {
-    width: 15rem; }
-
-@media (min-width: 992px) {
-  .masthead {
-    padding-top: calc(1rem + 104px);
-    padding-bottom: calc(1rem ); }
-    .masthead .masthead-heading {
-      font-size: 4rem;
-      line-height: 3.5rem; }
-    .masthead .masthead-subheading {
-      font-size: 1.5rem; } }
-.portfolio .portfolio-item {
-  cursor: pointer;
-  position: relative;
-  display: block;
-  max-width: 25rem;
-  border-radius: 15%;
-  overflow: hidden; }
-  .portfolio .portfolio-item .portfolio-item-caption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 0.2s ease-in-out;
-    opacity: 0;
-    background-color: rgba(28, 5, 56, 0.9); }
-    .portfolio .portfolio-item .portfolio-item-caption:hover {
-      opacity: 1; }
-    .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
-      font-size: 1.5rem; }
-
-.portfolio-modal .btn-close {
-  color: #1c0538;
-  font-size: 2rem;
-  padding: 1rem; }
-.portfolio-modal .portfolio-modal-title {
-  font-size: 2.25rem;
-  line-height: 2rem; }
-  @media (min-width: 992px) {
-    .portfolio-modal .portfolio-modal-title {
-      font-size: 3rem;
-      line-height: 2.5rem; } }
+  background: #1c0538;
+  padding: 0.5rem 1rem; }
+  .kairos-header .kairos-header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
+  .kairos-header .kairos-logo img {
+    height: 40px; }
+  .kairos-header .kairos-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: #6f12e0;
+    border-radius: 999px;
+    padding: 0.35rem 0.75rem; }
+  .kairos-header .kairos-menu-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center; }
+  .kairos-header .kairos-menu-btn {
+    background: transparent;
+    border: none;
+    color: #fffdfa;
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding: 0; }
+    .kairos-header .kairos-menu-btn:hover {
+      opacity: 0.8; }
+  .kairos-header .kairos-menu-btn::after {
+    display: none; }
+  .kairos-header .kairos-search {
+    flex: 1; }
+    .kairos-header .kairos-search input {
+      width: 100%;
+      border: none;
+      outline: none;
+      padding: 0.55rem 1rem;
+      border-radius: 999px;
+      background: #fffdfa;
+      color: #0a0f0f;
+      font-size: 1rem; }
+  .kairos-header .kairos-search-btn {
+    background: transparent;
+    border: none;
+    color: #fffdfa;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 0; }
+    .kairos-header .kairos-search-btn:hover {
+      opacity: 0.8; }
+  .kairos-header .kairos-actions-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #6f12e0;
+    border-radius: 999px;
+    padding: 0.35rem 0.75rem; }
+  .kairos-header .kairos-action-btn {
+    background: transparent;
+    border: none;
+    color: #fffdfa;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 0; }
+    .kairos-header .kairos-action-btn:hover {
+      opacity: 0.8; }
+  .kairos-header .kairos-menu-dropdown {
+    background: #1c0538;
+    border: 1px solid #6f12e0;
+    border-radius: 0.75rem;
+    padding: 0.25rem 0;
+    min-width: 200px;
+    margin-top: 0.6rem;
+    z-index: 1050; }
+  .kairos-header .kairos-menu-dropdown .dropdown-item {
+    color: #fffdfa;
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem; }
+    .kairos-header .kairos-menu-dropdown .dropdown-item:hover {
+      background: #6f12e0;
+      color: #fffdfa; }
 
 .kairos-footer {
   background: #1c0538;
@@ -17220,341 +17176,197 @@ html, body {
 
 .zona-de-pago-pc {
   background: #1c0538;
-  padding: 47px 0 47px 0;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
-  gap: 31px;
+  gap: 20px;
   align-items: center;
   justify-content: flex-start;
-  height: 2405px;
+  height: auto;
+  min-height: 100vh;
   position: relative;
   overflow: hidden; }
   .zona-de-pago-pc, .zona-de-pago-pc * {
     box-sizing: border-box; }
-  .zona-de-pago-pc .cabecera {
-    background: #1c0538;
-    padding: 0 30px;
-    display: flex;
-    flex-direction: row;
-    gap: 34px;
-    align-items: center;
-    justify-content: center;
-    align-self: stretch;
-    flex-shrink: 0;
-    height: 125px;
-    position: relative; }
-    .zona-de-pago-pc .cabecera .logo {
-      flex-shrink: 0;
-      width: 116px;
-      height: 88px;
-      position: relative;
-      object-fit: cover;
-      aspect-ratio: 116/88; }
-    .zona-de-pago-pc .cabecera .barra-de-b-squeda {
-      background: #6f12e0;
-      border-radius: 70px;
-      border: 3px solid #5e3a8b;
-      padding: 22px 53px;
-      display: flex;
-      flex-direction: row;
-      gap: 26px;
-      align-items: center;
-      justify-content: flex-start;
-      flex: 1;
-      height: 89px;
-      position: relative;
-      overflow: hidden; }
-      .zona-de-pago-pc .cabecera .barra-de-b-squeda .desplegable-de-plataformas {
-        flex-shrink: 0;
-        width: 58px;
-        height: 58px;
-        position: relative;
-        object-fit: cover;
-        aspect-ratio: 1; }
-      .zona-de-pago-pc .cabecera .barra-de-b-squeda .desplegable-plataforma {
-        background: #ffffff;
-        border-radius: 70px;
-        padding: 4px 269px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex: 1;
-        position: relative;
-        overflow: hidden; }
-      .zona-de-pago-pc .cabecera .barra-de-b-squeda .frame-1 {
-        padding: 10px;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        align-items: center;
-        justify-content: center;
-        align-self: stretch;
-        flex-shrink: 0;
-        height: 54px;
-        position: relative; }
-      .zona-de-pago-pc .cabecera .barra-de-b-squeda .frame-2 {
-        padding: 10px;
-        flex-shrink: 0;
-        width: 77px;
-        height: 77px;
-        position: relative; }
-      .zona-de-pago-pc .cabecera .barra-de-b-squeda .lupa {
-        width: 57px;
-        height: 57px;
-        position: absolute;
-        left: 10px;
-        top: 10px;
-        object-fit: cover;
-        aspect-ratio: 1; }
-    .zona-de-pago-pc .cabecera .usuario {
-      background: #6f12e0;
-      border-radius: 70px;
-      border: 3px solid #5e3a8b;
-      padding: 10px 16px;
-      display: flex;
-      flex-direction: row;
-      gap: 24px;
-      align-items: flex-end;
-      justify-content: flex-start;
-      flex-shrink: 0;
-      position: relative;
-      overflow: hidden; }
-      .zona-de-pago-pc .cabecera .usuario .frame-3 {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        align-items: center;
-        justify-content: flex-start;
-        flex-shrink: 0;
-        position: relative; }
-      .zona-de-pago-pc .cabecera .usuario .usuario2 {
-        flex-shrink: 0;
-        width: 68px;
-        height: 68px;
-        position: relative;
-        object-fit: cover;
-        aspect-ratio: 1; }
-      .zona-de-pago-pc .cabecera .usuario .frame-4 {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        align-items: center;
-        justify-content: flex-start;
-        flex-shrink: 0;
-        position: relative; }
-      .zona-de-pago-pc .cabecera .usuario .carrito {
-        flex-shrink: 0;
-        width: 66px;
-        height: 66px;
-        position: relative;
-        object-fit: cover;
-        aspect-ratio: 1; }
   .zona-de-pago-pc .carrito2 {
-    padding: 193px 102px 193px 100px;
+    padding: 15px 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
     justify-content: flex-start;
     align-self: stretch;
     flex-shrink: 0;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    flex: 1; }
     .zona-de-pago-pc .carrito2 .frame-9 {
-      padding: 10px;
+      padding: 0;
       display: flex;
       flex-direction: row;
-      gap: 10px;
-      align-items: center;
-      justify-content: flex-end;
-      flex-shrink: 0;
-      width: 1718px;
-      height: 1464px;
+      gap: 30px;
+      align-items: flex-start;
+      justify-content: center;
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
       position: relative;
       overflow: hidden; }
       .zona-de-pago-pc .carrito2 .frame-9 .frame-5 {
-        padding: 10px;
+        padding: 0;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
+        align-items: center;
+        justify-content: flex-start;
+        flex: 2;
+        position: relative;
+        overflow: hidden;
+        min-width: 380px; }
+      .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito {
+        background: #5e3a8b;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
         align-items: center;
         justify-content: flex-start;
         align-self: stretch;
         flex-shrink: 0;
+        height: 70px;
         position: relative;
-        overflow: hidden; }
-      .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito {
-        background: #5e3a8b;
-        border-radius: 15px;
-        display: flex;
-        flex-direction: row;
-        gap: 50px;
-        align-items: center;
-        justify-content: flex-start;
-        flex-shrink: 0;
-        height: 191px;
-        position: relative;
-        overflow: hidden; }
+        overflow: hidden;
+        padding: 6px; }
         .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .imagen {
-          border-radius: 30px;
-          padding: 10px;
+          border-radius: 6px;
+          padding: 3px;
           display: flex;
-          flex-direction: row;
-          gap: 10px;
           align-items: center;
           justify-content: center;
           flex-shrink: 0;
-          width: 199px;
-          height: 185px;
+          width: 55px;
+          height: 55px;
           position: relative;
           overflow: hidden; }
           .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .imagen .car-tula {
-            border-radius: 15px;
+            border-radius: 4px;
             align-self: stretch;
             flex: 1;
             position: relative;
             object-fit: cover; }
         .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .texto {
-          padding: 10px;
+          padding: 0;
           display: flex;
           flex-direction: column;
-          gap: 10px;
-          align-items: center;
+          gap: 3px;
+          align-items: flex-start;
           justify-content: center;
-          flex-shrink: 0;
-          width: 277px;
-          height: 186px;
-          position: relative;
-          overflow: hidden; }
+          flex: 1; }
           .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .texto .titulo {
-            display: flex;
-            flex-direction: row;
-            gap: 0;
-            align-items: flex-start;
-            justify-content: flex-start;
-            align-self: stretch;
-            flex-shrink: 0;
-            height: 51px;
-            position: relative;
-            overflow: hidden; }
-            .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .texto .titulo .producto-1 {
-              color: #ffffff;
-              text-align: left;
-              font: 400 20px "GasoekOne-Regular", sans-serif;
-              position: relative;
-              flex: 1;
-              height: 31px;
-              display: flex;
-              align-items: center;
-              justify-content: flex-start; }
-            .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .texto .titulo ._99 {
-              color: #ffffff;
-              text-align: left;
-              font: 400 20px "GasoekOne-Regular", sans-serif;
-              position: relative;
-              align-self: stretch;
-              display: flex;
-              align-items: center;
-              justify-content: flex-start; }
-        .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones {
-          padding: 10px;
-          display: flex;
-          flex-direction: row;
-          gap: 10px;
-          align-items: center;
-          justify-content: center;
-          flex-shrink: 0;
-          width: 114px;
-          height: 247px;
-          position: relative;
-          overflow: hidden; }
-          .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones ._1 {
-            color: #ffffff;
-            text-align: left;
-            font-family: "Raleway-SemiBold", sans-serif;
-            font-size: 22px;
-            line-height: 100%;
-            font-weight: 600;
-            position: relative;
-            width: 12px;
-            height: 20px; }
-          .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .group-4,
-          .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .group-42,
-          .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .group-43 {
-            flex-shrink: 0;
-            width: 20px;
-            height: 20px;
-            position: relative;
-            overflow: visible; }
-          .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .frame-7 {
-            padding: 24px 0;
             display: flex;
             flex-direction: row;
             gap: 10px;
             align-items: center;
-            justify-content: flex-start;
-            flex-shrink: 0;
-            width: 114px;
-            height: 247px;
+            justify-content: space-between;
+            align-self: stretch;
+            height: auto; }
+            .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .texto .titulo .producto-1 {
+              font: 400 18px/1 "GasoekOne-Regular", sans-serif;
+              color: #ffffff;
+              text-align: left;
+              flex: 1;
+              height: auto;
+              display: flex;
+              align-items: center;
+              justify-content: flex-start; }
+            .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .texto .titulo ._99 {
+              font: 400 18px/1 "GasoekOne-Regular", sans-serif;
+              color: #ffffff;
+              text-align: right;
+              align-self: stretch;
+              display: flex;
+              align-items: center;
+              justify-content: flex-end; }
+          .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .texto .descripci-n-o-plataforma {
+            color: #ccc;
+            font-family: "Inter-Regular", sans-serif;
+            font-size: 14px; }
+        .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones {
+          padding: 3px;
+          display: flex;
+          flex-direction: row;
+          gap: 8px;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+          width: 80px;
+          height: auto; }
+          .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones ._1 {
+            color: #ffffff;
+            text-align: center;
+            font-family: "Raleway-SemiBold", sans-serif;
+            font-size: 16px;
+            line-height: 100%;
+            font-weight: 600;
+            width: auto;
+            height: auto; }
+          .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .group-4, .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .group-42, .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .group-43 {
+            width: 14px;
+            height: 14px;
             position: relative;
-            overflow: hidden; }
+            overflow: visible;
+            cursor: pointer; }
+            .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .group-4:hover, .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .group-42:hover, .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .group-43:hover {
+              opacity: 0.8; }
           .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .trash-streamline-heroicons-outline,
           .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .trash-streamline-heroicons-outline2,
           .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .trash-streamline-heroicons-outline3 {
             display: flex;
-            flex-direction: column;
-            gap: 10px;
-            align-items: flex-start;
-            justify-content: flex-start;
-            flex-shrink: 0;
-            width: 48px;
-            height: 49px;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
             position: relative;
-            overflow: visible; }
-      .zona-de-pago-pc .carrito2 .frame-9 .frame-25, .zona-de-pago-pc .carrito2 .frame-9 .frame-26 {
-        padding: 10px;
+            overflow: visible;
+            cursor: pointer; }
+            .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .trash-streamline-heroicons-outline:hover,
+            .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .trash-streamline-heroicons-outline2:hover,
+            .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .trash-streamline-heroicons-outline3:hover {
+              opacity: 0.8; }
+      .zona-de-pago-pc .carrito2 .frame-9 .frame-25 {
+        flex: 1;
+        max-width: 320px;
+        align-self: stretch; }
+      .zona-de-pago-pc .carrito2 .frame-9 .frame-26 {
+        max-width: 320px;
+        padding: 15px;
+        background: #5e3a8b;
+        border-radius: 8px;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 12px;
         align-items: center;
-        justify-content: center;
-        align-self: stretch;
-        flex: 1;
-        position: relative;
-        overflow: hidden; }
-      .zona-de-pago-pc .carrito2 .frame-9 .frame-26 {
         justify-content: flex-start;
-        align-items: flex-start; }
-      .zona-de-pago-pc .carrito2 .frame-9 .frame-27 {
-        padding: 10px;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        align-items: flex-start;
-        justify-content: flex-start;
-        align-self: stretch;
-        flex-shrink: 0;
-        position: relative;
-        overflow: hidden; }
+        align-self: stretch; }
       .zona-de-pago-pc .carrito2 .frame-9 .resumen-del-pedido {
         color: #ffffff;
-        text-align: center;
-        font: 400 32px "GasoekOne-Regular", sans-serif;
-        position: relative;
-        flex: 1;
-        height: 123px;
+        text-align: left;
+        font: 400 26px/1 "GasoekOne-Regular", sans-serif;
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #6f12e0;
+        margin-bottom: 5px;
         display: flex;
         align-items: center;
-        justify-content: center; }
-      .zona-de-pago-pc .carrito2 .frame-9 .frame-28 {
-        padding: 10px;
+        justify-content: flex-start; }
+      .zona-de-pago-pc .carrito2 .frame-9 .frame-28, .zona-de-pago-pc .carrito2 .frame-9 .frame-29, .zona-de-pago-pc .carrito2 .frame-9 .frame-30, .zona-de-pago-pc .carrito2 .frame-9 .frame-33 {
+        padding: 0;
         display: flex;
         flex-direction: row;
         gap: 10px;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         align-self: stretch;
         flex-shrink: 0;
         position: relative;
@@ -17564,157 +17376,173 @@ html, body {
       .zona-de-pago-pc .carrito2 .frame-9 .devoluci-n-gratuita-en-30-d-as {
         color: #ffffff;
         text-align: left;
-        font: 400 32px "Inter-Regular", sans-serif;
-        position: relative;
+        font: 400 16px/1 "Inter-Regular", sans-serif;
         flex: 1;
-        height: 108px;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: flex-start; }
-      .zona-de-pago-pc .carrito2 .frame-9 .subtotal-x-productos {
-        height: auto; }
-      .zona-de-pago-pc .carrito2 .frame-9 .frame-29 {
-        padding: 10px;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        align-items: flex-start;
-        justify-content: flex-end;
-        align-self: stretch;
-        flex: 1;
-        position: relative;
-        overflow: hidden; }
       .zona-de-pago-pc .carrito2 .frame-9 ._992, .zona-de-pago-pc .carrito2 .frame-9 .gratuito {
         color: #ffffff;
         text-align: right;
-        font: 400 32px "Inter-Regular", sans-serif;
-        position: relative;
-        width: 198px;
-        height: 73px;
+        font: 400 16px/1 "Inter-Regular", sans-serif;
+        width: auto;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: flex-end; }
-      .zona-de-pago-pc .carrito2 .frame-9 .frame-292, .zona-de-pago-pc .carrito2 .frame-9 .frame-30, .zona-de-pago-pc .carrito2 .frame-9 .frame-31, .zona-de-pago-pc .carrito2 .frame-9 .frame-33 {
-        padding: 10px;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        align-items: flex-start;
-        justify-content: flex-start;
-        align-self: stretch;
-        flex-shrink: 0;
-        position: relative;
-        overflow: hidden; }
-      .zona-de-pago-pc .carrito2 .frame-9 .div {
-        color: #ffffff;
-        text-align: center;
-        font: 400 32px "GasoekOne-Regular", sans-serif;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center; }
       .zona-de-pago-pc .carrito2 .frame-9 .total-del-pedido {
         color: #ffffff;
         text-align: left;
-        font: 400 32px "GasoekOne-Regular", sans-serif;
-        position: relative;
+        font: 400 20px/1 "GasoekOne-Regular", sans-serif;
         flex: 1;
-        height: 108px;
+        height: auto;
+        padding-top: 10px;
+        border-top: 1px solid #6f12e0;
+        margin-top: 5px;
         display: flex;
         align-items: center;
         justify-content: flex-start; }
       .zona-de-pago-pc .carrito2 .frame-9 ._993 {
         color: #ffffff;
         text-align: right;
-        font: 400 32px "GasoekOne-Regular", sans-serif;
-        position: relative;
-        width: 198px;
-        height: 73px;
+        font: 400 20px/1 "GasoekOne-Regular", sans-serif;
+        width: auto;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: flex-end; }
       .zona-de-pago-pc .carrito2 .frame-9 .frame-72 {
         background: #6f12e0;
-        border-radius: 15px;
-        padding: 10px;
+        border-radius: 8px;
+        padding: 8px 12px;
         display: flex;
-        flex-direction: row;
-        gap: 10px;
         align-items: center;
         justify-content: center;
         align-self: stretch;
         flex-shrink: 0;
-        height: 131px;
+        height: 45px;
         position: relative;
-        overflow: hidden; }
+        overflow: hidden;
+        margin-top: 15px; }
         .zona-de-pago-pc .carrito2 .frame-9 .frame-72 .confirmar-pedido {
           color: #ffffff;
           text-align: center;
-          font: 400 32px "GasoekOne-Regular", sans-serif;
-          position: relative;
+          font: 400 20px/1 "GasoekOne-Regular", sans-serif;
           flex: 1;
-          height: 134px;
+          height: auto;
           display: flex;
           align-items: center;
-          justify-content: center; }
-  .zona-de-pago-pc .footer {
-    background: #1c0538;
-    padding: 13px;
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    align-items: flex-end;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: flex-end;
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-    overflow: hidden; }
-    .zona-de-pago-pc .footer .frame-12 {
-      display: flex;
-      flex-direction: row;
-      gap: 29px;
-      align-items: center;
-      justify-content: flex-start;
-      flex-shrink: 0;
-      position: relative; }
-    .zona-de-pago-pc .footer .con-cenos,
-    .zona-de-pago-pc .footer .t-rminos-y-condiciones,
-    .zona-de-pago-pc .footer .t-rminos-y-condiciones2 {
-      color: #ffffff;
-      text-align: center;
-      font: 400 24px "GasoekOne-Regular", sans-serif;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-    .zona-de-pago-pc .footer .con-cenos {
-      width: 170px; }
-    .zona-de-pago-pc .footer .t-rminos-y-condiciones {
-      width: 365px; }
-    .zona-de-pago-pc .footer .t-rminos-y-condiciones2 {
-      width: 127px; }
-    .zona-de-pago-pc .footer .frame-22 {
-      padding: 0 0 20px 0;
-      display: flex;
-      flex-direction: row;
-      gap: 20px;
-      align-items: center;
-      justify-content: flex-end;
-      flex-shrink: 0;
-      height: 26.01px;
-      position: relative; }
-    .zona-de-pago-pc .footer .icons-8-tik-tok-100-1,
-    .zona-de-pago-pc .footer .icons-8-twitterx-100-1-1,
-    .zona-de-pago-pc .footer .icons-8-instagram-100-1,
-    .zona-de-pago-pc .footer .icons-8-facebook-nuevo-100-1 {
-      flex-shrink: 0;
-      width: 45px;
-      height: 45px;
-      position: relative;
-      object-fit: cover;
-      aspect-ratio: 1; }
+          justify-content: center;
+          cursor: pointer; }
+  @media (max-width: 768px) {
+    .zona-de-pago-pc {
+      padding: 15px 0;
+      gap: 15px; }
+      .zona-de-pago-pc .cabecera {
+        height: 60px;
+        padding: 0 10px; }
+        .zona-de-pago-pc .cabecera .logo {
+          width: 55px;
+          height: 40px; }
+        .zona-de-pago-pc .cabecera .barra-de-b-squeda {
+          height: 40px;
+          padding: 5px 8px; }
+          .zona-de-pago-pc .cabecera .barra-de-b-squeda .desplegable-de-plataformas, .zona-de-pago-pc .cabecera .barra-de-b-squeda .lupa {
+            width: 20px;
+            height: 20px; }
+          .zona-de-pago-pc .cabecera .barra-de-b-squeda .desplegable-plataforma {
+            height: 30px; }
+          .zona-de-pago-pc .cabecera .barra-de-b-squeda .desplegable-plataforma input {
+            font-size: 0.85rem; }
+        .zona-de-pago-pc .cabecera .usuario {
+          height: 40px;
+          padding: 4px 7px; }
+          .zona-de-pago-pc .cabecera .usuario .usuario2, .zona-de-pago-pc .cabecera .usuario .carrito {
+            width: 28px;
+            height: 28px; }
+      .zona-de-pago-pc .carrito2 {
+        padding: 10px;
+        gap: 15px; }
+        .zona-de-pago-pc .carrito2 .frame-9 {
+          flex-direction: column;
+          gap: 25px;
+          max-width: 95%; }
+          .zona-de-pago-pc .carrito2 .frame-9 .frame-5 {
+            width: 100%;
+            gap: 6px;
+            min-width: unset; }
+          .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito {
+            height: 65px;
+            gap: 10px;
+            padding: 5px; }
+            .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .imagen {
+              width: 50px;
+              height: 50px; }
+            .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .texto .titulo .producto-1, .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .texto .titulo ._99 {
+              font-size: 15px; }
+            .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .texto .descripci-n-o-plataforma {
+              font-size: 13px; }
+            .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones {
+              width: 65px;
+              gap: 4px; }
+              .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones ._1 {
+                font-size: 14px; }
+              .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .group-4, .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .group-42, .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .group-43 {
+                width: 12px;
+                height: 12px; }
+              .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .trash-streamline-heroicons-outline,
+              .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .trash-streamline-heroicons-outline2,
+              .zona-de-pago-pc .carrito2 .frame-9 .elemento-carrito .botones .trash-streamline-heroicons-outline3 {
+                width: 20px;
+                height: 20px; }
+          .zona-de-pago-pc .carrito2 .frame-9 .frame-25 {
+            width: 100%;
+            max-width: 100%; }
+          .zona-de-pago-pc .carrito2 .frame-9 .frame-26 {
+            max-width: 100%;
+            width: 100%;
+            padding: 16px;
+            gap: 18px; }
+            .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .resumen-del-pedido {
+              font-size: 22px;
+              padding-bottom: 12px;
+              margin-bottom: 4px; }
+            .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .subtotal-x-productos,
+            .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .env-o-estimado,
+            .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .devoluci-n-gratuita-en-30-d-as {
+              font-size: 16px; }
+            .zona-de-pago-pc .carrito2 .frame-9 .frame-26 ._992, .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .gratuito {
+              font-size: 16px; }
+            .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .total-del-pedido {
+              font-size: 18px;
+              padding-top: 12px;
+              margin-top: 4px; }
+            .zona-de-pago-pc .carrito2 .frame-9 .frame-26 ._993 {
+              font-size: 18px; }
+            .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .frame-72 {
+              height: 40px;
+              margin-top: 10px; }
+              .zona-de-pago-pc .carrito2 .frame-9 .frame-26 .frame-72 .confirmar-pedido {
+                font-size: 18px; }
+      .zona-de-pago-pc .footer {
+        padding: 8px 10px;
+        gap: 10px;
+        min-height: 40px; }
+        .zona-de-pago-pc .footer .frame-12 {
+          gap: 8px; }
+        .zona-de-pago-pc .footer .con-cenos,
+        .zona-de-pago-pc .footer .t-rminos-y-condiciones,
+        .zona-de-pago-pc .footer .t-rminos-y-condiciones2 {
+          font-size: 11px; }
+        .zona-de-pago-pc .footer .frame-22 {
+          gap: 6px; }
+        .zona-de-pago-pc .footer .icons-8-tik-tok-100-1,
+        .zona-de-pago-pc .footer .icons-8-twitterx-100-1-1,
+        .zona-de-pago-pc .footer .icons-8-instagram-100-1,
+        .zona-de-pago-pc .footer .icons-8-facebook-nuevo-100-1 {
+          width: 22px;
+          height: 22px; } }
 
 .kairos-header {
   width: 100%;
@@ -17766,7 +17594,7 @@ html, body {
       padding: 0.55rem 1rem;
       border-radius: 999px;
       background: #fffdfa;
-      color: #0a0f0f;
+      color: #333333;
       font-size: 1rem; }
   .kairos-header .kairos-search-btn {
     background: transparent;
