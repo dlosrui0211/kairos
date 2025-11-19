@@ -1,4 +1,4 @@
-<nav class="kairos-header fixed-top">
+<nav class="kairos-header fixed-top" style="padding-bottom: 5px;">
     <div class="kairos-header-container">
 
         <!-- Logo -->
@@ -33,14 +33,14 @@
             </button>
         </div>
 
-        <!-- Barra pequeña: usuario + carrito -->
+        <!-- Barra pequeña: login + carrito -->
         <div class="kairos-actions-bar">
-            <button class="kairos-action-btn" type="button">
+            <a class="kairos-action-btn" href="login.php">
                 <i class="fas fa-user"></i>
             </button>
-            <button class="kairos-action-btn" type="button">
+            <button class="kairos-action-btn" type="button" id="openCartModal">
                 <i class="fas fa-shopping-cart"></i>
-            </button>
+            </a>
         </div>
 
     </div>

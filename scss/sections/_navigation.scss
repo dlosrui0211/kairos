@@ -2,7 +2,6 @@
     width: 100%;
     background: $primario;
     padding: 0.5rem 1rem;
-
     .kairos-header-container {
         max-width: 1400px;
         margin: 0 auto;
@@ -12,7 +11,7 @@
     }
 
     .kairos-logo img {
-        height: 40px;
+        height: 60px;
     }
 
     // ===== Barra grande: menú + buscador + lupa =====
@@ -141,4 +140,4 @@
             color: $texto_claro;
         }
     }
-}
+}   

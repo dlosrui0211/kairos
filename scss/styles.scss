@@ -15,8 +15,9 @@ $bootstrap-icons-font-src: url("../node_modules/bootstrap-icons/font/fonts/boots
 @import "./global.scss";
 
 // Components - Kairos
+@import "components/product-card";
 
-// Components - Kairos
+// Sections - Kairos
 @import "./sections/navigation.scss";
 @import "./sections/footer.scss";
 @import "./sections/soporte.scss";
