@@ -38,7 +38,7 @@
             <button class="kairos-action-btn" type="button">
                 <i class="fas fa-user"></i>
             </button>
-            <button class="kairos-action-btn" type="button">
+            <button class="kairos-action-btn" type="button" id="openCartModal">
                 <i class="fas fa-shopping-cart"></i>
             </button>
         </div>

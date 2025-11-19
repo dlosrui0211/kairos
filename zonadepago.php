@@ -19,7 +19,7 @@
       <div class="frame-5">
         <div class="elemento-carrito">
           <div class="imagen">
-            <img class="car-tula" src="car-tula0.png" onerror="this.src='https://placehold.co/55x55/5e3a8b/ffffff?text=P1'" />
+            <img class="car-tula" src="assets/img/fc26.jpg" onerror="this.src='https://placehold.co/55x55/5e3a8b/ffffff?text=P1'" />
           </div>
           <div class="texto">
             <div class="titulo">
@@ -45,7 +45,7 @@
         </div>
         <div class="elemento-carrito">
           <div class="imagen">
-            <img class="car-tula" src="car-tula1.png" onerror="this.src='https://placehold.co/55x55/5e3a8b/ffffff?text=P2'" />
+            <img class="car-tula" src="assets/img/fc26.jpg" onerror="this.src='https://placehold.co/55x55/5e3a8b/ffffff?text=P2'" />
           </div>
           <div class="texto">
             <div class="titulo">
@@ -70,7 +70,7 @@
         </div>
         <div class="elemento-carrito">
           <div class="imagen">
-            <img class="car-tula" src="car-tula2.png" onerror="this.src='https://placehold.co/55x55/5e3a8b/ffffff?text=P3'" />
+            <img class="car-tula" src="assets/img/fc26.jpg" onerror="this.src='https://placehold.co/55x55/5e3a8b/ffffff?text=P3'" />
           </div>
           <div class="texto">
             <div class="titulo">

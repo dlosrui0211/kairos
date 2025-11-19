@@ -15,6 +15,7 @@ $bootstrap-icons-font-src: url("../node_modules/bootstrap-icons/font/fonts/boots
 @import "./global.scss";
 
 // Components - Kairos
+@import "components/product-card";
 
 // Components - Kairos
 @import "./sections/navigation.scss";
@@ -23,3 +24,6 @@ $bootstrap-icons-font-src: url("../node_modules/bootstrap-icons/font/fonts/boots
 @import "./sections/registro.scss";
 @import "./sections/zonadepago.scss";
 @import "./sections/navigation.scss";
+@import "./sections/carrito.scss";
+
+
