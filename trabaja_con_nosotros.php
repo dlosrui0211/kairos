@@ -63,7 +63,7 @@
         <label class="t-tulo4">Motivo de afiliacion:</label>
         <textarea class="input2" placeholder="Escribe el motivo por el que quieres afiliarte aquí..." required></textarea>
       </div>
-      <div class="bot-n-simple">
+      <div class="boton-trabaja-con-nosotros">
         <div class="texto2">Enviar</div>
       </div>
     </div>
