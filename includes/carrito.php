@@ -39,7 +39,7 @@
             <div class="elemento-carrito" data-product-id="2" data-price="49">
                 <div class="producto-media">
                     <div class="imagen">
-                        <img class="car-tula" src="https://placehold.co/60x60/1C0538/FFFFFF?text=GOW" alt="God of War">
+                        <img class="car-tula" src="assets/img/fc26.jpg" alt="God of War">
                     </div>
                     <div class="texto">
                         <div class="producto-1">God of War</div>
@@ -62,7 +62,7 @@
             <div class="elemento-carrito" data-product-id="3" data-price="19">
                 <div class="producto-media">
                     <div class="imagen">
-                        <img class="car-tula" src="https://placehold.co/60x60/1C0538/FFFFFF?text=W3" alt="The Witcher 3">
+                        <img class="car-tula" src="assets/img/fc26.jpg" alt="The Witcher 3">
                     </div>
                     <div class="texto">
                         <div class="producto-1">The Witcher 3</div>
@@ -92,7 +92,7 @@
             </div>
 
             <div class="action-buttons-container">
-                <a class="action-button comprar" href="zona_de_pago.php">COMPRAR</a>
+                <a class="action-button comprar" href="zonadepago.php">COMPRAR</a>
                 <button class="action-button eliminar" id="removeAllItems">ELIMINAR TODOS</button>
             </div>
         </div>

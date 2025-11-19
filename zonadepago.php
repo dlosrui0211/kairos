@@ -13,6 +13,8 @@
     <?php
     include 'includes/navigation.php';
     ?>
+    <?php include("includes/carrito.php"); ?>
+
 <div class="carrito2">
     <div class="frame-9">
       <!-- Sección de Productos (Izquierda) - Se mantiene corta y compacta -->
@@ -36,11 +38,7 @@
             </div>
           </div>
           <div class="frame-7">
-            <img
-              class="trash-streamline-heroicons-outline"
-              src="trash-streamline-heroicons-outline0.svg"
-              onerror="this.src='https://placehold.co/22x22/ffffff/1c0538?text=T'"
-            />
+            🗑️
           </div>
         </div>
         <div class="elemento-carrito">
@@ -61,11 +59,7 @@
             </div>
           </div>
           <div class="frame-7">
-            <img
-              class="trash-streamline-heroicons-outline2"
-              src="trash-streamline-heroicons-outline1.svg"
-              onerror="this.src='https://placehold.co/22x22/ffffff/1c0538?text=T'"
-            />
+            🗑️
           </div>
         </div>
         <div class="elemento-carrito">
@@ -85,12 +79,7 @@
                 <div class="down-arrow">▼</div> 
             </div>
           </div>
-          <div class="frame-7">
-            <img
-              class="trash-streamline-heroicons-outline3"
-              src="trash-streamline-heroicons-outline2.svg"
-              onerror="this.src='https://placehold.co/22x22/ffffff/1c0538?text=T'"
-            />
+          <div class="frame-7">🗑️
           </div>
         </div>
       </div>
@@ -139,6 +128,7 @@
         include_once 'includes/footer.php';
     ?>
 </div>
+	<script src="js/scripts.js"></script>
 
 </body>
 </html>
