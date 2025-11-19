@@ -17910,5 +17910,63 @@ html, body {
     .elemento-carrito .imagen {
       width: 60px;
       height: 60px; } }
+.t-rminos-y-condiciones-pc {
+  background: var(--principal, #1c0538);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+  overflow-x: hidden; }
+  .t-rminos-y-condiciones-pc, .t-rminos-y-condiciones-pc * {
+    box-sizing: border-box; }
+  .t-rminos-y-condiciones-pc .condiciones-generales-de-venta {
+    background: var(--principal, #1c0538);
+    padding: 20px 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: auto;
+    margin: 0 auto; }
+    .t-rminos-y-condiciones-pc .condiciones-generales-de-venta .t-tulo {
+      color: var(--texto-principal, #ffffff);
+      text-align: center;
+      font-family: var(--h1-font-family, "GasoekOne-Regular", sans-serif);
+      font-size: 32px;
+      font-weight: 400;
+      position: relative;
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px; }
+    .t-rminos-y-condiciones-pc .condiciones-generales-de-venta .texto {
+      color: var(--texto-principal, #ffffff);
+      text-align: left;
+      font-family: var(--body-text-1-font-family, "Inter-Regular", sans-serif);
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.6;
+      position: relative;
+      align-self: stretch;
+      display: block; }
+
+@media (max-width: 1024px) {
+  .t-rminos-y-condiciones-pc .condiciones-generales-de-venta {
+    padding: 20px 10%; } }
+@media (max-width: 768px) {
+  .t-rminos-y-condiciones-pc .condiciones-generales-de-venta {
+    padding: 20px 20px; }
+    .t-rminos-y-condiciones-pc .condiciones-generales-de-venta .t-tulo {
+      font-size: 24px; }
+    .t-rminos-y-condiciones-pc .condiciones-generales-de-venta .texto {
+      font-size: 14px; } }
 
 /*# sourceMappingURL=styles.css.map */
