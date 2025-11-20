@@ -186,11 +186,11 @@ $color-acento-purpura: #b200ff;       // Púrpura vibrante para acentos y botone
             cursor: pointer;
             transition: background-color 0.3s;
             box-shadow: 0 4px 10px rgba($color-acento-purpura, 0.5);
-
+/*
             &:hover {
                 background-color: darken($color-acento-purpura, 10%);
             }
-
+*/
             .texto2 {
                 font-weight: bold;
                 text-transform: uppercase;

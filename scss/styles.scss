@@ -18,8 +18,13 @@ $bootstrap-icons-font-src: url("../node_modules/bootstrap-icons/font/fonts/boots
 @import "components/product-card";
 
 // Sections - Kairos
+@import "./sections/carrito.scss";
+@import "./sections/conocenos.scss";
 @import "./sections/navigation.scss";
+@import "./sections/login.scss";
+@import "./sections/registro.scss";
+@import "./sections/terminoscondiciones.scss";
+@import "./sections/zonadepago.scss";
 @import "./sections/footer.scss";
 @import "./sections/soporte.scss";
 @import "./sections/trabaja_con_nosotros.scss";
-@import "./sections/conocenos.scss";

@@ -12,7 +12,7 @@
                     <div class="product-card-price">
                         39.99€
                     </div>
-                    <a class="product-card-button" href="details.php">
+                    <a class="product-card-button" href="">
                         AÑADIR AL CARRITO
                     </a>
                 </div>

@@ -4,6 +4,7 @@
         <!-- Enlaces -->
         <div class="kairos-footer-links">
             <a href="conocenos.php">Conócenos</a>
+            <a href="trabaja_con_nosotros.php">Trabaja con Nosotros</a>
             <a href="terminoscondiciones.php">Términos y Condiciones</a>
             <a href="soporte.php">Soporte</a>
         </div>

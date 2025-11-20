@@ -1,11 +1,10 @@
 .product-card {
-    /* Marco exterior lila */
     background: $secundario;
     border-radius: 2rem;
     padding: 0.6rem;
-    width: 100%;
-    max-width: 20rem;
-    max-height: 300rem;
+    width: auto;
+    max-width: 360px;
+    justify-self: center;
     color: $texto_claro;
     font-family: $font-family-sans-serif;
     margin-top: 1rem;
@@ -33,7 +32,6 @@
         display: block;
     }
 
-    /* Icono de plataforma */
     .product-card-platform {
         position: absolute;
         top: 0.8rem;
@@ -52,7 +50,6 @@
         }
     }
 
-    /* Texto -30% */
     .product-card-discount {
         position: absolute;
         top: 0.9rem;
@@ -61,7 +58,6 @@
         font-weight: $headings-font-weight;
         font-size: 1.9rem;
         color: $texto_claro;
-        /* borde fucsia alrededor del texto */
         text-shadow:
             -2px -2px 0 $resalte,
              2px -2px 0 $resalte,
@@ -71,7 +67,6 @@
 
     /* ============== PARTE INFERIOR: PRECIO + BOTÓN ============== */
     .product-card-bottom {
-        /* bloque oscuro inferior, pegado a la imagen */
         background: $primario;
         border-radius: 0 0 1.7rem 1.7rem;
         padding: 0.75rem;
@@ -81,7 +76,6 @@
         gap: 0.4rem;
     }
 
-    /* Contenedor morado interior (precio + botón) */
     .product-card-price,
     .product-card-button {
         background: $resalte;

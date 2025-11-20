@@ -37,8 +37,8 @@
         <div class="kairos-actions-bar">
             <a class="kairos-action-btn" href="login.php">
                 <i class="fas fa-user"></i>
-            </button>
-            <button class="kairos-action-btn" type="button" id="openCartModal">
+            </a>
+            <a class="kairos-action-btn" href="carrito.php">
                 <i class="fas fa-shopping-cart"></i>
             </a>
         </div>
