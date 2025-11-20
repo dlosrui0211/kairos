@@ -41,7 +41,7 @@
             <a class="kairos-action-btn" href="wishlist.php">
                 <i class="fas fa-star"></i>
             </a>
-            <a class="kairos-action-btn" href="carrito.php">
+            <a class="kairos-action-btn" id="openCartModal">
                 <i class="fas fa-shopping-cart"></i>
             </a>
         </div>

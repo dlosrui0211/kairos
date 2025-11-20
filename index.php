@@ -7,6 +7,8 @@
 <body>
   <header>
 	<?php include("includes/navigation.php");?>
+  <?php include("includes/carrito.php"); ?>
+
   </header>
 
   <main>
@@ -39,5 +41,7 @@
   </main>
 
   <footer><?php include("includes/footer.php");?></footer>
+  <script src="js/scripts.js"></script>
+
 </body>
 </html>

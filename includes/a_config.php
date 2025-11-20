@@ -60,12 +60,12 @@
 			$CURRENT_PAGE = "registro"; 
 			$PAGE_TITLE = "Kairos - Tu página de claves";
 			break;
-		case "/carrito.php":
-			$CURRENT_PAGE = "carrito"; 
-			$PAGE_TITLE = "Carrito";
-			break;
-		case "/zona_pago.php":
-			$CURRENT_PAGE = "zona_pago"; 
+		// case "/carrito.php":
+		// 	$CURRENT_PAGE = "carrito"; 
+		// 	$PAGE_TITLE = "Carrito";
+		// 	break;
+		case "/zonapago.php":
+			$CURRENT_PAGE = "zonapago"; 
 			$PAGE_TITLE = "Zona de Pago";
 			break;
 		default:
