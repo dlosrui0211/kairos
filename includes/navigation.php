@@ -38,6 +38,9 @@
             <a class="kairos-action-btn" href="login.php">
                 <i class="fas fa-user"></i>
             </a>
+            <a class="kairos-action-btn" href="wishlist.php">
+                <i class="fas fa-star"></i>
+            </a>
             <a class="kairos-action-btn" href="carrito.php">
                 <i class="fas fa-shopping-cart"></i>
             </a>

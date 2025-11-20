@@ -1,0 +1,16 @@
+.products {
+  display: grid;
+  justify-content: center;
+  grid-auto-flow: row;
+  gap: 16px;
+  padding: 16px;
+  grid-template-columns: repeat(4, max-content);
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, max-content);
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: repeat(1, max-content);
+  }
+}

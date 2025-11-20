@@ -14,9 +14,6 @@ $bootstrap-icons-font-src: url("../node_modules/bootstrap-icons/font/fonts/boots
 // Import custom styles
 @import "./global.scss";
 
-// Components - Kairos
-@import "components/product-card";
-
 // Sections - Kairos
 @import "./sections/carrito.scss";
 @import "./sections/conocenos.scss";
@@ -28,3 +25,7 @@ $bootstrap-icons-font-src: url("../node_modules/bootstrap-icons/font/fonts/boots
 @import "./sections/footer.scss";
 @import "./sections/soporte.scss";
 @import "./sections/trabaja_con_nosotros.scss";
+
+// Components - Kairos
+@import "components/product-card";
+@import "components/product-grid";
