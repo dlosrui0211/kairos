@@ -1,0 +1,565 @@
+.devoluciones-pc {
+  &,
+  & * {
+    box-sizing: border-box;
+  }
+
+  background: var(--principal, #1c0538);
+  padding: 47px 0px 47px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  align-items: center;
+  justify-content: flex-start;
+  height: 2405px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cabecera {
+  background: var(--principal, #1c0538);
+  padding: 0px 30px 0px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 34px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 125px;
+  position: relative;
+}
+
+.logo {
+  flex-shrink: 0;
+  width: 116px;
+  height: 88px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 116/88;
+}
+
+.barra-de-b-squeda {
+  background: var(--principal-de-acento, #6f12e0);
+  border-radius: 70px;
+  border-style: solid;
+  border-color: var(--secundario, #5e3a8b);
+  border-width: 3px;
+  padding: 22px 53px 22px 53px;
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  height: 89px;
+  position: relative;
+  overflow: hidden;
+}
+
+.desplegable-de-plataformas {
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.desplegable-plataforma {
+  background: var(--texto-principal, #ffffff);
+  border-radius: 70px;
+  padding: 4px 269px 4px 269px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame-1 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 54px;
+  position: relative;
+}
+
+.frame-2 {
+  padding: 10px;
+  flex-shrink: 0;
+  width: 77px;
+  height: 77px;
+  position: relative;
+}
+
+.lupa {
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.usuario {
+  background: var(--principal-de-acento, #6f12e0);
+  border-radius: 70px;
+  border-style: solid;
+  border-color: var(--secundario, #5e3a8b);
+  border-width: 3px;
+  padding: 10px 16px 10px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.usuario2 {
+  flex-shrink: 0;
+  width: 68px;
+  height: 68px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.frame-4 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.carrito {
+  flex-shrink: 0;
+  width: 66px;
+  height: 66px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.lista-devoluciones {
+  padding: 0px 102px 193px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame-9 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  width: 1718px;
+  height: 1265px;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame-25 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame-26 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame-27 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.devoluci-n {
+  color: #ffffff;
+  text-align: center;
+  font-family: var(--h1-font-family, "GasoekOne-Regular", sans-serif);
+  font-size: var(--h1-font-size, 32px);
+  font-weight: var(--h1-font-weight, 400);
+  position: relative;
+  flex: 1;
+  height: 123px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame-28 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.subtotal-x-productos {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--body-text-1-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-text-1-font-size, 32px);
+  font-weight: var(--body-text-1-font-weight, 400);
+  position: relative;
+  flex: 1;
+  height: 108px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.frame-29 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+._99 {
+  color: #ffffff;
+  text-align: right;
+  font-family: var(--body-text-1-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-text-1-font-size, 32px);
+  font-weight: var(--body-text-1-font-weight, 400);
+  position: relative;
+  width: 198px;
+  height: 73px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.coste-de-recogida-a-domicilio {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--body-text-1-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-text-1-font-size, 32px);
+  font-weight: var(--body-text-1-font-weight, 400);
+  position: relative;
+  flex: 1;
+  height: 108px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+._2-99 {
+  color: #ffffff;
+  text-align: right;
+  font-family: var(--body-text-1-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-text-1-font-size, 32px);
+  font-weight: var(--body-text-1-font-weight, 400);
+  position: relative;
+  width: 198px;
+  height: 73px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.frame-30 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.el-importe-de-la-devoluci-n-se-reembolsar-en-el-mismo-m-todo-de-pago-en-el-que-realiz-la-compra-en-un-plazo-m-ximo-de-10-d-as-h-biles {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--body-text-1-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-text-1-font-size, 32px);
+  font-weight: var(--body-text-1-font-weight, 400);
+  position: relative;
+  flex: 1;
+  height: 108px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.frame-31 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.div {
+  color: #ffffff;
+  text-align: center;
+  font-family: var(--h1-font-family, "GasoekOne-Regular", sans-serif);
+  font-size: var(--h1-font-size, 32px);
+  font-weight: var(--h1-font-weight, 400);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame-33 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.total-de-la-devoluci-n {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--h1-font-family, "GasoekOne-Regular", sans-serif);
+  font-size: var(--h1-font-size, 32px);
+  font-weight: var(--h1-font-weight, 400);
+  position: relative;
+  flex: 1;
+  height: 108px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+._992 {
+  color: #ffffff;
+  text-align: right;
+  font-family: var(--h1-font-family, "GasoekOne-Regular", sans-serif);
+  font-size: var(--h1-font-size, 32px);
+  font-weight: var(--h1-font-weight, 400);
+  position: relative;
+  width: 198px;
+  height: 73px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.frame-7 {
+  background: var(--principal-de-acento, #6f12e0);
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 472px;
+  height: 131px;
+  position: relative;
+  overflow: hidden;
+}
+
+.confirmar-devoluci-n {
+  color: var(--texto-principal, #ffffff);
+  text-align: center;
+  font-family: var(--h1-font-family, "GasoekOne-Regular", sans-serif);
+  font-size: var(--h1-font-size, 32px);
+  font-weight: var(--h1-font-weight, 400);
+  position: relative;
+  flex: 1;
+  height: 134px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  background: var(--principal, #1c0538);
+  padding: 13px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame-12 {
+  display: flex;
+  flex-direction: row;
+  gap: 29px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.con-cenos {
+  color: var(--texto-principal, #ffffff);
+  text-align: center;
+  font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
+  font-size: var(--h2-font-size, 24px);
+  font-weight: var(--h2-font-weight, 400);
+  position: relative;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.t-rminos-y-condiciones {
+  color: var(--texto-principal, #ffffff);
+  text-align: center;
+  font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
+  font-size: var(--h2-font-size, 24px);
+  font-weight: var(--h2-font-weight, 400);
+  position: relative;
+  width: 365px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.t-rminos-y-condiciones2 {
+  color: var(--texto-principal, #ffffff);
+  text-align: center;
+  font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
+  font-size: var(--h2-font-size, 24px);
+  font-weight: var(--h2-font-weight, 400);
+  position: relative;
+  width: 127px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame-22 {
+  padding: 0px 0px 20px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  height: 26.01px;
+  position: relative;
+}
+
+.icons-8-tik-tok-100-1 {
+  flex-shrink: 0;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.icons-8-twitterx-100-1-1 {
+  flex-shrink: 0;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.icons-8-instagram-100-1 {
+  flex-shrink: 0;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.icons-8-facebook-nuevo-100-1 {
+  flex-shrink: 0;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
