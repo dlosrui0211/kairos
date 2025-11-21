@@ -44,6 +44,9 @@
             <a class="kairos-action-btn" id="openCartModal">
                 <i class="fas fa-shopping-cart"></i>
             </a>
+            <a class="kairos-action-btn" href="devoluciones.php">
+                <i class="fas fa-box-open"></i>
+            </a>
         </div>
 
     </div>
