@@ -1,451 +1,45 @@
-.trabaja-con-nosotros-pc,
-.trabaja-con-nosotros-pc * {
-  box-sizing: border-box;
-}
-.trabaja-con-nosotros-pc {
-  background: var(--principal, #1c0538);
-  padding: 47px 0px 47px 0px;
-  display: flex;
-  flex-direction: column;
-  gap: 31px;
-  align-items: center;
-  justify-content: flex-start;
-  height: 2035px;
-  position: relative;
-  overflow: hidden;
-}
-.cabecera {
-  background: var(--principal, #1c0538);
-  padding: 0px 30px 0px 30px;
-  display: flex;
-  flex-direction: row;
-  gap: 34px;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 125px;
-  position: relative;
-}
-.logo {
-  flex-shrink: 0;
-  width: 116px;
-  height: 88px;
-  position: relative;
-  object-fit: cover;
-  aspect-ratio: 116/88;
-}
-.barra-de-b-squeda {
-  background: var(--principal-de-acento, #6f12e0);
-  border-radius: 70px;
-  border-style: solid;
-  border-color: var(--secundario, #5e3a8b);
-  border-width: 3px;
-  padding: 22px 53px 22px 53px;
-  display: flex;
-  flex-direction: row;
-  gap: 26px;
-  align-items: center;
-  justify-content: flex-start;
-  flex: 1;
-  height: 89px;
-  position: relative;
-  overflow: hidden;
-}
-.desplegable-de-plataformas {
-  flex-shrink: 0;
-  width: 58px;
-  height: 58px;
-  position: relative;
-  object-fit: cover;
-  aspect-ratio: 1;
-}
-.desplegable-plataforma {
-  background: var(--texto-principal, #ffffff);
-  border-radius: 70px;
-  padding: 4px 269px 4px 269px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex: 1;
-  position: relative;
-  overflow: hidden;
-}
-.frame-1 {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 54px;
-  position: relative;
-}
-.frame-2 {
-  padding: 10px;
-  flex-shrink: 0;
-  width: 77px;
-  height: 77px;
-  position: relative;
-}
-.lupa {
-  width: 57px;
-  height: 57px;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  object-fit: cover;
-  aspect-ratio: 1;
-}
-.usuario {
-  background: var(--principal-de-acento, #6f12e0);
-  border-radius: 70px;
-  border-style: solid;
-  border-color: var(--secundario, #5e3a8b);
-  border-width: 3px;
-  padding: 10px 16px 10px 16px;
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  align-items: flex-end;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-.frame-3 {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.usuario2 {
-  flex-shrink: 0;
-  width: 68px;
-  height: 68px;
-  position: relative;
-  object-fit: cover;
-  aspect-ratio: 1;
-}
-.frame-4 {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.carrito {
-  flex-shrink: 0;
-  width: 66px;
-  height: 66px;
-  position: relative;
-  object-fit: cover;
-  aspect-ratio: 1;
-}
-.condiciones-generales-de-venta {
-  background: var(--principal, #1c0538);
-  padding: 41px 26px 41px 26px;
-  display: flex;
-  flex-direction: column;
-  gap: 29px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-.t-tulo {
-  color: var(--texto-principal, #ffffff);
-  text-align: center;
-  font-family: var(--h1-font-family, "GasoekOne-Regular", sans-serif);
-  font-size: var(--h1-font-size, 32px);
-  font-weight: var(--h1-font-weight, 400);
-  position: relative;
-  align-self: stretch;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.texto {
-  color: var(--texto-principal, #ffffff);
-  text-align: left;
-  position: relative;
-  align-self: stretch;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.texto-span {
-  font-family: var(--h2-font-family, "GothicA1-Bold", sans-serif);
-  font-size: var(--h2-font-size, 32px);
-  font-weight: var(--h2-font-weight, 700);
-}
-.texto-span2 {
-  font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
-  font-size: var(--h2-font-size, 32px);
-  font-weight: var(--h2-font-weight, 400);
-}
-.texto-span3 {
-  font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
-  font-size: var(--h2-font-size, 24px);
-  font-weight: var(--h2-font-weight, 400);
-}
-.formulario {
-  padding: 11px 0px 11px 0px;
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-  align-items: center;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 807px;
-  position: relative;
-}
-.t-tulo2 {
-  color: var(--texto-principal, #ffffff);
-  text-align: center;
-  font-family: var(--h1-font-family, "GasoekOne-Regular", sans-serif);
-  font-size: var(--h1-font-size, 32px);
-  font-weight: var(--h1-font-weight, 400);
-  position: relative;
-  width: 1920px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.inputs {
-  padding: 28px 22px 28px 22px;
-  display: flex;
-  flex-direction: column;
-  gap: 44px;
-  align-items: center;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-.correo-electr-nico {
-  flex-shrink: 0;
-  width: 1033px;
-  height: 53px;
-  position: relative;
-}
-.t-tulo3 {
-  color: var(--texto-principal, #ffffff);
-  text-align: center;
-  font-family: var(--h1-font-family, "GasoekOne-Regular", sans-serif);
-  font-size: var(--h1-font-size, 32px);
-  font-weight: var(--h1-font-weight, 400);
-  position: absolute;
-  left: 24px;
-  top: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.input {
-  background: var(--texto-principal, #ffffff);
-  border-radius: 15px;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  width: 602px;
-  height: 50px;
-  position: absolute;
-  left: 431px;
-  top: 3px;
-  overflow: hidden;
-}
-.mensaje {
-  flex-shrink: 0;
-  width: 1033px;
-  height: 344px;
-  position: static;
-}
-.input2 {
-  background: var(--texto-principal, #ffffff);
-  border-radius: 15px;
-  width: 1033px;
-  height: 344px;
-  position: absolute;
-  left: 443.5px;
-  top: 125px;
-  overflow: hidden;
-}
-.bot-n-simple {
-  background: var(--principal-de-acento, #6f12e0);
-  border-radius: 15px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 256px;
-  height: 83px;
-  position: relative;
-  overflow: hidden;
-}
-.texto2 {
-  color: var(--texto-principal, #ffffff);
-  text-align: center;
-  font-family: var(--h1-font-family, "GasoekOne-Regular", sans-serif);
-  font-size: var(--h1-font-size, 32px);
-  font-weight: var(--h1-font-weight, 400);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footer {
-  background: var(--principal, #1c0538);
-  padding: 13px;
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  align-items: flex-end;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: flex-end;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 47px;
-  position: relative;
-  
-}
-.frame-12 {
-  display: flex;
-  flex-direction: row;
-  gap: 29px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.con-cenos {
-  color: var(--texto-principal, #ffffff);
-  text-align: center;
-  font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
-  font-size: var(--h2-font-size, 24px);
-  font-weight: var(--h2-font-weight, 400);
-  position: relative;
-  width: 170px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.t-rminos-y-condiciones {
-  color: var(--texto-principal, #ffffff);
-  text-align: center;
-  font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
-  font-size: var(--h2-font-size, 24px);
-  font-weight: var(--h2-font-weight, 400);
-  position: relative;
-  width: 365px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.t-rminos-y-condiciones2 {
-  color: var(--texto-principal, #ffffff);
-  text-align: center;
-  font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
-  font-size: var(--h2-font-size, 24px);
-  font-weight: var(--h2-font-weight, 400);
-  position: relative;
-  width: 127px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.frame-22 {
-  padding: 0px 0px 20px 0px;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  align-items: center;
-  justify-content: flex-end;
-  flex-shrink: 0;
-  height: 26.01px;
-  position: relative;
-}
-.icons-8-tik-tok-100-1 {
-  flex-shrink: 0;
-  width: 45px;
-  height: 45px;
-  position: relative;
-  object-fit: cover;
-  aspect-ratio: 1;
-}
-.icons-8-twitterx-100-1-1 {
-  flex-shrink: 0;
-  width: 45px;
-  height: 45px;
-  position: relative;
-  object-fit: cover;
-  aspect-ratio: 1;
-}
-.icons-8-instagram-100-1 {
-  flex-shrink: 0;
-  width: 45px;
-  height: 45px;
-  position: relative;
-  object-fit: cover;
-  aspect-ratio: 1;
-}
-.icons-8-facebook-nuevo-100-1 {
-  flex-shrink: 0;
-  width: 45px;
-  height: 45px;
-  position: relative;
-  object-fit: cover;
-  aspect-ratio: 1;
+// Variables (Asumo que tienes estas variables definidas en otro archivo SCSS que se importa)
+// $principal: #1c0538;
+// $texto-principal: #ffffff;
+// $h1-font-family: "GasoekOne-Regular", sans-serif;
+// $h1-font-size: 32px;
+// $h1-font-weight: 400;
+// $h2-font-family: "GasoekOne-Regular", sans-serif;
+// $body-text-1-font-family: "Inter-Regular", sans-serif;
+// $body-text-1-font-size: 32px;
+// $body-text-1-font-weight: 400;
+
+.soporte{
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-// Página de Soporte
 .soporte-pc {
   background: var(--principal, #1c0538);
-  padding: 60px 20px 80px;
   display: flex;
   flex-direction: column;
   gap: 60px;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   position: relative;
-  
+  top: 50px;
+
+
   .qu-enes-somos {
-    max-width: 1200px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-bottom: 20px;
-    
+    align-items: center;
+
     .t-tulo {
       color: var(--texto-principal, #ffffff);
       text-align: center;
+
       font-family: var(--h1-font-family, "GasoekOne-Regular", sans-serif);
       font-size: var(--h1-font-size, 32px);
       font-weight: var(--h1-font-weight, 400);
     }
-    
+
     .texto {
       color: var(--texto-principal, #ffffff);
       text-align: justify;
@@ -454,7 +48,7 @@
       font-size: 18px;
     }
   }
-  
+
   .opciones {
     max-width: 1200px;
     width: 100%;
@@ -464,7 +58,7 @@
     align-items: stretch;
     justify-content: center;
     flex-wrap: wrap;
-    
+
     .card-de-soporte {
       background: #5a3a7f;
       border-radius: 8px;
@@ -478,12 +72,12 @@
       min-width: 280px;
       max-width: 350px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      
+
       &:hover {
         transform: translateY(-5px);
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
       }
-      
+
       .icono {
         width: 80px;
         height: 80px;
@@ -492,7 +86,7 @@
         object-fit: contain;
         order: 1;
       }
-      
+
       .texto2 {
         color: var(--texto-principal, #ffffff);
         width: 100%;
@@ -500,7 +94,7 @@
         flex-direction: column;
         align-items: center;
         order: 2;
-        
+
         .t-tulo2 {
           font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
           font-size: 20px;
@@ -509,8 +103,8 @@
           margin-bottom: 15px;
           order: 1;
         }
-        
-        .texto-descriptivo{
+
+        .texto-descriptivo {
           font-family: var(--h2-font-family, "GasoekOne-Regular", sans-serif);
           font-size: 14px;
           line-height: 1.6;
@@ -522,37 +116,40 @@
   }
 }
 
-// Responsive
+// Media Queries Anidadas
 @media (max-width: 1024px) {
-  .soporte-pc {
-    .opciones {
-      gap: 20px;
-      
-      .card-de-soporte {
-        max-width: 300px;
-      }
+  .soporte-pc .opciones {
+    gap: 20px;
+
+    .card-de-soporte {
+      max-width: 300px;
     }
   }
 }
 
 @media (max-width: 768px) {
-  .soporte-pc {
-    padding: 40px 15px 60px;
-    
+  .soporte {
+    overflow-y: auto;
+
+    .soporte-pc{
+      padding: 40px 15px 60px;
+      overflow-y: visible;
+    }
+
     .qu-enes-somos {
       .t-tulo {
         font-size: 24px;
       }
-      
+
       .texto {
         font-size: 16px;
       }
     }
-    
+
     .opciones {
       flex-direction: column;
       align-items: center;
-      
+
       .card-de-soporte {
         max-width: 100%;
         width: 100%;

@@ -1,115 +1,38 @@
 // --- Variables de Color ---
-$color-principal-fondo: #210330;      // Púrpura/negro oscuro para el fondo
-$color-secundario-fondo: #380753;   // Púrpura oscuro para la cabecera
-$color-texto-claro: #ffffff;          // Texto blanco
-$color-acento-purpura: #b200ff;       // Púrpura vibrante para acentos y botones
+$color-principal-fondo: #210330;     
+$color-secundario-fondo: #380753;   
+$color-texto-claro: #ffffff;          
+$color-acento-purpura: #b200ff;       
 
 .trabaja-con-nosotros-pc {
     color: $color-texto-claro;
     font-family: sans-serif;
     min-height: 100vh;
-    // Reducimos el padding lateral para que el contenido se acerque a los bordes
-    padding: 0 10px 50px 10px; 
+    padding: 0 10px 50px 10px;
+    height: 10px;
 }
 
-// --- CABECERA ---
-.cabecera {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    // Padding lateral muy pequeño para pegarse a los bordes
-    padding: 15px 10px; 
-    border-bottom: 1px solid rgba($color-texto-claro, 0.1);
-
-    .logo {
-        width: 60px;
-        height: auto;
-    }
-
-    .barra-de-b-squeda {
-        display: flex;
-        flex-grow: 1;
-        // Quitamos el max-width para que se estire
-        height: 40px;
-        background-color: $color-texto-claro;
-        border-radius: 20px;
-        overflow: hidden;
-        margin: 0 20px; // Reducimos los márgenes para más espacio
-
-        .desplegable-de-plataformas {
-            width: 40px;
-            height: 40px;
-            padding: 8px;
-            cursor: pointer;
-        }
-
-        .desplegable-plataforma {
-            flex-grow: 1;
-            display: flex;
-            align-items: center;
-        }
-
-        .frame-2 {
-            width: 40px;
-            background-color: $color-acento-purpura;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            
-            .lupa {
-                width: 24px;
-                height: 24px;
-            }
-        }
-    }
-
-    .usuario {
-        display: flex;
-        gap: 15px;
-
-        .frame-3, .frame-4 {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: $color-acento-purpura;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            
-            .usuario2, .carrito {
-                width: 24px;
-                height: 24px;
-            }
-        }
-    }
-}
-// --- FIN CABECERA ---
----
-// --- CONDICIONES DE AFILIACIÓN (TEXTO) ---
 .condiciones-generales-de-venta {
-    // ELIMINAMOS MAX-WIDTH para usar el ancho completo
-    // max-width: 1300px; 
+ 
     margin: 50px auto 0;
-    padding: 0; // Sin padding interno
+    padding: 0; 
     text-align: center;
 
     .t-tulo {
         font-size: 1.8em;
         font-weight: bold;
         margin-bottom: 45px;
-        color: $color-acento-purpura;
+        color: $color-texto-claro;
         text-transform: uppercase;
-        // Padding lateral para asegurar el margen interior del título
-        padding: 0 10px; 
+        
+        padding: 0 10px
     }
 
     .texto {
-        font-size: 1em;
+        font-size: 1.2em;
         line-height: 1.7;
         text-align: justify;
-        // Padding lateral ligero para que el texto no toque los bordes de la pantalla
+       
         padding: 0 15px; 
         
         .texto-span {
@@ -124,10 +47,8 @@ $color-acento-purpura: #b200ff;       // Púrpura vibrante para acentos y botone
         }
     }
 }
----
-// --- FORMULARIO DE AFILIACIÓN ---
+
 .formulario {
-    // Reducimos el max-width solo para el formulario para que los campos de entrada se vean grandes
     max-width: 700px; 
     margin: 80px auto 30px;
     padding: 30px 20px;
@@ -137,7 +58,7 @@ $color-acento-purpura: #b200ff;       // Púrpura vibrante para acentos y botone
         font-size: 1.8em;
         font-weight: bold;
         margin-bottom: 40px;
-        color: $color-acento-purpura;
+        color: $color-texto-claro;
         text-transform: uppercase;
     }
 
@@ -165,7 +86,12 @@ $color-acento-purpura: #b200ff;       // Púrpura vibrante para acentos y botone
         }
 
         .mensaje {
-            margin-bottom: 35px;
+            .t-tulo4{
+                text-align: left;
+                margin-bottom: 10px;
+                font-weight: bold;
+                font-size: 1.1em;
+            }
 
             .input2 {
                 height: 180px;
@@ -178,19 +104,17 @@ $color-acento-purpura: #b200ff;       // Púrpura vibrante para acentos y botone
             }
         }
 
-        .bot-n-simple {
+        .boton-trabaja-con-nosotros {
             display: inline-block;
-            background-color: $color-acento-purpura;
+            background-color: #6f12e0;
             padding: 12px 60px;
             border-radius: 8px;
             cursor: pointer;
             transition: background-color 0.3s;
-            box-shadow: 0 4px 10px rgba($color-acento-purpura, 0.5);
-/*
             &:hover {
                 background-color: darken($color-acento-purpura, 10%);
             }
-*/
+
             .texto2 {
                 font-weight: bold;
                 text-transform: uppercase;
@@ -200,4 +124,3 @@ $color-acento-purpura: #b200ff;       // Púrpura vibrante para acentos y botone
         }
     }
 }
-// --- FIN FORMULARIO ---
