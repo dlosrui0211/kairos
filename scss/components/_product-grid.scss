@@ -6,11 +6,11 @@
   padding: 16px;
   grid-template-columns: repeat(4, max-content);
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1500px) {
     grid-template-columns: repeat(2, max-content);
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 760px) {
     grid-template-columns: repeat(1, max-content);
   }
 }
