@@ -7,6 +7,10 @@
   grid-template-columns: repeat(4, max-content);
 
   @media (max-width: 1500px) {
+    grid-template-columns: repeat(3, max-content);
+  }
+
+  @media (max-width: 1130px) {
     grid-template-columns: repeat(2, max-content);
   }
 

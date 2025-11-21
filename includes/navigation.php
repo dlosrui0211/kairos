@@ -16,6 +16,7 @@
                 </button>
 
                 <ul class="dropdown-menu kairos-menu-dropdown" aria-labelledby="kairosMenuDropdown">
+                    <li><a class="dropdown-item" href="plataformas.php">Ver todas las plataformas</a></li>
                     <li><a class="dropdown-item" href="steam.php">Steam</a></li>
                     <li><a class="dropdown-item" href="playstation.php">PlayStation</a></li>
                     <li><a class="dropdown-item" href="xbox.php">Xbox</a></li>
@@ -43,6 +44,9 @@
             </a>
             <a class="kairos-action-btn" id="openCartModal">
                 <i class="fas fa-shopping-cart"></i>
+            </a>
+            <a class="kairos-action-btn" href="recibos.php">
+                <i class="fas fa-receipt"></i>
             </a>
             <a class="kairos-action-btn" href="devoluciones.php">
                 <i class="fas fa-box-open"></i>
