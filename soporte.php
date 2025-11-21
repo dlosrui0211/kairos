@@ -7,8 +7,9 @@
     <?php include_once 'includes/head-tag-contents.php' ?>
     
 </head>
-<body>
+<body class="soporte">
     <?php include_once 'includes/navigation.php' ?>
+    <?php include_once 'includes/carrito.php' ?>
     <div class="soporte-pc">
         <div class="qu-enes-somos">
             <div class="t-tulo">¿CÓMO FUNCIONA NUESTRO SOPORTE?</div>
@@ -28,7 +29,7 @@
         </div>
         <div class="opciones">
             <div class="card-de-soporte">
-            <img class="icono" src="/img/pedido.png" />
+            <img class="icono" src="/assets/img/pedido.png" />
             <div class="texto2">
                 <div class="t-tulo2">
                 PEDIDOS
@@ -42,7 +43,7 @@
             </div>
             </div>
             <div class="card-de-soporte">
-            <img class="icono" src="/img/pagos.png" />
+            <img class="icono" src="/assets/img/pagos.png" />
             <div class="texto2">
                 <div class="t-tulo2">
                 PAGO
@@ -56,7 +57,7 @@
             </div>
             </div>
             <div class="card-de-soporte">
-            <img class="icono" src="/img/seguridad.png" />
+            <img class="icono" src="/assets/img/seguridad.png" />
             <div class="texto2">
                 <div class="t-tulo2">
                 SEGURIDAD
@@ -71,5 +72,6 @@
             </div>
         </div>
     <?php include_once 'includes/footer.php' ?>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

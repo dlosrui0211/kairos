@@ -9,6 +9,7 @@
 </head>
 <body>
   <?php include_once 'includes/navigation.php' ?>
+  <?php include_once 'includes/carrito.php' ?>
 <div class="trabaja-con-nosotros-pc">
   <div class="condiciones-generales-de-venta">
     <div class="t-tulo">CONDICIONES DE AFILIACIÓN</div>
@@ -69,6 +70,7 @@
     </div>
   </div>
   <?php include_once 'includes/footer.php' ?>
+  <script src="js/scripts.js"></script>
 </div>
 </body>
 </html>

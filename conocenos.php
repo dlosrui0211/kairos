@@ -6,11 +6,12 @@
   <title>Conócenos - Kairos</title>
   <?php include_once 'includes/head-tag-contents.php' ?>
 </head>
-<body>
+<body class="conocenos">
 <?php include_once 'includes/navigation.php' ?>
+<?php include_once 'includes/carrito.php' ?>
   <div class="con-cenos-pc">
   <div class="qu-enes-somos">
-    <div class="t-tulo">¿QUIÉNES SOMOS?</div>
+    <div class="t-tulo1">¿QUIÉNES SOMOS?</div>
     <div class="texto">
       Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos
       de texto. Lorem Ipsum ha sido el texto de relleno estándar de las
@@ -26,9 +27,9 @@
     </div>
   </div>
   <div class="historia">
-    <img class="imagen" src="/img/imagen-placeholder.png" />
+    <img class="imagen" src="/assets/img/imagen-placeholder.png" />
     <div class="campo-de-texto">
-      <div class="t-tulo">HISTORIA</div>
+      <div class="t-tulo1">HISTORIA</div>
       <div class="texto">
         Lorem Ipsum es simplemente el texto de relleno de las imprentas y
         archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
@@ -45,7 +46,7 @@
     </div>
   </div>
   <div class="qu-enes-somos">
-    <div class="t-tulo">¿QUIÉNES SOMOS?</div>
+    <div class="t-tulo1">¿QUIÉNES SOMOS?</div>
     <div class="texto">
       Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos
       de texto. Lorem Ipsum ha sido el texto de relleno estándar de las
@@ -60,10 +61,10 @@
       versiones de Lorem Ipsum.
     </div>
   </div>
-  <div class="de-d-nde-obtenemos-nuestras-claves">
-    <img class="imagen" src="/img/imagen-placeholder.png" />
+  <div class="obtener-clave">
+    <img class="imagen" src="/assets/img/imagen-placeholder.png" />
     <div class="campo-de-texto">
-      <div class="t-tulo">¿DE DÓNDE OBTENEMOS NUESTRAS CLAVES?</div>
+      <div class="t-tulo1">¿DE DÓNDE OBTENEMOS NUESTRAS CLAVES?</div>
       <div class="texto">
         Lorem Ipsum es simplemente el texto de relleno de las imprentas y
         archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
@@ -79,8 +80,8 @@
       </div>
     </div>
   </div>
-  <div class="nuestro-objetivo-hacer-el-gaming-m-s-barato">
-    <div class="t-tulo">NUESTRO OBJETIVO: HACER EL GAMING MÁS ACCESIBLE</div>
+  <div class="objetivo">
+    <div class="t-tulo1">NUESTRO OBJETIVO: HACER EL GAMING MÁS ACCESIBLE</div>
     <div class="texto">
       Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos
       de texto. Lorem Ipsum ha sido el texto de relleno estándar de las
@@ -103,6 +104,7 @@
   </div>
 </div>
 <?php include_once 'includes/footer.php' ?>
+<script src="js/scripts.js"></script>
 </body>
 </html>
 
