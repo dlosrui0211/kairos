@@ -1,46 +1,71 @@
-<?php include("includes/a_config.php");?>
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Plataformas</title>
-    <?php include_once 'includes/head-tag-contents.php' ?>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataformas - Kairos</title>
+    <?php include_once 'includes/head-tag-contents.php'?>
 </head>
-
 <body>
-<?php include("includes/navigation.php");?>
-<main>
-    <div class="lista-contenedor">
-        <p class="titulo">Plataformas</p>
-        <div class="plataforma-card plataforma-playstation">
-            <img class="plataforma-logo" src="assets/img/playstation.png" />
-            <div class="plataforma-footer">
-                <p>PLAYSTATION</p>
-            </div>
-        </div>
-        <div class="plataforma-card plataforma-nintendo">
-            <img class="plataforma-logo" src="assets/img/nintendo.png" />
-            <div class="plataforma-footer">
-                <p>NINTENDO</p>
-            </div>
-        </div>
-        <div class="plataforma-card plataforma-xbox">
-            <img class="plataforma-logo" src="assets/img/xbox.png" />
-            <div class="plataforma-footer">
-                <p>XBOX</p>
-            </div>
-        </div>
-        <div class="plataforma-card plataforma-steam">
-            <img class="plataforma-logo" src="assets/img/steam.png" />
-            <div class="plataforma-footer">
-                <p>STEAM</p>
-            </div>
-        </div>
-    </div>
-</main>
-<?php include("includes/footer.php");?>
-</body>
 
+<?php include_once 'includes/navigation.php' ?>
+<?php include_once 'includes/carrito.php' ?>
+
+<div class="plataformas-pc">
+
+    <div class="titulo-plataformas">PLATAFORMAS</div>
+
+    <div class="grid-plataformas">
+
+        <a href="playstation.php" class="product-card plataforma">
+            <div class="product-card-inner">
+                <div class="product-card-media">
+                    <img class="product-card-cover" src="assets/img/playstation.png" alt="PlayStation">
+                </div>
+                <div class="product-card-bottom">
+                    <div class="product-card-price">PLAYSTATION</div>
+                </div>
+            </div>
+        </a>
+
+        <a href="nintendo.php" class="product-card plataforma">
+            <div class="product-card-inner">
+                <div class="product-card-media">
+                    <img class="product-card-cover" src="assets/img/nintendo.png" alt="Nintendo">
+                </div>
+                <div class="product-card-bottom">
+                    <div class="product-card-price">NINTENDO</div>
+                </div>
+            </div>
+        </a>
+
+        <a href="xbox.php" class="product-card plataforma">
+            <div class="product-card-inner">
+                <div class="product-card-media">
+                    <img class="product-card-cover" src="assets/img/xbox.png" alt="Xbox">
+                </div>
+                <div class="product-card-bottom">
+                    <div class="product-card-price">XBOX</div>
+                </div>
+            </div>
+        </a>
+
+        <a href="steam.php" class="product-card plataforma">
+            <div class="product-card-inner">
+                <div class="product-card-media">
+                    <img class="product-card-cover" src="assets/img/steam.png" alt="Steam">
+                </div>
+                <div class="product-card-bottom">
+                    <div class="product-card-price">STEAM</div>
+                </div>
+            </div>
+        </a>
+
+    </div>
+
+</div>
+
+<?php include_once 'includes/footer.php'?>
+<script src="js/scripts.js"></script>
+</body>
 </html>

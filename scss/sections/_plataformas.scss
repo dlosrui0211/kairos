@@ -1,0 +1,129 @@
+/*********************************************************
+ * 📌 PLATAFORMAS (Tarjetas de Consolas)
+ *********************************************************/
+
+.plataformas-pc {
+    background: #1c0538;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 100px;
+
+    .titulo-plataformas {
+        color: #ffffff;
+        font-family: "Gasoek One", sans-serif;
+        font-size: 26px;
+        margin-top: 30px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    /* 📌 GRID PRINCIPAL */
+    .grid-plataformas {
+        width: 100%;
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+        justify-items: center;
+        padding: 0 50px;
+
+        @media (max-width: 900px) {
+            grid-template-columns: 1fr;
+        }
+
+        /***** 🎮 TARJETA DE PLATAFORMA *****/
+        .product-card {
+            width: 100%;
+            max-width: 420px;
+            border: 5px solid #6b50a8;
+            border-radius: 20px;
+            padding: 5px;
+            text-decoration: none;
+            color: #fff;
+            font-family: "Inter", sans-serif;
+            transition: transform 0.25s ease;
+            position: relative;
+            overflow: hidden;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+
+            .product-card-inner {
+                border-radius: 15px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                background: #6b50a8;
+            }
+
+            .product-card-media {
+                width: 100%;
+                height: 200px;
+                overflow: hidden;
+                border-radius: 15px 15px 0 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img.product-card-cover {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                    transition: filter 0.3s ease, transform 0.3s ease;
+                }
+            }
+
+            /* 📌 PARTE INFERIOR (Nombre Consola) */
+            .product-card-bottom {
+                background: #6f12e0;
+                padding: 10px 0;
+                text-align: center;
+                border-radius: 0 0 15px 15px;
+                border-top: 4px solid #6b50a8;
+
+                .product-card-price {
+                    font-family: "Gasoek One", sans-serif;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    color: #ffffff;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        /****** 🌟 Efecto brillante al hacer hover ******/
+
+        .product-card::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(168, 92, 255, 0.25), transparent 60%);
+            transform: scale(0);
+            opacity: 0;
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+
+        .product-card:hover::after {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .product-card:hover .product-card-media img {
+            filter: brightness(1.15);
+            transform: scale(1.04);
+        }
+
+        .product-card:hover .product-card-bottom {
+            box-shadow: 0px 0px 12px rgba(162, 0, 255, 0.6);
+        }
+    }
+}

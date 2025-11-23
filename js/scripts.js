@@ -1,4 +1,3 @@
-
 //
 // Poner aquí los scripts 
 // 
@@ -43,7 +42,6 @@ window.addEventListener('DOMContentLoaded', event => {
 
 document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('cartModal');
-    // Usamos un selector para encontrar el botón del carrito en el navbar
     const openButton = document.getElementById('openCartModal'); 
     const closeButton = document.getElementById('closeCartModal');
     const productList = document.getElementById('productList');
@@ -53,12 +51,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- Funciones del Drawer ---
     function openDrawer() {
         modal.classList.add('active');
-        document.body.style.overflow = 'hidden'; // Evita el scroll de fondo
+        document.body.style.overflow = 'hidden';
     }
 
     function closeDrawer() {
         modal.classList.remove('active');
-        // Usamos un pequeño retraso para permitir que termine la animación CSS
         setTimeout(() => {
             modal.style.display = 'none';
             document.body.style.overflow = 'auto';
@@ -67,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (openButton) {
         openButton.addEventListener('click', () => {
-            modal.style.display = 'block'; // Asegura que esté visible antes de la animación
+            modal.style.display = 'block';
             updateSubtotal();
             requestAnimationFrame(openDrawer);
         });
@@ -77,14 +74,12 @@ document.addEventListener('DOMContentLoaded', function() {
         closeButton.addEventListener('click', closeDrawer);
     }
 
-    // Cerrar al hacer clic en el fondo oscuro
     window.addEventListener('click', function(event) {
         if (event.target === modal) {
             closeDrawer();
         }
     });
 
-    // Cerrar con tecla ESC
     document.addEventListener('keydown', function(e) {
         if ((e.key === "Escape" || e.key === "Esc") && modal && modal.classList.contains('active')) {
             closeDrawer();
@@ -94,14 +89,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- Lógica de Cantidad y Carrito ---
 
-    // Función para recalcular el subtotal
     function updateSubtotal() {
         let total = 0;
         const items = productList.querySelectorAll('.elemento-carrito');
         
         items.forEach(item => {
             const price = parseFloat(item.getAttribute('data-price'));
-            // Busca el elemento de cantidad
             const quantityDisplay = item.querySelector('[data-quantity]');
             const quantity = parseInt(quantityDisplay.textContent, 10);
             
@@ -113,7 +106,6 @@ document.addEventListener('DOMContentLoaded', function() {
         subtotalElement.textContent = `${total}€`;
     }
 
-    // Manejador de eventos delegado para botones de cantidad y eliminar
     productList.addEventListener('click', function(event) {
         const target = event.target;
         const item = target.closest('.elemento-carrito');
@@ -121,38 +113,31 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!item) return;
 
         const quantityDisplay = item.querySelector('[data-quantity]');
-        
-        // Verifica que el display de cantidad exista antes de continuar
         if (!quantityDisplay) return; 
         
         let currentQuantity = parseInt(quantityDisplay.textContent, 10);
 
-        // Aumentar cantidad (▲)
         if (target.classList.contains('increment-btn')) {
             currentQuantity++;
             quantityDisplay.textContent = currentQuantity;
             updateSubtotal();
-        } 
-        // Disminuir cantidad (▼)
-        else if (target.classList.contains('decrement-btn')) {
+
+        } else if (target.classList.contains('decrement-btn')) {
             if (currentQuantity > 1) {
                 currentQuantity--;
                 quantityDisplay.textContent = currentQuantity;
                 updateSubtotal();
             } else if (currentQuantity === 1) {
-                 // Opción: Al disminuir de 1, eliminar el elemento
                 item.remove();
                 updateSubtotal();
             }
-        } 
-        // Eliminar producto (🗑️)
-        else if (target.classList.contains('remove-item-btn')) {
+
+        } else if (target.classList.contains('remove-item-btn')) {
             item.remove();
             updateSubtotal();
         }
     });
 
-    // Eliminar todos los productos
     if (removeAllButton) {
         removeAllButton.addEventListener('click', () => {
             productList.innerHTML = ''; 
@@ -160,6 +145,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Inicializar subtotal si hay elementos al cargar
     updateSubtotal();
+
+
+    // 🗑️ --- ELIMINACIÓN DE RECIBOS (SIN PHP, ANIMADO) ---
+    const botonesEliminarRecibo = document.querySelectorAll(".eliminar-recibo");
+
+    botonesEliminarRecibo.forEach(boton => {
+        boton.addEventListener("click", () => {
+            const tarjeta = boton.closest(".tarjeta-recibo");
+            tarjeta.classList.add("eliminando");
+
+            setTimeout(() => {
+                tarjeta.remove();
+            }, 300);
+        });
+    });
+
 });
