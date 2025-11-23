@@ -36,10 +36,6 @@
 			$CURRENT_PAGE = "nintendo"; 
 			$PAGE_TITLE = "Kairos - Tu página de claves";
 			break;
-		case "/otros.php":
-			$CURRENT_PAGE = "otros"; 
-			$PAGE_TITLE = "Kairos - Tu página de claves";
-			break;
 		case "/soporte.php":
 			$CURRENT_PAGE = "soporte"; 
 			$PAGE_TITLE = "Soporte";

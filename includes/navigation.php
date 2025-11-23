@@ -21,7 +21,6 @@
                     <li><a class="dropdown-item" href="playstation.php">PlayStation</a></li>
                     <li><a class="dropdown-item" href="xbox.php">Xbox</a></li>
                     <li><a class="dropdown-item" href="nintendo.php">Nintendo</a></li>
-                    <li><a class="dropdown-item" href="otros.php">Otros</a></li>
                 </ul>
             </div>
 
