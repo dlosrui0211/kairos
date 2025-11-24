@@ -1,11 +1,16 @@
 <?php include("includes/a_config.php"); ?>
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
     <title>Nintendo - Kairos</title>
 </head>
+
+
+
+
+
 
 <body>
 

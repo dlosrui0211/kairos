@@ -1,26 +1,26 @@
 .detalles-pc {
-    background: #1c0538;
+    background: $primario;
     width: 100%;
     min-height: 100vh;
-    padding: 40px 0 80px 0;
+    padding: 2.5rem 0 5rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #ffffff;
-    font-family: var(--body-text-1-font-family, "Inter-Regular", sans-serif);
+    color: $texto_claro;
+    font-family: $font-family-sans-serif;
     overflow: hidden;
 
     .detalles-contenedor {
         width: 100%;
         max-width: 1200px;
         display: flex;
-        gap: 40px;
-        padding: 0 60px;
+        gap: 2.5rem;
+        padding: 0 3.75rem;
 
         @media (max-width: 992px) {
             flex-direction: column;
             align-items: center;
-            padding: 0 20px;
+            padding: 0 1.25rem;
         }
     }
 
@@ -31,9 +31,9 @@
 
         img {
             width: 100%;
-            max-width: 500px;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+            max-width: 480px;
+            border-radius: $border-radius-lg;
+            box-shadow: 0 4px 20px rgba($texto_claro, 0.15);
         }
     }
 
@@ -41,13 +41,15 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 18px;
+        gap: 1.15rem;
         justify-content: center;
 
         .detalles-titulo {
-            font-family: "Gasoek One", sans-serif;
+            font-family: $headings-font-family;
+            font-weight: $headings-font-weight;
             font-size: 2.4rem;
             letter-spacing: 3px;
+            text-transform: uppercase;
         }
 
         .detalles-plataforma {
@@ -57,11 +59,11 @@
         .detalles-datos {
             display: flex;
             flex-direction: column;
-            gap: 6px;
+            gap: 0.4rem;
             font-size: 0.95rem;
 
             strong {
-                color: #b388ff;
+                color: lighten($resalte, 25%);
             }
         }
 
@@ -73,48 +75,52 @@
 
         .detalles-precio {
             font-size: 2rem;
-            font-family: "Gasoek One", sans-serif;
+            font-family: $headings-font-family;
             letter-spacing: 2px;
         }
 
         .detalles-boton {
-            background-color: #6f12e0;
-            border-radius: 15px;
-            padding: 12px 0;
+            background-color: $resalte;
+            border-radius: $border-radius-lg;
+            padding: 0.8rem 0;
             width: 100%;
             text-align: center;
-            font-family: "Gasoek One", sans-serif;
-            font-size: 1.2rem;
-            color: #fff !important;  
+            font-family: $headings-font-family;
+            font-weight: $headings-font-weight;
+            font-size: 1.3rem;
+            color: $texto_claro !important;
             cursor: pointer;
             text-decoration: none;
             transition: all 0.3s ease;
             margin-top: 5px;
+            letter-spacing: 1px;
 
             &:hover {
-                background-color: #b200ff;
+                background-color: lighten($resalte, 10%);
                 transform: translateY(-2px);
-                box-shadow: 0 4px 12px rgba(255, 255, 255, 0.25);
+                box-shadow: 0 4px 12px rgba($texto_claro, 0.25);
             }
         }
     }
 
     .requs-titulo {
-        margin-top: 60px;
-        font-family: "Gasoek One", sans-serif;  
-        font-size: 2rem;
-        letter-spacing: 3px;
+        margin-top: 4rem;
+        font-family: $headings-font-family;
+        font-weight: $headings-font-weight;
+        font-size: 1.9rem;
+        letter-spacing: 2px;
         text-align: center;
+        text-transform: uppercase;
     }
 
     .requs-contenedor {
         width: 100%;
         max-width: 1000px;
-        margin-top: 30px;
+        margin-top: 2rem;
         display: flex;
         justify-content: space-between;
-        gap: 30px;
-        padding: 0 20px;
+        gap: 2rem;
+        padding: 0 1.25rem;
 
         @media (max-width: 768px) {
             flex-direction: column;
@@ -122,18 +128,20 @@
         }
 
         .requs-bloque {
-            background: #5e3a8b;
-            padding: 20px 25px;
-            border-radius: 12px;
+            background: $secundario;
+            padding: 1.2rem 1.5rem;
+            border-radius: $border-radius-lg;
             width: 100%;
             max-width: 450px;
-            box-shadow: 0 4px 16px rgba(255, 255, 255, 0.15);
+            box-shadow: 0 4px 16px rgba($texto_claro, 0.15);
 
             .requs-sub {
-                font-family: "Gasoek One", sans-serif;
-                font-size: 1.3rem;
-                margin-bottom: 10px;
-                color: #ffffff;
+                font-family: $headings-font-family;
+                font-weight: $headings-font-weight;
+                font-size: 1.25rem;
+                margin-bottom: 0.7rem;
+                color: $texto_claro;
+                text-transform: uppercase;
             }
 
             ul {
@@ -145,7 +153,7 @@
                     margin-bottom: 6px;
 
                     strong {
-                        color: #c39aff;
+                        color: lighten($resalte, 20%);
                     }
                 }
             }

@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plataformas - Kairos</title>
+    <title>Plataformas</title>
     <?php include_once 'includes/head-tag-contents.php'?>
 </head>
+
+
+
+
+
+
 <body>
 
 <?php include_once 'includes/navigation.php' ?>

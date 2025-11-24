@@ -1,71 +1,75 @@
-/*********************************************************
- * 📌 PLATAFORMAS (Tarjetas de Consolas)
- *********************************************************/
-
 .plataformas-pc {
-    background: #1c0538;
+    background: $primario;
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
-    padding-bottom: 100px;
+    gap: $spacer * 2.5;
+    padding-bottom: $spacer * 4;
 
     .titulo-plataformas {
-        color: #ffffff;
-        font-family: "Gasoek One", sans-serif;
-        font-size: 26px;
-        margin-top: 30px;
+        color: $texto_claro;
+        font-family: $headings-font-family;
+        font-weight: $headings-font-weight;
+        font-size: 2rem;
+        margin-top: 2rem;
+        letter-spacing: 2px;
         text-align: center;
-        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+            margin-top: 1.2rem;
+        }
     }
 
-    /* 📌 GRID PRINCIPAL */
     .grid-plataformas {
         width: 100%;
         max-width: 1200px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 60px;
+        gap: 3rem;
         justify-items: center;
-        padding: 0 50px;
+        padding: 0 3rem;
 
         @media (max-width: 900px) {
             grid-template-columns: 1fr;
+            gap: 2rem;
+            padding: 0 1rem;
         }
 
-        /***** 🎮 TARJETA DE PLATAFORMA *****/
         .product-card {
             width: 100%;
             max-width: 420px;
-            border: 5px solid #6b50a8;
-            border-radius: 20px;
-            padding: 5px;
+            border: $border-width * 2 solid $resalte;
+            border-radius: $border-radius-lg;
+            padding: 0.35rem;
             text-decoration: none;
-            color: #fff;
-            font-family: "Inter", sans-serif;
+            color: $texto_claro;
+            font-family: $font-family-sans-serif;
             transition: transform 0.25s ease;
             position: relative;
             overflow: hidden;
+            background: transparent;
 
             &:hover {
-                transform: translateY(-5px);
+                transform: translateY(-6px);
             }
 
             .product-card-inner {
-                border-radius: 15px;
+                border-radius: $border-radius-lg;
                 overflow: hidden;
                 display: flex;
                 flex-direction: column;
-                background: #6b50a8;
+                background: $secundario;
             }
 
             .product-card-media {
                 width: 100%;
-                height: 200px;
+                height: 220px;
                 overflow: hidden;
-                border-radius: 15px 15px 0 0;
+                border-radius: $border-radius-lg $border-radius-lg 0 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -79,25 +83,23 @@
                 }
             }
 
-            /* 📌 PARTE INFERIOR (Nombre Consola) */
             .product-card-bottom {
-                background: #6f12e0;
-                padding: 10px 0;
+                background: $resalte;
+                padding: 0.6rem 0;
                 text-align: center;
-                border-radius: 0 0 15px 15px;
-                border-top: 4px solid #6b50a8;
+                border-radius: 0 0 $border-radius-lg $border-radius-lg;
+                border-top: $border-width * 2 solid $secundario;
 
                 .product-card-price {
-                    font-family: "Gasoek One", sans-serif;
-                    font-size: 16px;
-                    letter-spacing: 1px;
-                    color: #ffffff;
+                    font-family: $headings-font-family;
+                    font-weight: $headings-font-weight;
+                    font-size: 1rem;
                     text-transform: uppercase;
+                    letter-spacing: 1px;
+                    color: $texto_claro;
                 }
             }
         }
-
-        /****** 🌟 Efecto brillante al hacer hover ******/
 
         .product-card::after {
             content: "";
@@ -106,7 +108,7 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(168, 92, 255, 0.25), transparent 60%);
+            background: radial-gradient(circle, rgba($resalte, 0.25), transparent 60%);
             transform: scale(0);
             opacity: 0;
             transition: opacity 0.4s ease, transform 0.4s ease;
@@ -120,10 +122,6 @@
         .product-card:hover .product-card-media img {
             filter: brightness(1.15);
             transform: scale(1.04);
-        }
-
-        .product-card:hover .product-card-bottom {
-            box-shadow: 0px 0px 12px rgba(162, 0, 255, 0.6);
         }
     }
 }
