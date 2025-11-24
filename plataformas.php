@@ -8,10 +8,6 @@
 </head>
 
 
-
-
-
-
 <body>
 
 <?php include_once 'includes/navigation.php' ?>
