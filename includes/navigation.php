@@ -1,3 +1,5 @@
+<!-- Fase 2: ERROR GRAVE: no usáis boostrap, componentes como navbar, modales, botones y clases auxiliares de todo tipo!-->
+
 <nav class="kairos-header fixed-top" style="padding-bottom: 5px;">
     <div class="kairos-header-container">
 

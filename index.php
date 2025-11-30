@@ -1,3 +1,5 @@
+<!-- Fase 2: ERROR GRAVE: no usáis boostrap, componentes como navbar, modales, botones y clases auxiliares de todo tipo!-->
+
 <?php include("includes/a_config.php");?>
 <!DOCTYPE html>
 <html>
