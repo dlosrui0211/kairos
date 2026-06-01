@@ -1,4 +1,4 @@
-<!-- Fase 2: ERROR GRAVE: las variables no se definen aquí!, ya están definidas en los SCSS de variables-->
+//Fase 2: ERROR GRAVE: las variables no se definen aquí!, ya están definidas en los SCSS de variables-->
 
 // --- Variables de Color (Inferred from CSS) ---
 $principal: #1c0538;
@@ -330,7 +330,10 @@ $divider-thickness: 1px;
       .total-del-pedido {
           color: $texto-principal;
           text-align: left;
-          font: $h2-font-weight $h2-font-size-pc / 1 $h2-font-family;
+          font-weight: $h2-font-weight;
+          font-size: $h2-font-size-pc;
+          line-height: 1;
+          font-family: $h2-font-family;
           flex: 1;
           height: auto;
           display: flex;
@@ -346,7 +349,10 @@ $divider-thickness: 1px;
       ._993 { /* Total price */
           color: $texto-principal;
           text-align: right;
-          font: $h2-font-weight $h2-font-size-pc / 1 $h2-font-family;
+          font-weight: $h2-font-weight;
+          font-size: $h2-font-size-pc;
+          line-height: 1;
+          font-family: $h2-font-family;
           width: auto;
           height: auto;
           display: flex;
