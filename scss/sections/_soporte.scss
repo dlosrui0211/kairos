@@ -117,7 +117,7 @@
 }
 
 // Media Queries Anidadas
-@media (max-width: 1024px) {
+@include media-breakpoint-up(lg) {
   .soporte-pc .opciones {
     gap: 20px;
 
@@ -127,7 +127,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@include media-breakpoint-up(lg) {
   .soporte {
     overflow-y: auto;
 

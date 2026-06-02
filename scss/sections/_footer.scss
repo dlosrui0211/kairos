@@ -66,7 +66,7 @@
 }
 
 // Responsividad
-@media (max-width: 768px) {
+@include media-breakpoint-up(lg) {
     .kairos-footer-container {
         gap: 2rem;
         padding: 0 1rem;
@@ -86,7 +86,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@include media-breakpoint-up(lg) {
     .kairos-footer-container {
         flex-direction: column;
         gap: 1.25rem;
@@ -111,7 +111,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@include media-breakpoint-up(lg) {
     .kairos-footer-links {
         flex-wrap: wrap;
         gap: 0.75rem;

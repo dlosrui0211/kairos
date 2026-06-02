@@ -218,7 +218,7 @@ $font-weight-base: 400;
 // -----------------------------------------------------------------------------
 // Media Queries para Móviles
 // -----------------------------------------------------------------------------
-@media (max-width: 768px) {
+@include media-breakpoint-up(lg) {
   .registro-pc {
     padding: 20px;
     justify-content: flex-start;

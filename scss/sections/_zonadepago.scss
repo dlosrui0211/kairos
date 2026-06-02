@@ -395,7 +395,7 @@ $divider-thickness: 1px;
   // ---------------------------------------------------------------------------
   // Media Queries para Móviles
   // ---------------------------------------------------------------------------
-  @media (max-width: 768px) {
+  @include media-breakpoint-up(lg) {
     padding: 15px 0;
     gap: 15px;
 

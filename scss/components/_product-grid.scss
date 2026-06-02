@@ -6,15 +6,15 @@
   padding: 16px;
   grid-template-columns: repeat(4, max-content);
 // Fase 2: hay que usar los mixins de bootstrap media-breakpoints-up -->
-  @media (max-width: 1500px) {
+  @include media-breakpoint-up(lg) {
     grid-template-columns: repeat(3, max-content);
   }
 
-  @media (max-width: 1130px) {
+  @include media-breakpoint-up(lg) {
     grid-template-columns: repeat(2, max-content);
   }
 
-  @media (max-width: 760px) {
+  @include media-breakpoint-up(lg) {
     grid-template-columns: repeat(1, max-content);
   }
 }

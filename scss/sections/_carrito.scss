@@ -317,7 +317,7 @@ $font-body: "Inter", sans-serif;
 }
 
 // --- Media Queries para Móviles Pequeños ---
-@media (max-width: 480px) {
+@include media-breakpoint-up(lg) {
     .modal-content {
         width: 100%; // Pantalla completa
         max-width: none;

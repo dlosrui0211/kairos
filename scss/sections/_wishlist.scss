@@ -29,7 +29,7 @@
     position: relative;
     overflow: hidden;
 
-    @media (max-width: 1200px) {
+    @include media-breakpoint-up(lg) {
       padding: 30px 20px;
     }
 
@@ -43,7 +43,7 @@
       max-width: 1200px;
       position: relative;
 
-      @media (max-width: 1200px) {
+      @include media-breakpoint-up(lg) {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -64,7 +64,7 @@
         position: relative;
         overflow: hidden;
 
-        @media (max-width: 1200px) {
+        @include media-breakpoint-up(lg) {
           flex-direction: column;
           width: calc(50% - 7.5px);
           gap: 15px;
@@ -81,7 +81,7 @@
           width: 150px;
           position: relative;
 
-          @media (max-width: 1200px) {
+          @include media-breakpoint-up(lg) {
             width: 100%;
           }
 
@@ -92,7 +92,7 @@
             object-fit: cover;
             border-radius: 5px;
 
-            @media (max-width: 1200px) {
+            @include media-breakpoint-up(lg) {
               height: 120px;
             }
           }
@@ -108,7 +108,7 @@
           flex: 1;
           position: relative;
 
-          @media (max-width: 1200px) {
+          @include media-breakpoint-up(lg) {
             width: 100%;
             align-items: flex-start;
           }
@@ -124,7 +124,7 @@
             align-items: center;
             justify-content: flex-start;
 
-            @media (max-width: 1200px) {
+            @include media-breakpoint-up(lg) {
               font-size: 16px;
             }
           }
@@ -140,7 +140,7 @@
             align-items: center;
             justify-content: flex-start;
 
-            @media (max-width: 1200px) {
+            @include media-breakpoint-up(lg) {
               font-size: 10px;
             }
           }
@@ -156,7 +156,7 @@
             align-items: center;
             justify-content: flex-start;
 
-            @media (max-width: 768px) {
+            @include media-breakpoint-up(lg) {
               font-size: 10px;
             }
           }
@@ -174,7 +174,7 @@
           padding: 10px 20px;
           position: relative;
 
-          @media (max-width: 1200px) {
+          @include media-breakpoint-up(lg) {
             width: 100%;
             padding: 8px 15px;
             gap: 10px;
@@ -201,7 +201,7 @@
               align-items: center;
               justify-content: center;
 
-              @media (max-width: 1200px) {
+              @include media-breakpoint-up(lg) {
                 font-size: 14px;
               }
             }
@@ -252,7 +252,7 @@
               justify-content: center;
               white-space: nowrap;
 
-              @media (max-width: 1200px) {
+              @include media-breakpoint-up(lg) {
                 font-size: 12px;
               }
             }
@@ -270,7 +270,7 @@
         width: 100%;
         position: relative;
 
-        @media (max-width: 1200px) {
+        @include media-breakpoint-up(lg) {
           width: 100%;
           padding: 15px 0;
         }
@@ -288,7 +288,7 @@
           cursor: pointer;
           transition: background 0.3s ease;
 
-          @media (max-width: 1200px) {
+          @include media-breakpoint-up(lg) {
             padding: 12px 30px;
           }
 
@@ -309,7 +309,7 @@
             align-items: center;
             justify-content: center;
 
-            @media (max-width: 1200px) {
+            @include media-breakpoint-up(lg) {
               font-size: 18px;
             }
           }

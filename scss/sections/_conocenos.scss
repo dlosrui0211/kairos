@@ -164,7 +164,7 @@
   justify-content: center;
 }
 
-@media (max-width: 767px) {
+@include media-breakpoint-up(lg) {
   .con-cenos-pc {
     padding: 20px 0;
     gap: 20px;
@@ -227,7 +227,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@include media-breakpoint-up(lg) {
   .t-tulo1 {
     font-size: 18px;
   }
@@ -250,7 +250,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(lg) {
   .historia,
   .obtener-clave {
     flex-direction: row;

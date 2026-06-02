@@ -217,7 +217,7 @@ $h2-font-weight: 400;
 // -----------------------------------------------------------------------------
 // Media Queries para Móviles
 // -----------------------------------------------------------------------------
-@media (max-width: 768px) {
+@include media-breakpoint-up(lg) {
   .login-pc {
     padding: 20px;
     justify-content: flex-start; // Alineamos arriba en móvil

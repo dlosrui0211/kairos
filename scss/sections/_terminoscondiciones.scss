@@ -94,13 +94,13 @@ $font-body: "Inter-Regular", sans-serif;
 // -----------------------------------------------------------------------------
 // Media Queries (Para que se vea bien en móvil)
 // -----------------------------------------------------------------------------
-@media (max-width: 1024px) {
+@include media-breakpoint-up(lg) {
     .t-rminos-y-condiciones-pc .condiciones-generales-de-venta {
         padding: 20px 10%; // Menos margen lateral en tablets
     }
 }
 
-@media (max-width: 768px) {
+@include media-breakpoint-up(lg) {
     .t-rminos-y-condiciones-pc {
         .condiciones-generales-de-venta {
             // En móvil reducimos el margen lateral casi al mínimo
