@@ -1,19 +1,3 @@
-// Fase 2: ERROR GRAVE: las variables no se definen aquí!, ya están definidas en los SCSS de variables-->
-
-// --- Variables ---
-$principal: #1c0538;
-$texto-principal: #ffffff;
-$principal-de-acento: #6f12e0;
-$secundario: #5e3a8b;
-$input-bg: #ffffff;
-
-$h1-font-family: "GasoekOne-Regular", sans-serif; // Usamos esto para títulos grandes
-$h2-font-family: "GasoekOne-Regular", sans-serif;
-$body-font-family: "Inter", sans-serif;
-
-$h2-font-size: 24px;
-$h2-font-weight: 400;
-
 // -----------------------------------------------------------------------------
 // Componente Principal
 // -----------------------------------------------------------------------------
@@ -23,7 +7,7 @@ $h2-font-weight: 400;
   }
 
   // Contenedor principal para PC (Centrado en pantalla)
-  background: $principal;
+  background: $primario;
   min-height: 100vh;
   padding: 40px 0; // Más pequeño en PC
   display: flex;
@@ -91,9 +75,9 @@ $h2-font-weight: 400;
     padding: 10px 0;
     
     .bienvenido-a-kairos {
-      color: $texto-principal;
+      color: $texto_claro;
       text-align: center;
-      font-family: $h1-font-family;
+      font-family: $headings-font-family;
       font-size: 30px; // Tamaño adecuado para un título de formulario
       font-weight: 400;
       line-height: 1.2;
@@ -120,8 +104,8 @@ $h2-font-weight: 400;
     position: relative;
 
     .label-field { // Estilo para el label "Email:" o "Contraseña:"
-      color: $texto-principal;
-      font-family: $body-font-family;
+      color: $texto_claro;
+      font-family: $font-family-sans-serif;
       font-size: 16px;
       font-weight: 600;
       text-align: left;
@@ -132,19 +116,19 @@ $h2-font-weight: 400;
     // Campo de Entrada (Input)
     .frame-17 {
       // Estilos del input: Se aplica a <input>
-      background: $input-bg;
+      background: $texto_claro;
       border: 2px solid transparent;
       border-radius: 8px;
       padding: 12px 15px;
       width: 100%;
       height: 45px; // Altura fija
-      font-family: $body-font-family;
+      font-family: $font-family-sans-serif;
       font-size: 16px;
-      color: $principal; // Texto dentro del input
+      color: $primario; // Texto dentro del input
       transition: border-color 0.3s ease;
       
       &:focus {
-          border-color: $principal-de-acento;
+          border-color: $resalte;
           outline: none;
       }
     }
@@ -161,7 +145,7 @@ $h2-font-weight: 400;
 
     .frame-23 {
       // El botón real (el frame interior)
-      background: $principal-de-acento;
+      background: $resalte;
       border: none;
       border-radius: 30px;
       padding: 10px 15px;
@@ -174,13 +158,13 @@ $h2-font-weight: 400;
       transition: background-color 0.3s ease;
       
       &:hover {
-          background: darken($principal-de-acento, 10%);
+          background: darken($resalte, 10%);
       }
 
       .log-in {
-        color: $texto-principal;
+        color: $texto_claro;
         text-align: center;
-        font-family: $h2-font-family;
+        font-family: $headings-font-family;
         font-size: 20px;
         font-weight: 400;
       }
@@ -194,18 +178,18 @@ $h2-font-weight: 400;
     padding-top: 5px; // Pequeño espacio extra
 
     .a-n-no-tienes-cuenta-registrate-aqu {
-      color: $texto-principal;
+      color: $texto_claro;
       text-align: center;
-      font-family: $body-font-family;
+      font-family: $font-family-sans-serif;
       font-size: 14px; // Más pequeño para un enlace auxiliar
       font-weight: 400;
 
       a {
-          color: $texto-principal; // Enlace en color de acento
+          color: $texto_claro; // Enlace en color de acento
           text-decoration: none;
           transition: color 0.3s ease;
           &:hover {
-              color: lighten($principal-de-acento, 15%);
+              color: lighten($resalte, 15%);
               text-decoration: underline;
           }
       }

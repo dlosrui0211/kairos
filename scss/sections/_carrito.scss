@@ -1,59 +1,40 @@
 // ==========================================================================
-// ESTILOS COMPLETOS DEL CARRITO (ESTRUCTURA + DISEÑO VISUAL)
+// ESTILOS DEL CARRITO CON MODAL BOOTSTRAP
 // ==========================================================================
-// Fase 2: ERROR GRAVE: las variables no se definen aquí!, ya están definidas en los SCSS de variables-->
-// --- Variables (Asegúrate de que coincidan con las tuyas) ---
-$principal: #1c0538;            // Fondo oscuro
-$secundario: #5e3a8b;           // Fondo de elementos/tarjetas
-$principal-de-acento: #6f12e0;  // Botones y destacados
-$texto-principal: #ffffff;      // Texto blanco
-$font-title: "GasoekOne-Regular", sans-serif;
-$font-body: "Inter", sans-serif;
 
-// -------------------------------------------------------------------
-// 1. ESTRUCTURA DEL MODAL (El fondo oscuro y el panel lateral)
-// -------------------------------------------------------------------
-
-.modal-backdrop {
-    display: none; 
-    position: fixed;
-    z-index: 1050; 
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); 
-    opacity: 0;
-    transition: opacity 0.3s ease;
-
-    &.active {
-        display: block;
-        opacity: 1;
-        
-        .modal-content {
-            transform: translateX(0); 
-        }
+.cart-modal {
+    .modal-dialog {
+        margin-left: auto;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        max-width: 480px;
+        min-height: 100%;
     }
-}
 
-.modal-content {
-    background-color: $principal; 
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%; 
-    width: 90%;
-    max-width: 450px; 
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
-    padding: 25px; // Un poco más de espacio interno
-    box-sizing: border-box;
-    
-    transform: translateX(100%); 
-    transition: transform 0.3s ease-out;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    &.fade .modal-dialog {
+        transform: translateX(100%);
+    }
+
+    &.show .modal-dialog {
+        transform: translateX(0);
+    }
+
+    .modal-content {
+        background-color: $primario;
+        min-height: 100vh;
+        border: none;
+        border-radius: 0;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+        color: $texto_claro;
+    }
+
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
 }
 
 // -------------------------------------------------------------------
@@ -65,31 +46,27 @@ $font-body: "Inter", sans-serif;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgba($texto-principal, 0.2); // Línea sutil
+    border-bottom: 1px solid rgba($texto_claro, 0.2); // Línea sutil
     margin-bottom: 20px;
     flex-shrink: 0;
 }
 
 .drawer-title {
-    font-family: $font-title;
+    font-family: $headings-font-family;
     font-size: 28px;
-    color: $texto-principal;
+    color: $texto_claro;
     text-transform: uppercase; // Estilo más "fuerte"
     letter-spacing: 1px;
 }
 
 .close-button {
-    color: $texto-principal;
-    font-size: 40px; // X más grande y fácil de clicar
-    background: none;
-    border: none;
+    filter: invert(1) grayscale(100%) brightness(200%);
+    opacity: 1;
     cursor: pointer;
-    line-height: 0.8;
-    padding: 0;
     transition: transform 0.2s;
 
     &:hover {
-        color: $principal-de-acento;
+        opacity: 0.85;
         transform: scale(1.1);
     }
 }
@@ -104,7 +81,7 @@ $font-body: "Inter", sans-serif;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding-right: 5px;
+    padding: 0 8px 0 0;
     
     // Scrollbar personalizada para que se vea integrada
     &::-webkit-scrollbar {
@@ -119,11 +96,11 @@ $font-body: "Inter", sans-serif;
 .elemento-carrito {
     background-color: $secundario; // Fondo de la tarjeta de producto
     border-radius: 12px; // Bordes redondeados modernos
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
     align-items: center;
-    justify-content: space-between; // Separa info de acciones
-    padding: 12px;
-    gap: 15px;
+    padding: 14px;
+    gap: 12px;
     transition: transform 0.2s;
 
     &:hover {
@@ -132,14 +109,15 @@ $font-body: "Inter", sans-serif;
 
     // Parte Izquierda: Imagen + Textos
     .producto-media {
-        display: flex;
+        display: grid;
+        grid-template-columns: 72px minmax(0, 1fr);
         align-items: center;
-        gap: 15px;
-        flex-grow: 1;
+        gap: 12px;
+        min-width: 0;
         
         .imagen {
-            width: 70px; // Imagen un poco más grande
-            height: 70px;
+            width: 72px; // Imagen un poco más grande
+            height: 72px;
             overflow: hidden;
             border-radius: 8px;
             flex-shrink: 0;
@@ -156,18 +134,20 @@ $font-body: "Inter", sans-serif;
             display: flex;
             flex-direction: column;
             gap: 4px;
+            min-width: 0;
             
             .producto-1 {
-                color: $texto-principal;
-                font-family: $font-title;
-                font-size: 16px;
+                color: $texto_claro;
+                font-family: $headings-font-family;
+                font-size: 14px;
                 line-height: 1.2;
                 text-transform: uppercase;
+                overflow-wrap: anywhere;
             }
             
             ._99 {
-                color: lighten($principal-de-acento, 20%); // Precio destacado
-                font-family: $font-body;
+                color: lighten($resalte, 20%); // Precio destacado
+                font-family: $font-family-sans-serif;
                 font-weight: 700;
                 font-size: 15px;
             }
@@ -178,14 +158,17 @@ $font-body: "Inter", sans-serif;
     .item-actions {
         display: flex;
         align-items: center;
-        gap: 15px;
+        justify-content: flex-end;
+        gap: 10px;
         flex-shrink: 0;
         
         .trash-icon {
             cursor: pointer;
             font-size: 20px;
-            color: rgba($texto-principal, 0.6); // Grisáceo por defecto
+            color: rgba($texto_claro, 0.6); // Grisáceo por defecto
             transition: color 0.2s;
+            padding: 0;
+            border: none;
             
             &:hover { 
                 color: #ff4d4d; // Rojo al pasar el ratón
@@ -198,15 +181,15 @@ $font-body: "Inter", sans-serif;
 .item-quantity {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     background-color: rgba(0,0,0, 0.2); // Fondo oscuro para el control
-    padding: 4px 8px;
+    padding: 4px 6px;
     border-radius: 8px;
     
     .quantity-display {
-        width: 20px;
+        width: 16px;
         text-align: center;
-        color: $texto-principal;
+        color: $texto_claro;
         font-weight: 600;
         font-size: 16px;
     }
@@ -222,7 +205,7 @@ $font-body: "Inter", sans-serif;
     .quantity-btn {
         background: none;
         border: none;
-        color: $texto-principal;
+        color: $texto_claro;
         cursor: pointer;
         padding: 0;
         line-height: 0.8;
@@ -232,7 +215,7 @@ $font-body: "Inter", sans-serif;
 
         &:hover {
             opacity: 1;
-            color: $principal-de-acento;
+            color: $resalte;
         }
         &:focus {
             outline: none;
@@ -245,10 +228,12 @@ $font-body: "Inter", sans-serif;
 // -------------------------------------------------------------------
 
 .drawer-footer {
+    display: block;
     padding-top: 20px;
-    border-top: 1px solid rgba($texto-principal, 0.2);
+    border-top: 1px solid rgba($texto_claro, 0.2);
     margin-top: 15px;
     flex-shrink: 0;
+    width: 100%;
 
     .subtotal-row {
         display: flex;
@@ -257,15 +242,15 @@ $font-body: "Inter", sans-serif;
         margin-bottom: 20px;
         
         .subtotal-text {
-            font-family: $font-body;
+            font-family: $font-family-sans-serif;
             font-size: 18px;
-            color: rgba($texto-principal, 0.8);
+            color: rgba($texto_claro, 0.8);
         }
         
         .subtotal-price {
-            font-family: $font-title;
+            font-family: $headings-font-family;
             font-size: 24px;
-            color: $texto-principal;
+            color: $texto_claro;
         }
     }
 
@@ -280,7 +265,7 @@ $font-body: "Inter", sans-serif;
             padding: 15px;
             border-radius: 50px; // Botones muy redondeados (estilo moderno)
             border: none;
-            font-family: $font-title;
+            font-family: $headings-font-family;
             font-size: 18px;
             cursor: pointer;
             text-align: center;
@@ -294,42 +279,24 @@ $font-body: "Inter", sans-serif;
             }
             
             &.comprar {
-                background-color: $principal-de-acento;
-                color: $texto-principal;
-                box-shadow: 0 4px 15px rgba($principal-de-acento, 0.4); // Sombra brillante
+                background-color: $resalte;
+                color: $texto_claro;
+                box-shadow: 0 4px 15px rgba($resalte, 0.4); // Sombra brillante
             }
             
             &.eliminar {
                 background: transparent;
-                color: rgba($texto-principal, 0.6);
-                border: 2px solid rgba($texto-principal, 0.2);
+                color: rgba($texto_claro, 0.6);
+                border: 2px solid rgba($texto_claro, 0.2);
                 font-size: 14px;
                 padding: 12px;
                 
                 &:hover {
                     background-color: rgba(255, 255, 255, 0.05);
-                    color: $texto-principal;
-                    border-color: $texto-principal;
+                    color: $texto_claro;
+                    border-color: $texto_claro;
                 }
             }
-        }
-    }
-}
-
-// --- Media Queries para Móviles Pequeños ---
-@include media-breakpoint-up(lg) {
-    .modal-content {
-        width: 100%; // Pantalla completa
-        max-width: none;
-        border-radius: 0; // Sin bordes redondeados en full screen
-    }
-    
-    .elemento-carrito {
-        padding: 10px;
-        
-        .imagen {
-            width: 60px;
-            height: 60px;
         }
     }
 }

@@ -1,0 +1,12 @@
+// Bootstrap responsive configuration
+// Keep the mobile/base styles and use lg as the only responsive breakpoint.
+$grid-breakpoints: (
+  xs: 0,
+  lg: 992px
+);
+
+$container-max-widths: (
+  lg: 960px
+);
+
+$enable-rfs: false;

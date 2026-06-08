@@ -1,20 +1,55 @@
 .products {
   display: grid;
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
   justify-content: center;
   grid-auto-flow: row;
-  gap: 16px;
-  padding: 16px;
-  grid-template-columns: repeat(4, max-content);
+  gap: 2rem 1.5rem;
+  padding: 3rem 1rem 2rem;
+  grid-template-columns: minmax(0, 1fr);
 // Fase 2: hay que usar los mixins de bootstrap media-breakpoints-up -->
   @include media-breakpoint-up(lg) {
-    grid-template-columns: repeat(3, max-content);
+    column-gap: 1.5rem;
+    row-gap: 2rem;
+    padding-top: 3.5rem;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, minmax(0, 16rem));
+  }
+}
+
+.home-products {
+  max-width: 1220px;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+
+  .row {
+    row-gap: 2rem;
+  }
+
+  .row:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  .col {
+    display: flex;
+    justify-content: center;
   }
 
   @include media-breakpoint-up(lg) {
-    grid-template-columns: repeat(2, max-content);
-  }
+    padding-top: 3.5rem;
 
-  @include media-breakpoint-up(lg) {
-    grid-template-columns: repeat(1, max-content);
+    .row {
+      --bs-gutter-x: 1.5rem;
+      row-gap: 2rem;
+    }
+
+    .col:nth-child(4n + 1) {
+      justify-content: flex-start;
+    }
+
+    .col:nth-child(4n) {
+      justify-content: flex-end;
+    }
   }
 }

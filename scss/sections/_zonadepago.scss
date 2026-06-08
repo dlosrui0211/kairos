@@ -1,37 +1,3 @@
-//Fase 2: ERROR GRAVE: las variables no se definen aquí!, ya están definidas en los SCSS de variables-->
-
-// --- Variables de Color (Inferred from CSS) ---
-$principal: #1c0538;
-$secundario: #5e3a8b;
-$principal-de-acento: #6f12e0;
-$texto-principal: #ffffff;
-$texto-oscuro: #333333; // Añadido para los inputs
-
-// --- Variables de Tipografía (Inferred from CSS) ---
-$h1-font-family: "GasoekOne-Regular", sans-serif;
-$h1-font-size-pc: 28px;
-$h1-font-size-mobile: 24px;
-$h1-font-weight: 400;
-
-$h2-font-family: "GasoekOne-Regular", sans-serif;
-$h2-font-size-pc: 22px;
-$h2-font-size-mobile: 18px;
-$h2-font-weight: 400;
-
-$h3-font-family: "GasoekOne-Regular", sans-serif;
-$h3-font-size-pc: 20px;
-$h3-font-size-mobile: 16px;
-$h3-font-weight: 400;
-
-$body-text-1-font-family: "Inter-Regular", sans-serif;
-$body-text-1-font-size-pc: 20px;
-$body-text-1-font-size-mobile: 16px;
-$body-text-1-font-weight: 400;
-
-// --- Nuevo: Variables para el divisor (Líneas divisorias blancas) ---
-$divider-color: #ffffff; 
-$divider-thickness: 1px;
-
 // -----------------------------------------------------------------------------
 // Componente Principal
 // -----------------------------------------------------------------------------
@@ -40,7 +6,7 @@ $divider-thickness: 1px;
     box-sizing: border-box;
   }
 
-  background: $principal;
+  background: $primario;
   padding: 20px 0;
   display: flex;
   flex-direction: column;
@@ -150,8 +116,8 @@ $divider-thickness: 1px;
             height: auto;
 
             .producto-1 {
-              font: $h3-font-weight 18px / 1 $h3-font-family;
-              color: $texto-principal;
+              font: $headings-font-weight 18px / 1 $headings-font-family;
+              color: $texto_claro;
               text-align: left;
               flex: 1;
               height: auto;
@@ -161,8 +127,8 @@ $divider-thickness: 1px;
             }
 
             ._99 {
-              font: $h3-font-weight 18px / 1 $h3-font-family;
-              color: $texto-principal;
+              font: $headings-font-weight 18px / 1 $headings-font-family;
+              color: $texto_claro;
               text-align: right;
               align-self: stretch;
               display: flex;
@@ -190,7 +156,7 @@ $divider-thickness: 1px;
           height: auto;
 
           ._1 {
-            color: $texto-principal;
+            color: $texto_claro;
             text-align: center;
             font-family: "Raleway-SemiBold", sans-serif;
             font-size: 16px;
@@ -253,13 +219,13 @@ $divider-thickness: 1px;
 
       .resumen-del-pedido {
         /* Título con línea divisoria inferior */
-        color: $texto-principal;
+        color: $texto_claro;
         text-align: left;
-        font: $h1-font-weight $h1-font-size-pc / 1 $h1-font-family;
+        font: $headings-font-weight 28px / 1 $headings-font-family;
         width: 100%;
         height: auto;
         padding-bottom: 15px;
-        border-bottom: $divider-thickness solid $divider-color; /* Línea divisoria */
+        border-bottom: 1px solid $texto_claro; /* Línea divisoria */
         margin-bottom: 5px;
         display: flex;
         align-items: center;
@@ -283,24 +249,24 @@ $divider-thickness: 1px;
       /* Styles for detail text (Subtotal, Shipping, etc.) - Nítido */
       .subtotal-x-productos,
       .env-o-estimado {
-          color: $texto-principal;
+          color: $texto_claro;
           text-align: left;
-          font: $body-text-1-font-weight $body-text-1-font-size-pc / 1 $body-text-1-font-family;
+          font: 400 20px / 1 $font-family-sans-serif;
           flex: 1;
       }
 
       /* Styles for detail prices/values - Nítido, con énfasis */
       ._992, .gratuito {
-          color: $texto-principal;
+          color: $texto_claro;
           text-align: right;
-          font: 600 $body-text-1-font-size-pc / 1 $body-text-1-font-family; 
+          font: 600 20px / 1 $font-family-sans-serif; 
       }
       
       /* Style for the information row (Devolución) */
       .devoluci-n-gratuita-en-30-d-as {
-        color: $texto-principal;
+        color: $texto_claro;
         text-align: center;
-        font: $body-text-1-font-weight 14px / 1 $body-text-1-font-family;
+        font: 400 14px / 1 $font-family-sans-serif;
         font-style: italic;
         width: 100%;
         display: flex;
@@ -323,17 +289,17 @@ $divider-thickness: 1px;
           
           padding-top: 15px; /* Espacio superior para la línea */
           margin-top: 10px;
-          border-top: $divider-thickness solid $divider-color; 
+          border-top: 1px solid $texto_claro; 
       }
 
       /* Styles for Total text and price - Más grande (H2) */
       .total-del-pedido {
-          color: $texto-principal;
+          color: $texto_claro;
           text-align: left;
-          font-weight: $h2-font-weight;
-          font-size: $h2-font-size-pc;
+          font-weight: $headings-font-weight;
+          font-size: 22px;
           line-height: 1;
-          font-family: $h2-font-family;
+          font-family: $headings-font-family;
           flex: 1;
           height: auto;
           display: flex;
@@ -347,12 +313,12 @@ $divider-thickness: 1px;
       }
 
       ._993 { /* Total price */
-          color: $texto-principal;
+          color: $texto_claro;
           text-align: right;
-          font-weight: $h2-font-weight;
-          font-size: $h2-font-size-pc;
+          font-weight: $headings-font-weight;
+          font-size: 22px;
           line-height: 1;
-          font-family: $h2-font-family;
+          font-family: $headings-font-family;
           width: auto;
           height: auto;
           display: flex;
@@ -362,7 +328,7 @@ $divider-thickness: 1px;
 
       // Botón Confirmar Pedido (CENTRADOS APLICADOS)
       .frame-72 {
-        background: $principal-de-acento;
+        background: $resalte;
         border-radius: 8px;
         padding: 10px 15px; /* Restaurado a padding más estándar */
         height: auto; /* Altura automática en lugar de 50px */
@@ -374,12 +340,12 @@ $divider-thickness: 1px;
         justify-content: center; /* Centrado horizontal */
 
         &:hover {
-            background: darken($principal-de-acento, 10%);
+            background: darken($resalte, 10%);
         }
 
         .confirmar-pedido {
-          color: $texto-principal;
-          font: $h1-font-weight 24px / 1 $h1-font-family; /* Restaurado */
+          color: $texto_claro;
+          font: $headings-font-weight 24px / 1 $headings-font-family; /* Restaurado */
           cursor: pointer;
           text-align: center; /* Centrado del texto */
         }
@@ -509,9 +475,9 @@ $divider-thickness: 1px;
           gap: 15px; 
 
           .resumen-del-pedido {
-            font-size: $h2-font-size-mobile;
+            font-size: 18px;
             padding-bottom: 12px;
-            border-bottom: $divider-thickness solid $divider-color; /* Línea divisoria */
+            border-bottom: 1px solid $texto_claro; /* Línea divisoria */
             margin-bottom: 4px;
           }
 
@@ -523,12 +489,12 @@ $divider-thickness: 1px;
           /* Detail text */
           .subtotal-x-productos,
           .env-o-estimado {
-            font-size: $body-text-1-font-size-mobile; 
+            font-size: 16px; 
           }
 
           /* Detail prices */
           ._992, .gratuito {
-            font-size: $body-text-1-font-size-mobile; 
+            font-size: 16px; 
             font-weight: 600;
           }
           
@@ -536,19 +502,19 @@ $divider-thickness: 1px;
           .frame-33 {
             padding-top: 12px;
             margin-top: 4px;
-            border-top: $divider-thickness solid $divider-color; /* Línea divisoria */
+            border-top: 1px solid $texto_claro; /* Línea divisoria */
           }
 
           /* Total text and price */
           .total-del-pedido {
-            font-size: $h2-font-size-mobile;
+            font-size: 18px;
             padding-top: 0 !important; /* Resetting old conflicting style */
             border-top: none !important; /* Resetting old conflicting style */
             margin-top: 0 !important; /* Resetting old conflicting style */
           }
 
           ._993 {
-            font-size: $h2-font-size-mobile;
+            font-size: 18px;
           }
 
           // Botón Confirmar Pedido (CENTRADOS APLICADOS MOBILE)

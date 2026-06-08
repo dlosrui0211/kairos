@@ -1,12 +1,5 @@
-// Fase 2: ERROR GRAVE: las variables no se definen aquí!, ya están definidas en los SCSS de variables-->
-
-$color-principal-fondo: #210330;     
-$color-secundario-fondo: #380753;   
-$color-texto-claro: #ffffff;          
-$color-acento-purpura: #b200ff;       
-
 .trabaja-con-nosotros-pc {
-    color: $color-texto-claro;
+    color: $texto_claro;
     font-family: sans-serif;
     min-height: 100vh;
     padding: 0 10px 50px 10px;
@@ -23,7 +16,7 @@ $color-acento-purpura: #b200ff;
         font-size: 1.8em;
         font-weight: bold;
         margin-bottom: 45px;
-        color: $color-texto-claro;
+        color: $texto_claro;
         text-transform: uppercase;
         
         padding: 0 10px
@@ -59,7 +52,7 @@ $color-acento-purpura: #b200ff;
         font-size: 1.8em;
         font-weight: bold;
         margin-bottom: 40px;
-        color: $color-texto-claro;
+        color: $texto_claro;
         text-transform: uppercase;
     }
 
@@ -80,7 +73,7 @@ $color-acento-purpura: #b200ff;
                 height: 45px;
                 width: 100%;
                 box-sizing: border-box;
-                background-color: $color-texto-claro;
+                background-color: $texto_claro;
                 border: none;
                 border-radius: 5px;
             }
@@ -98,7 +91,7 @@ $color-acento-purpura: #b200ff;
                 height: 180px;
                 width: 100%;
                 box-sizing: border-box;
-                background-color: $color-texto-claro;
+                background-color: $texto_claro;
                 border: none;
                 border-radius: 5px;
                 resize: vertical;
@@ -107,19 +100,19 @@ $color-acento-purpura: #b200ff;
 
         .boton-trabaja-con-nosotros {
             display: inline-block;
-            background-color: #6f12e0;
+            background-color: $resalte;
             padding: 12px 60px;
             border-radius: 8px;
             cursor: pointer;
             transition: background-color 0.3s;
             &:hover {
-                background-color: darken($color-acento-purpura, 10%);
+                background-color: darken($resalte, 10%);
             }
 
             .texto2 {
                 font-weight: bold;
                 text-transform: uppercase;
-                color: $color-texto-claro;
+                color: $texto_claro;
                 font-size: 1.1em;
             }
         }

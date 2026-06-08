@@ -43,53 +43,34 @@ window.addEventListener('DOMContentLoaded', event => {
 document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('cartModal');
     const openButton = document.getElementById('openCartModal'); 
-    const closeButton = document.getElementById('closeCartModal');
     const productList = document.getElementById('productList');
     const subtotalElement = document.getElementById('subtotalPrice');
     const removeAllButton = document.getElementById('removeAllItems');
 
-    // --- Funciones del Drawer ---
-    function openDrawer() {
-        modal.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    }
-
-    function closeDrawer() {
-        modal.classList.remove('active');
-        setTimeout(() => {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }, 300);
-    }
-
     if (openButton) {
         openButton.addEventListener('click', () => {
-            modal.style.display = 'block';
             updateSubtotal();
-            requestAnimationFrame(openDrawer);
+            bootstrap.Modal.getOrCreateInstance(modal).show();
         });
     }
 
-    if (closeButton) {
-        closeButton.addEventListener('click', closeDrawer);
-    }
-
-    window.addEventListener('click', function(event) {
-        if (event.target === modal) {
-            closeDrawer();
-        }
-    });
-
-    document.addEventListener('keydown', function(e) {
-        if ((e.key === "Escape" || e.key === "Esc") && modal && modal.classList.contains('active')) {
-            closeDrawer();
-        }
-    });
-
-
     // --- Lógica de Cantidad y Carrito ---
 
+    function formatPrice(value) {
+        return `${Number.isInteger(value) ? value : value.toFixed(2)}€`;
+    }
+
+    function updateItemPrice(item, price, quantity) {
+        const priceElement = item.querySelector('.product-price');
+
+        if (priceElement) {
+            priceElement.textContent = formatPrice(price * quantity);
+        }
+    }
+
     function updateSubtotal() {
+        if (!productList || !subtotalElement) return;
+
         let total = 0;
         const items = productList.querySelectorAll('.elemento-carrito');
         
@@ -99,44 +80,47 @@ document.addEventListener('DOMContentLoaded', function() {
             const quantity = parseInt(quantityDisplay.textContent, 10);
             
             if (!isNaN(price) && !isNaN(quantity)) {
+                updateItemPrice(item, price, quantity);
                 total += price * quantity;
             }
         });
 
-        subtotalElement.textContent = `${total}€`;
+        subtotalElement.textContent = formatPrice(total);
     }
 
-    productList.addEventListener('click', function(event) {
-        const target = event.target;
-        const item = target.closest('.elemento-carrito');
-        
-        if (!item) return;
+    if (productList) {
+        productList.addEventListener('click', function(event) {
+            const target = event.target;
+            const item = target.closest('.elemento-carrito');
+            
+            if (!item) return;
 
-        const quantityDisplay = item.querySelector('[data-quantity]');
-        if (!quantityDisplay) return; 
-        
-        let currentQuantity = parseInt(quantityDisplay.textContent, 10);
+            const quantityDisplay = item.querySelector('[data-quantity]');
+            if (!quantityDisplay) return; 
+            
+            let currentQuantity = parseInt(quantityDisplay.textContent, 10);
 
-        if (target.classList.contains('increment-btn')) {
-            currentQuantity++;
-            quantityDisplay.textContent = currentQuantity;
-            updateSubtotal();
-
-        } else if (target.classList.contains('decrement-btn')) {
-            if (currentQuantity > 1) {
-                currentQuantity--;
+            if (target.classList.contains('increment-btn')) {
+                currentQuantity++;
                 quantityDisplay.textContent = currentQuantity;
                 updateSubtotal();
-            } else if (currentQuantity === 1) {
+
+            } else if (target.classList.contains('decrement-btn')) {
+                if (currentQuantity > 1) {
+                    currentQuantity--;
+                    quantityDisplay.textContent = currentQuantity;
+                    updateSubtotal();
+                } else if (currentQuantity === 1) {
+                    item.remove();
+                    updateSubtotal();
+                }
+
+            } else if (target.classList.contains('remove-item-btn')) {
                 item.remove();
                 updateSubtotal();
             }
-
-        } else if (target.classList.contains('remove-item-btn')) {
-            item.remove();
-            updateSubtotal();
-        }
-    });
+        });
+    }
 
     if (removeAllButton) {
         removeAllButton.addEventListener('click', () => {

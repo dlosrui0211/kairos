@@ -19,46 +19,46 @@
 
     <div class="grid-plataformas">
 
-        <a href="playstation.php" class="product-card plataforma">
+        <a href="playstation.php" class="card product-card plataforma">
             <div class="product-card-inner">
-                <div class="product-card-media">
+                <div class="product-card-media card-img-top">
                     <img class="product-card-cover" src="assets/img/playstation.png" alt="PlayStation">
                 </div>
-                <div class="product-card-bottom">
-                    <div class="product-card-price">PLAYSTATION</div>
+                <div class="card-body product-card-bottom">
+                    <div class="card-title product-card-price">PLAYSTATION</div>
                 </div>
             </div>
         </a>
 
-        <a href="nintendo.php" class="product-card plataforma">
+        <a href="nintendo.php" class="card product-card plataforma">
             <div class="product-card-inner">
-                <div class="product-card-media">
+                <div class="product-card-media card-img-top">
                     <img class="product-card-cover" src="assets/img/nintendo.png" alt="Nintendo">
                 </div>
-                <div class="product-card-bottom">
-                    <div class="product-card-price">NINTENDO</div>
+                <div class="card-body product-card-bottom">
+                    <div class="card-title product-card-price">NINTENDO</div>
                 </div>
             </div>
         </a>
 
-        <a href="xbox.php" class="product-card plataforma">
+        <a href="xbox.php" class="card product-card plataforma">
             <div class="product-card-inner">
-                <div class="product-card-media">
+                <div class="product-card-media card-img-top">
                     <img class="product-card-cover" src="assets/img/xbox.png" alt="Xbox">
                 </div>
-                <div class="product-card-bottom">
-                    <div class="product-card-price">XBOX</div>
+                <div class="card-body product-card-bottom">
+                    <div class="card-title product-card-price">XBOX</div>
                 </div>
             </div>
         </a>
 
-        <a href="steam.php" class="product-card plataforma">
+        <a href="steam.php" class="card product-card plataforma">
             <div class="product-card-inner">
-                <div class="product-card-media">
+                <div class="product-card-media card-img-top">
                     <img class="product-card-cover" src="assets/img/steam.png" alt="Steam">
                 </div>
-                <div class="product-card-bottom">
-                    <div class="product-card-price">STEAM</div>
+                <div class="card-body product-card-bottom">
+                    <div class="card-title product-card-price">STEAM</div>
                 </div>
             </div>
         </a>

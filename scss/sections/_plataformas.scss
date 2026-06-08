@@ -19,10 +19,6 @@
         text-align: center;
         text-transform: uppercase;
 //Fase2: Tienes que usar para esto los mixins de Boostrap (media-breakpoint-up)-->
-        @include media-breakpoint-up(lg) {
-            font-size: 1.5rem;
-            margin-top: 1.2rem;
-        }
     }
 
     .grid-plataformas {
@@ -33,12 +29,6 @@
         gap: 3rem;
         justify-items: center;
         padding: 0 3rem;
-
-        @include media-breakpoint-up(lg) {
-            grid-template-columns: 1fr;
-            gap: 2rem;
-            padding: 0 1rem;
-        }
 
         .product-card {
             width: 100%;

@@ -1,5 +1,3 @@
-<!-- Fase 2: ERROR GRAVE: no usáis boostrap, componentes como navbar, modales, botones y clases auxiliares de todo tipo!-->
-
 <?php include("includes/a_config.php");?>
 <!DOCTYPE html>
 <html>
@@ -14,31 +12,64 @@
   </header>
 
   <main>
-    <div class="products">
-      <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
-	    <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
-	    <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
-      <?php include("includes/product-card.php");?>
+    <div class="container home-products">
+      <div class="row">
+        <div class="col col-lg-3">
+          <?php include("includes/product-card.php");?>
+        </div>
+        <div class="col col-lg-3">
+          <?php include("includes/product-card.php");?>
+        </div>
+        <div class="col col-lg-3">
+          <?php include("includes/product-card.php");?>
+        </div>
+        <div class="col col-lg-3">
+          <?php include("includes/product-card.php");?>
+        </div>
+        </div>
+      <div class="row">
+        <div class="col col-lg-3">
+          <?php include("includes/product-card.php");?>
+        </div>
+        <div class="col col-lg-3">
+          <?php include("includes/product-card.php");?>
+        </div>
+        <div class="col col-lg-3">
+          <?php include("includes/product-card.php");?>
+        </div>
+        <div class="col col-lg-3">
+          <?php include("includes/product-card.php");?>
+        </div>
+        </div>
+      <div class="row">
+        <div class="col col-lg-3">
+          <?php include("includes/product-card.php");?>
+        </div>
+        <div class="col col-lg-3">
+          <?php include("includes/product-card.php");?>
+        </div>
+        <div class="col col-lg-3">
+          <?php include("includes/product-card.php");?>
+        </div>
+        <div class="col col-lg-3">
+          <?php include("includes/product-card.php");?>
+        </div>
+        </div>
+      <div class="row">
+        <div class="col col-lg-3">
+          <?php include("includes/product-card.php");?>
+        </div>
+        <div class="col col-lg-3">
+          <?php include("includes/product-card.php");?>
+        </div>
+        <div class="col col-lg-3">
+          <?php include("includes/product-card.php");?>
+        </div>
+        <div class="col col-lg-3">
+          <?php include("includes/product-card.php");?>
+        </div>
+        </div>
+
     </div>
   </main>
 

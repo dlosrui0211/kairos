@@ -1,7 +1,7 @@
-<div class="product-card">
+<div class="card product-card">
     <div class="product-card-inner">
 
-        <a href="detalles.php" class="product-card-media">
+        <a href="detalles.php" class="product-card-media card-img-top">
             <div class="product-card-platform">
                 <img src="assets/img/platforms/steam.png" alt="Steam">
             </div>
@@ -11,11 +11,11 @@
             <img class="product-card-cover" src="assets/img/fc26.jpg" alt="EA Sports FC 26">
         </a>
 
-        <div class="product-card-bottom">
-            <div class="product-card-price">
+        <div class="card-body product-card-bottom">
+            <div class="card-title product-card-price">
                 39.99€
             </div>
-            <a class="product-card-button" href="">
+            <a class="btn product-card-button" href="">
                 AÑADIR AL CARRITO
             </a>
         </div>

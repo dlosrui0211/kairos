@@ -20,10 +20,6 @@
         margin-top: 2.5rem;
         text-transform: uppercase;
 
-        @include media-breakpoint-up(lg) {
-            font-size: 1.4rem;
-            margin-top: 1.2rem;
-        }
     }
 
     .lista-recibos {
@@ -123,33 +119,6 @@
                 }
             }
 
-            @include media-breakpoint-up(lg) {
-                grid-template-columns: 55px auto 50px 25px;
-                padding: 0.9rem 1rem;
-                gap: 0.6rem;
-
-                .icono-recibo img {
-                    width: 55px;
-                    height: 55px;
-                }
-
-                .texto-recibo .nombre-recibo {
-                    font-size: 0.9rem;
-                }
-
-                .texto-recibo .solicitar {
-                    font-size: 0.7rem;
-                }
-
-                .dias-recibo span {
-                    font-size: 0.75rem;
-                }
-
-                .eliminar-recibo img {
-                    width: 16px;
-                    height: 16px;
-                }
-            }
         }
     }
 }

@@ -126,34 +126,3 @@
     }
   }
 }
-
-@include media-breakpoint-up(lg) {
-  .soporte {
-    overflow-y: auto;
-
-    .soporte-pc{
-      padding: 40px 15px 60px;
-      overflow-y: visible;
-    }
-
-    .qu-enes-somos {
-      .t-tulo {
-        font-size: 24px;
-      }
-
-      .texto {
-        font-size: 16px;
-      }
-    }
-
-    .opciones {
-      flex-direction: column;
-      align-items: center;
-
-      .card-de-soporte {
-        max-width: 100%;
-        width: 100%;
-      }
-    }
-  }
-}
